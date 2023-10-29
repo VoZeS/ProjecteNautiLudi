@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class AudioManagement : MonoBehaviour
 {
     // Audio GO
-    public AudioSource musicSource;
-    public AudioSource fxSource;
+    private AudioSource musicSource;
+    private AudioSource fxSource;
 
     // UI GO
     public Image volumeImage;
@@ -16,6 +16,20 @@ public class AudioManagement : MonoBehaviour
     // Music Image GO
     public Sprite mutedMusicImage;
     public Sprite unmutedMusicImage;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    private void Start()
+    {
+        musicSource = GameObject.Find("MusicManager").GetComponent<AudioSource>();
+        fxSource = GameObject.Find("FXManager").GetComponent<AudioSource>();
+
+        //volumeImage = GameObject.Find("MuteVolumeButton").GetComponent<Image>();
+        //fxImage = GameObject.Find("MuteFXButton").GetComponent<Image>();
+    }
 
     public void MusicMuteLogic()
     {

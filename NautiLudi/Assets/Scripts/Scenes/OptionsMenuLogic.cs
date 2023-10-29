@@ -12,14 +12,24 @@ public class OptionsMenuLogic : MonoBehaviour
     // Set to true GO
     public GameObject optionsGroup;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+
+    }
+
     public void OpenOptionsMenu()
     {
-        mainMenuGroup.SetActive(false);
+        if(mainMenuGroup != null)
+            mainMenuGroup.SetActive(false);
+
         optionsGroup.SetActive(true);
     }
     public void CloseOptionsMenu()
     {
-        mainMenuGroup.SetActive(true);
+        if (mainMenuGroup != null)
+            mainMenuGroup.SetActive(true);
+
         optionsGroup.SetActive(false);
     }
 
