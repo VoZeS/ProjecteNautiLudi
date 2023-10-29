@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class AudioManagement : MonoBehaviour
 {
     // Audio GO
-    private AudioSource musicSource;
-    private AudioSource fxSource;
+    public AudioMixer audioMixer;
+    public float lastVolumeFX;
+    public float lastVolumeMusic;
 
     // UI GO
+    public Toggle muteFX;
+    public Toggle muteMusic;
     public Image volumeImage;
     public Image fxImage;
 
@@ -17,57 +21,61 @@ public class AudioManagement : MonoBehaviour
     public Sprite mutedMusicImage;
     public Sprite unmutedMusicImage;
 
+    // Between Scenes Logic
+    private static bool audioCreated = false;
+
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (!audioCreated)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            audioCreated = true;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void Start()
     {
-        musicSource = GameObject.Find("MusicManager").GetComponent<AudioSource>();
-        fxSource = GameObject.Find("FXManager").GetComponent<AudioSource>();
+        //musicGroup = GameObject.Find("MusicManager").GetComponent<AudioSource>();
+        //fxGroup = GameObject.Find("FXManager").GetComponent<AudioSource>();
 
         //volumeImage = GameObject.Find("MuteVolumeButton").GetComponent<Image>();
         //fxImage = GameObject.Find("MuteFXButton").GetComponent<Image>();
     }
 
-    public void MusicMuteLogic()
+    public void SetMusicMute()
     {
-        musicSource.mute = !musicSource.mute;
 
-        if (musicSource.mute == true)
+        if (muteMusic.isOn)
         {
-            if (mutedMusicImage != null && volumeImage != null)
-            {
-                volumeImage.sprite = mutedMusicImage;
-            }
+            audioMixer.GetFloat("VolMusic", out lastVolumeMusic);
+            audioMixer.SetFloat("VolMusic", -80);
+            volumeImage.sprite = mutedMusicImage;
         }
-        else if (musicSource.mute == false)
+        else
         {
-            if (unmutedMusicImage != null && volumeImage != null)
-            {
-                volumeImage.sprite = unmutedMusicImage;
-            }
+            audioMixer.SetFloat("VolMusic", lastVolumeMusic);
+            volumeImage.sprite = unmutedMusicImage;
         }
     }
 
-    public void FXMuteLogic()
+    public void SetFXMute()
     {
-        fxSource.mute = !fxSource.mute;
 
-        if (fxSource.mute == true)
+        if (muteFX.isOn)
         {
-            if (mutedMusicImage != null && fxImage != null)
-            {
-                fxImage.sprite = mutedMusicImage;
-            }
+            audioMixer.GetFloat("VolFX", out lastVolumeFX);
+            audioMixer.SetFloat("VolFX", -80);
+            fxImage.sprite = mutedMusicImage;
+
         }
-        else if (fxSource.mute == false)
+        else
         {
-            if (unmutedMusicImage != null && fxImage != null)
-            {
-                fxImage.sprite = unmutedMusicImage;
-            }
+            audioMixer.SetFloat("VolFX", lastVolumeFX);
+            fxImage.sprite = unmutedMusicImage;
         }
     }
 }
