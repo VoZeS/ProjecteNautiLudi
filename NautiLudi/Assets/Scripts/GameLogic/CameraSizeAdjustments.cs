@@ -33,7 +33,7 @@ public class CameraSizeAdjustments : MonoBehaviour
         }
         else
         {
-            float newSize = baseSize * (targetAspect / currentAspect) * (targetSize / baseSize);
+            float newSize = baseSize * (targetAspect / currentAspect) * (baseSize / targetSize);
             mainCamera.orthographicSize = newSize;
         }
     }
