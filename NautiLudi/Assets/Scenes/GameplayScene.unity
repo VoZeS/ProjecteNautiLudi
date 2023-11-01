@@ -7679,7 +7679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60ae4b7ca116ce418a5365d6f26dd5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSize: 13
+  baseSize: 50
   targetWidth: 828
   targetHeight: 1792
   targetSize: 50
