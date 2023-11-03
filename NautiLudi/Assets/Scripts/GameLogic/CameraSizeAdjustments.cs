@@ -1,40 +1,73 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraSizeAdjustments : MonoBehaviour
 {
+    private float currentWidth;
+    private float currentHeight;
+
+    [Header("Camera")]
     private Camera mainCamera;
-    public float baseSize = 13f;
-    public float targetWidth = 828f;
-    public float targetHeight = 1792f;
-    public float targetSize = 50f;
+    public float aspectRatioThreshold = 0.1f;
+    private float targetWidth = 1920f;
+    private float targetHeight = 1080f;
+    private float baseMobileSize = 50f;
+    private float baseDesktopSize = 13f;
+
+    [Header("Buttons")]
+    public RectTransform buttonRectTransform;
+    public Vector2 positionOffset;
+    public Vector2 sizeOffset;
 
     void Start()
     {
         mainCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
+        //AdjustButtonsSize();
+
+        UpdateScreenSize();
+        AdjustCameraSize();
 
     }
 
+
     private void Update()
     {
+        UpdateScreenSize();
         AdjustCameraSize();
 
+    }
+    void UpdateScreenSize()
+    {
+        currentWidth = Screen.width;
+        currentHeight = Screen.height;
     }
 
     void AdjustCameraSize()
     {
         float targetAspect = targetWidth / targetHeight;
-        float currentAspect = (float)Screen.width / Screen.height;
+        float currentAspect = currentWidth / currentHeight;
 
-        if (Mathf.Approximately(targetAspect, currentAspect))
+        if (Mathf.Abs(targetAspect - currentAspect) < aspectRatioThreshold)
         {
-            mainCamera.orthographicSize = baseSize;
+            mainCamera.orthographicSize = baseDesktopSize;
         }
         else
         {
-            float newSize = baseSize * (targetAspect / currentAspect) * (baseSize / targetSize);
-            mainCamera.orthographicSize = newSize;
+            //float baseSize = (currentWidth < currentHeight) ? baseMobileSize : baseDesktopSize;
+            //float newSize = baseSize * (targetAspect / currentAspect);
+            mainCamera.orthographicSize = baseMobileSize;
         }
+    }
+
+    void AdjustButtonsSize()
+    {
+        //float widthRatio = currentWidth / targetWidth;
+        //float heightRatio = currentHeight / targetHeight;
+
+        // Buttons config
+        //buttonRectTransform.anchoredPosition += new Vector2(positionOffset.x * widthRatio, positionOffset.y * heightRatio);
+        //buttonRectTransform.sizeDelta += new Vector2(sizeOffset.x * widthRatio, sizeOffset.y * heightRatio);
     }
 }
