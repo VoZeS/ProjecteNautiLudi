@@ -6,34 +6,32 @@ using UnityEngine.UI;
 
 public class NewsSelection : MonoBehaviour
 {
-    private Toggle selectToggle;
-    public Text toggleText;
-    public Image toggleBackground;
+    private Button selectButton;
+    public TMP_Text buttonText;
+    public Image buttonBackground;
 
     private void Start()
     {
-        selectToggle = GetComponent<Toggle>();
-        toggleText.text = "Seleccionar";
-        toggleBackground.color = new Color(0, 100, 0, 1);
+        selectButton = GetComponent<Button>();
+        buttonText.text = "Seleccionar";
+        buttonBackground.color = new Color(0, 100, 0, 1);
     }
 
     public void NewsSelectionLogic()
     {
 
-        if (selectToggle.isOn)
+        if (buttonText.text == "Seleccionar" && NewsTextLogic.selectedNews < 3)
         {
-            if (NewsTextLogic.selectedNews < 3)
-            {
-                NewsTextLogic.selectedNews++;
-                toggleText.text = "Deseleccionar";
-                toggleBackground.color = new Color(100, 0, 0, 1);
-            }
+            NewsTextLogic.selectedNews++;
+            buttonText.text = "Deseleccionar";
+            buttonBackground.color = new Color(100, 0, 0, 1);
+
         }
-        else if (!selectToggle.isOn)
+        else if (buttonText.text == "Deseleccionar" && NewsTextLogic.selectedNews <= 3)
         {
             NewsTextLogic.selectedNews--;
-            toggleText.text = "Seleccionar";
-            toggleBackground.color = new Color(0, 100, 0, 1);
+            buttonText.text = "Seleccionar";
+            buttonBackground.color = new Color(0, 100, 0, 1);
 
         }
     }
