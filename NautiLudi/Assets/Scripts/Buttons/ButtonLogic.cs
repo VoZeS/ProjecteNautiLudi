@@ -19,6 +19,22 @@ public class ButtonLogic : MonoBehaviour
     [Header("WinLoseImages")]
     public Image[] winloseImages;
 
+    [Header("Write Button")]
+    public GameObject writeNewspaper;
+    public GameObject newsScroll;
+
+    private void Update()
+    {
+        if(NewsTextLogic.selectedNews >= 3 && newsScroll.activeInHierarchy)
+        {
+            writeNewspaper.SetActive(true);
+        }
+        else if(NewsTextLogic.selectedNews < 3 || !newsScroll.activeInHierarchy)
+        {
+            writeNewspaper.SetActive(false);
+        }
+    }
+
     public void Start_InvisibleFading()
     {
         fadingScript.StartToInvisibleFading(startImages);

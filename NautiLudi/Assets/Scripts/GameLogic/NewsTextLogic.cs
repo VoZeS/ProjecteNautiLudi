@@ -4,8 +4,13 @@ using TMPro;
 using UnityEngine;
 public class NewsTextLogic : MonoBehaviour
 {
+    [Header("General Panel")]
     public TMP_Text newsSelectedText;
-    static public int selectedNews;
+
+    [Header("Info Panel")]
+    public TMP_Text[] infoNewsSelectedText;
+
+    static public double selectedNews;
 
     private void Start()
     {
@@ -15,6 +20,14 @@ public class NewsTextLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ------------- General Panel -------------
         newsSelectedText.text = "Noticies seleccionades: " + selectedNews + "/3";
+
+        // --------------- Info Panel --------------
+        for(int i = 0; i < infoNewsSelectedText.Length; i++)
+        {
+            infoNewsSelectedText[i].text = selectedNews + "/3";
+
+        }
     }
 }
