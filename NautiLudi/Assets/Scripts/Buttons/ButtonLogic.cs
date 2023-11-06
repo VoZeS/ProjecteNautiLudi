@@ -25,11 +25,11 @@ public class ButtonLogic : MonoBehaviour
 
     private void Update()
     {
-        if(NewsTextLogic.selectedNews >= 3 && newsScroll.activeInHierarchy)
+        if(NewsLogic.selectedNews >= 3 && newsScroll.activeInHierarchy)
         {
             writeNewspaper.SetActive(true);
         }
-        else if(NewsTextLogic.selectedNews < 3 || !newsScroll.activeInHierarchy)
+        else if(NewsLogic.selectedNews < 3 || !newsScroll.activeInHierarchy)
         {
             writeNewspaper.SetActive(false);
         }
