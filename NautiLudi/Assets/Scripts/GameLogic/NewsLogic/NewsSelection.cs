@@ -62,16 +62,16 @@ public class NewsSelection : MonoBehaviour
     public void NewsSelectionLogic()
     {
 
-        if (buttonText.text == "Seleccionar" && NewsTextLogic.selectedNews < 3)
+        if (buttonText.text == "Seleccionar" && NewsLogic.selectedNews < 3)
         {
-            NewsTextLogic.selectedNews += 0.5;
+            NewsLogic.selectedNews += 0.5;
             buttonText.text = "Deseleccionar";
             buttonBackground.color = new Color(100, 0, 0, 1);
 
         }
-        else if (buttonText.text == "Deseleccionar" && NewsTextLogic.selectedNews <= 3)
+        else if (buttonText.text == "Deseleccionar" && NewsLogic.selectedNews <= 3)
         {
-            NewsTextLogic.selectedNews -= 0.5;
+            NewsLogic.selectedNews -= 0.5;
             buttonText.text = "Seleccionar";
             buttonBackground.color = new Color(0, 100, 0, 1);
 
@@ -81,19 +81,37 @@ public class NewsSelection : MonoBehaviour
     public void AssociateNewsSelectionLogic()
     {
 
-        if (associateButtonText.text == "Seleccionar" && NewsTextLogic.selectedNews < 3)
+        if (associateButtonText.text == "Seleccionar" && NewsLogic.selectedNews < 3)
         {
-            NewsTextLogic.selectedNews += 0.5;
+            NewsLogic.selectedNews += 0.5;
             associateButtonText.text = "Deseleccionar";
             associateButtonBackground.color = new Color(100, 0, 0, 1);
 
         }
-        else if (associateButtonText.text == "Deseleccionar" && NewsTextLogic.selectedNews <= 3)
+        else if (associateButtonText.text == "Deseleccionar" && NewsLogic.selectedNews <= 3)
         {
-            NewsTextLogic.selectedNews -= 0.5;
+            NewsLogic.selectedNews -= 0.5;
             associateButtonText.text = "Seleccionar";
             associateButtonBackground.color = new Color(0, 100, 0, 1);
 
+        }
+    }
+
+    public void RealSelectionLogic(News news)
+    {
+        if ((buttonText.text == "Seleccionar" || associateButtonText.text == "Seleccionar") && NewsLogic.selectedNews < 3)
+        {
+            if (!NewsLogic.newsSelectedList.Contains(news) && NewsLogic.newsSelectedList.Count < 3)
+            {
+                NewsLogic.newsSelectedList.Add(news);
+            }
+        }
+        else if ((buttonText.text == "Deseleccionar" || associateButtonText.text == "Deseleccionar") && NewsLogic.selectedNews <= 3)
+        {
+            if (NewsLogic.newsSelectedList.Contains(news))
+            {
+                NewsLogic.newsSelectedList.Remove(news);
+            }
         }
     }
 
