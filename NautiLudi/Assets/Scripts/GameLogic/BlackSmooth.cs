@@ -91,4 +91,5 @@ public class BlackSmooth : MonoBehaviour
 
         timer2 = 0.0f;
     }
+
 }
