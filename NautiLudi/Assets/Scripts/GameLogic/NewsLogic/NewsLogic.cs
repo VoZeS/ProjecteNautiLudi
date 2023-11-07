@@ -30,14 +30,21 @@ public class NewsLogic : MonoBehaviour
     void Update()
     {
         // ------------- General Panel -------------
-        newsSelectedText.text = "Noticies seleccionades: " + selectedNews + "/3";
+        newsSelectedText.text = selectedNews + "/3";
 
         // --------------- Info Panel --------------
         for (int i = 0; i < infoNewsSelectedText.Length; i++)
         {
             infoNewsSelectedText[i].text = selectedNews + "/3";
-
         }
+        
+        // --------------- News List Management --------------
+        for (int i = 0; i < newsSelectedList.Count; i++)
+        {
+            newsSelectedList[i].isBlocked = false;
+        }
+
+
     }
 
     public void DisplaySelectedNews()

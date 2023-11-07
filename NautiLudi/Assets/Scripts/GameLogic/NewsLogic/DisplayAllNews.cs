@@ -11,11 +11,13 @@ public class DisplayAllNews : MonoBehaviour
     [Header("Selection Panel")]
     public TMP_Text titleNews;
     public TMP_Text shortDescription;
+    public TMP_Text costDisplay;
 
     [Header("Info Panel")]
     public TMP_Text titleInfo;
     public TMP_Text extendedDescription;
     public Image infoImage;
+    public TMP_Text link;
 
     private void Start()
     {
@@ -35,5 +37,8 @@ public class DisplayAllNews : MonoBehaviour
         infoImage.sprite = news.newsImage;
         //newspaperImage.sprite = news.newsImage;
 
+        link.text = news.url;
+
+        costDisplay.text = news.moneyCost.ToString();
     }
 }

@@ -11,6 +11,7 @@ public class NewsSelection : MonoBehaviour
     private bool isAssociateButtonClicked = false;
 
     private Button selectButton;
+
     [Header("Main Button")]
     public TMP_Text buttonText;
     public Image buttonBackground;
@@ -24,10 +25,10 @@ public class NewsSelection : MonoBehaviour
     {
         selectButton = GetComponent<Button>();
         buttonText.text = "Seleccionar";
-        buttonBackground.color = new Color(0, 100, 0, 1);
+        buttonBackground.color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1);
 
         associateButtonText.text = "Seleccionar";
-        associateButtonBackground.color = new Color(0, 100, 0, 1);
+        associateButtonBackground.color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1);
 
         selectButton.onClick.AddListener(OnSelectClick);
         associateSelectButton.onClick.AddListener(OnAssociateSelectClick);
@@ -66,14 +67,14 @@ public class NewsSelection : MonoBehaviour
         {
             NewsLogic.selectedNews += 0.5;
             buttonText.text = "Deseleccionar";
-            buttonBackground.color = new Color(100, 0, 0, 1);
+            buttonBackground.color = new Color(240f / 255f, 80f / 255f, 70f / 255f, 1);
 
         }
         else if (buttonText.text == "Deseleccionar" && NewsLogic.selectedNews <= 3)
         {
             NewsLogic.selectedNews -= 0.5;
             buttonText.text = "Seleccionar";
-            buttonBackground.color = new Color(0, 100, 0, 1);
+            buttonBackground.color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1);
 
         }
     }
@@ -85,14 +86,14 @@ public class NewsSelection : MonoBehaviour
         {
             NewsLogic.selectedNews += 0.5;
             associateButtonText.text = "Deseleccionar";
-            associateButtonBackground.color = new Color(100, 0, 0, 1);
+            associateButtonBackground.color = new Color(240f / 255f, 80f / 255f, 70f / 255f, 1);
 
         }
         else if (associateButtonText.text == "Deseleccionar" && NewsLogic.selectedNews <= 3)
         {
             NewsLogic.selectedNews -= 0.5;
             associateButtonText.text = "Seleccionar";
-            associateButtonBackground.color = new Color(0, 100, 0, 1);
+            associateButtonBackground.color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1);
 
         }
     }

@@ -6,19 +6,19 @@ using UnityEngine.UI;
 
 public class News : MonoBehaviour
 {
+    [Header("Visual")]
     public string title;
     public string shortDescription;
     public string extendedDescription;
     public Sprite newsImage;
+    public string url;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        //title = "This is the title!";
-        //shortDescription = "This should be de short description. Not too much text.";
-        //extendedDescription = "Here goes the extended description. This is the news introduction.\n" +
-        //    "It can have multiple pharagrafs and a lot of characters. Let's see how it is done.";
-    }
+    [Header("Logic")]
+    public int socialValue;
+    public int sportsValue;
+    public int internationalValue;
+    public int moneyCost;
+    public bool isBlocked = true;
 
     public string GetTitle()
     {
@@ -38,5 +38,9 @@ public class News : MonoBehaviour
     public void SetExtendedDescription(string newExtendedDescription)
     {
         extendedDescription = newExtendedDescription;
+    }
+    public void OpenLink()
+    {
+        Application.OpenURL(url);
     }
 }
