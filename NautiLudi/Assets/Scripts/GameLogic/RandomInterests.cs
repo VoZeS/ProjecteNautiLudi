@@ -19,16 +19,16 @@ public class RandomInterests : MonoBehaviour
     private void Start()
     {
         // Initial values
-        socialInterestSlider.value = 0.5f;
-        sportsInterestSlider.value = 0.5f;
-        internationalInterestSlider.value = 0.5f;
+        //socialInterestSlider.value = 0.5f;
+        //sportsInterestSlider.value = 0.5f;
+        //internationalInterestSlider.value = 0.5f;
 
         dayCount = 1;
     }
 
     private void Update()
     {
-        dayText.text = "Day " + dayCount;
+        dayText.text = "" + dayCount;
     }
 
     public void RandInterests()
