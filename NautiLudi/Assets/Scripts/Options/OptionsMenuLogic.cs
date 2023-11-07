@@ -45,8 +45,8 @@ public class OptionsMenuLogic : MonoBehaviour
         if(mainMenuGroup == null)
             mainMenuGroup = GameObject.Find("_MainMenu");
 
-        if (mainMenuGroup != null)
-            mainMenuGroup.SetActive(false);
+        //if (mainMenuGroup != null)
+        //    mainMenuGroup.SetActive(false);
 
         if (optionsGroup != null)
             optionsGroup.SetActive(true);
