@@ -32,5 +32,6 @@ public class MoneyLogic : MonoBehaviour
     public void NewspaperBenefits()
     {
         totalMoney += moneyGained;
+        moneyGained = 0;
     }
 }

@@ -43,6 +43,13 @@ public class RandomInterests : MonoBehaviour
         dayText.text = dayCount.ToString();
     }
 
+    public void SetNewDay()
+    {
+        dayCount++;
+        RandInterests();
+
+    }
+
     public void RandInterests()
     {
 

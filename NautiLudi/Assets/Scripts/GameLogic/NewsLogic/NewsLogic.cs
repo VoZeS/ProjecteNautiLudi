@@ -23,12 +23,15 @@ public class NewsLogic : MonoBehaviour
 
     private void Start()
     {
-        selectedNews = 0;
+        selectedNews = newsSelectedList.Count;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        selectedNews = newsSelectedList.Count;
+
         // ------------- General Panel -------------
         newsSelectedText.text = selectedNews + "/3";
 
