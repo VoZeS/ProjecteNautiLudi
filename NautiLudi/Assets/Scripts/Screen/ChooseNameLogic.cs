@@ -7,10 +7,17 @@ public class ChooseNameLogic : MonoBehaviour
 {
     public TMP_InputField inputName;
     public TMP_Text nameText;
+    static public string nameString;
 
     public void ChangeName()
     {
-        nameText.text = inputName.text;
+        nameString = inputName.text;
+        nameText.text = nameString;
+    }
+
+    private void Start()
+    {
+        nameText.text = nameString;
     }
 
 }

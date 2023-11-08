@@ -3168,7 +3168,6 @@ GameObject:
   - component: {fileID: 458124266}
   - component: {fileID: 458124265}
   - component: {fileID: 458124264}
-  - component: {fileID: 458124267}
   m_Layer: 0
   m_Name: BetweenScenesLogic
   m_TagString: Untagged
@@ -3215,18 +3214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &458124267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458124263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88b82c40d1b63546af2067a29c90693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &460447536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9754,7 +9741,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1330586530}
+      - m_Target: {fileID: 1937123250}
         m_TargetAssemblyTypeName: ChooseNameLogic, Assembly-CSharp
         m_MethodName: ChangeName
         m_Mode: 1
@@ -9956,7 +9943,6 @@ GameObject:
   - component: {fileID: 1330586527}
   - component: {fileID: 1330586529}
   - component: {fileID: 1330586528}
-  - component: {fileID: 1330586530}
   m_Layer: 5
   m_Name: ChooseNamePanel
   m_TagString: Untagged
@@ -10025,20 +10011,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330586526}
   m_CullTransparentMesh: 1
---- !u!114 &1330586530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330586526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e81456567b7993f489a6c61bfe2c93ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputName: {fileID: 696959268}
-  nameText: {fileID: 1118915147}
 --- !u!1 &1333201784
 GameObject:
   m_ObjectHideFlags: 0
@@ -13935,6 +13907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1937123249}
   - component: {fileID: 1937123248}
+  - component: {fileID: 1937123250}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -13969,6 +13942,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1937123250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937123247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81456567b7993f489a6c61bfe2c93ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputName: {fileID: 696959268}
+  nameText: {fileID: 1118915147}
 --- !u!1 &1948819923
 GameObject:
   m_ObjectHideFlags: 0
