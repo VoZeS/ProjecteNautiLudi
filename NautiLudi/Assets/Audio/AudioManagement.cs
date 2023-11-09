@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using System;
 
 public class AudioManagement : MonoBehaviour
 {
     // Audio GO
     public AudioMixer audioMixer;
-    public float lastVolumeFX;
-    public float lastVolumeMusic;
+    static public float lastVolumeFX;
+    static public float lastVolumeMusic;
 
     // UI GO
     public Toggle muteFX;
@@ -41,8 +42,38 @@ public class AudioManagement : MonoBehaviour
 
     private void Start()
     {
-        SetMusicMute();
-        SetFXMute();
+        GetMusicVolume();
+        GetFxVolume();
+    }
+
+    private void GetFxVolume()
+    {
+        if (isFxOn)
+        {
+            audioMixer.SetFloat("VolFX", lastVolumeFX);
+            fxImage.sprite = unmutedMusicImage;
+        }
+        else if (!isFxOn)
+        {
+            audioMixer.GetFloat("VolFX", out lastVolumeFX);
+            audioMixer.SetFloat("VolFX", -80);
+            fxImage.sprite = mutedMusicImage;
+        }
+    }
+
+    private void GetMusicVolume()
+    {
+        if (isMusicOn)
+        {
+            audioMixer.SetFloat("VolMusic", lastVolumeMusic);
+            volumeImage.sprite = unmutedMusicImage;
+        }
+        else if (!isMusicOn)
+        {
+            audioMixer.GetFloat("VolMusic", out lastVolumeMusic);
+            audioMixer.SetFloat("VolMusic", -80);
+            volumeImage.sprite = mutedMusicImage;
+        }
     }
 
     public void SetMusicMute()

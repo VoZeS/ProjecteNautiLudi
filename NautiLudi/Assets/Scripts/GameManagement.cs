@@ -9,7 +9,9 @@ using UnityEngine.SceneManagement;
 public class GameManagement : MonoBehaviour
 {
     private bool isNewGame = true;
+    public bool hasPlayed;
     private string saveFilePath;
+    public GameObject continueButton;
 
     // VALORES INICIALES IN-GAME
     public const int INITIALMONEY = 500;
@@ -40,16 +42,34 @@ public class GameManagement : MonoBehaviour
         if (isNewGame)
         {
             StartNewGame();
+            hasPlayed = false;
         }
         else
         {
             ContinueGame();
-        }
+
+        }        
     }
 
     private void Start()
     {
-        
+        if (hasPlayed)
+        {
+            continueButton.SetActive(true);
+        }
+    }
+
+    public void ContinueButtonActivation()
+    {
+        if (hasPlayed)
+            continueButton.SetActive(true);
+        else if (!hasPlayed)
+            continueButton.SetActive(false);
+    }
+
+    public void SetPlayability(bool played)
+    {
+        hasPlayed = played;
     }
 
     public void StartNewGame()
@@ -61,6 +81,7 @@ public class GameManagement : MonoBehaviour
             PlayerData playerData = new PlayerData
             {
                 companyName = INITIALCOMPANYNAME,
+                hasPlayedBefore = false,
                 playerStats = new PlayerStats
                 {
                     day = 1,
@@ -69,12 +90,16 @@ public class GameManagement : MonoBehaviour
                 settings = new Settings
                 {
                     isMusicActive = true,
-                    isFxActive = true
+                    isFxActive = true,
+                    startFxVolume = 0,
+                    startMusicVolume = 0
                 }
             };
 
             string jsonData = JsonConvert.SerializeObject(playerData, Formatting.Indented);
             File.WriteAllText(saveFilePath, jsonData);
+
+            LoadGame();
         }
         catch (System.Exception e)
         {
@@ -83,10 +108,44 @@ public class GameManagement : MonoBehaviour
 
     }
 
+   
+
     public void FirstGameStart()
     {
-        Invoke("GoToGameplayScene", 3.0f);
+        SetInitialStatsNewGame();
 
+        Invoke("GoToGameplayScene", 2.0f);
+    }
+
+    public void SetInitialStatsNewGame()
+    {
+        try
+        {
+            PlayerData playerData = new PlayerData
+            {
+                companyName = ChooseNameLogic.nameString,
+                hasPlayedBefore = hasPlayed,
+                playerStats = new PlayerStats
+                {
+                    day = 1,
+                    money = INITIALMONEY
+                },
+                settings = new Settings
+                {
+                    isMusicActive = AudioManagement.isMusicOn,
+                    isFxActive = AudioManagement.isFxOn
+                }
+            };
+
+            string jsonData = JsonConvert.SerializeObject(playerData, Formatting.Indented);
+            File.WriteAllText(saveFilePath, jsonData);
+
+            LoadGame();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Error al guardar los datos: " + e.Message);
+        }
     }
 
     private void GoToGameplayScene()
@@ -111,6 +170,7 @@ public class GameManagement : MonoBehaviour
             PlayerData playerData = new PlayerData
             {
                 companyName = ChooseNameLogic.nameString,
+                hasPlayedBefore = hasPlayed,
                 playerStats = new PlayerStats
                 {
                     day = RandomInterests.dayCount,
@@ -143,12 +203,15 @@ public class GameManagement : MonoBehaviour
             // ----------------------------------------------- Load All Necessary Data
             // Load Company Name
             ChooseNameLogic.nameString = playerData.companyName;
+            hasPlayed = playerData.hasPlayedBefore;
 
             // Load Gameplay Logic
             RandomInterests.dayCount = playerData.playerStats.day;
             MoneyLogic.totalMoney = playerData.playerStats.money;
             AudioManagement.isMusicOn = playerData.settings.isMusicActive;
             AudioManagement.isFxOn = playerData.settings.isFxActive;
+            AudioManagement.lastVolumeMusic = playerData.settings.startMusicVolume;
+            AudioManagement.lastVolumeFX = playerData.settings.startFxVolume;
 
             // Checkers LOGS
             Debug.Log("Loaded company name: " + ChooseNameLogic.nameString);
@@ -168,6 +231,7 @@ public class GameManagement : MonoBehaviour
     public class PlayerData
     {
         public string companyName;
+        public bool hasPlayedBefore;
 
         public PlayerStats playerStats;
         public Settings settings;
@@ -185,5 +249,8 @@ public class GameManagement : MonoBehaviour
     {
         public bool isMusicActive;
         public bool isFxActive;
+
+        public float startMusicVolume;
+        public float startFxVolume;
     }
 }

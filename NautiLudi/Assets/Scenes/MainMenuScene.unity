@@ -5245,18 +5245,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1640209270}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: GoToScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: GameplayScene
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1459707850}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -5267,6 +5255,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1937123248}
+        m_TargetAssemblyTypeName: GameManagement, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1640209270}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: GoToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GameplayScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &775516967
@@ -5345,7 +5357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -106.4, y: 9.7}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &776447102
@@ -5509,10 +5521,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1672560483}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1937123248}
+        m_TargetAssemblyTypeName: GameManagement, Assembly-CSharp
+        m_MethodName: ContinueButtonActivation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6315,7 +6327,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 458124265}
         m_TargetAssemblyTypeName: OptionsManagerBetweenScenes, Assembly-CSharp
-        m_MethodName: OpenOptions
+        m_MethodName: ManageOpenAndCloseOptions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8907,10 +8919,10 @@ RectTransform:
   - {fileID: 776447101}
   m_Father: {fileID: 1212051614}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68, y: -541}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 150, y: 449}
+  m_SizeDelta: {x: 70, y: 198}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1166589678
 PrefabInstance:
@@ -9776,6 +9788,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1937123248}
+        m_TargetAssemblyTypeName: GameManagement, Assembly-CSharp
+        m_MethodName: SetPlayability
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1937123248}
         m_TargetAssemblyTypeName: GameManagement, Assembly-CSharp
@@ -12383,7 +12407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1672560484
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13967,6 +13991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88b82c40d1b63546af2067a29c90693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPlayed: 0
+  continueButton: {fileID: 1672560483}
 --- !u!4 &1937123249
 Transform:
   m_ObjectHideFlags: 0
@@ -15470,8 +15496,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 9614a1d9a809fb04facf0a78a7a9cc15, type: 2}
-  lastVolumeFX: 0
-  lastVolumeMusic: 0
   muteFX: {fileID: 1546696}
   muteMusic: {fileID: 1345214742}
   volumeImage: {fileID: 1345214740}
@@ -15492,8 +15516,8 @@ SceneRoots:
   - {fileID: 96939273}
   - {fileID: 568307576}
   - {fileID: 2142701935}
-  - {fileID: 1295086120}
   - {fileID: 1937123249}
   - {fileID: 516653368}
   - {fileID: 1640209271}
   - {fileID: 458124266}
+  - {fileID: 1295086120}

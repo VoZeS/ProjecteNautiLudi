@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class RandomInterests : MonoBehaviour
 {
+    public GameManagement managerScript;
+
     // SLIDERS
     [Header("Interests")]
     static public int socialInterestSlider;
@@ -28,14 +30,16 @@ public class RandomInterests : MonoBehaviour
     public Image highInterInterest;
 
     [Header("Days")]
-    static public int dayCount = 1;
+    static public int dayCount;
     public TMP_Text dayText;
 
     private void Start()
     {
+        managerScript = GameObject.Find("GameManager").GetComponent<GameManagement>();
+
         RandInterests();
 
-        dayCount = 1;
+        //dayCount = 1;
     }
 
     private void Update()
@@ -48,6 +52,7 @@ public class RandomInterests : MonoBehaviour
         dayCount++;
         RandInterests();
 
+        managerScript.SaveGame();
     }
 
     public void RandInterests()

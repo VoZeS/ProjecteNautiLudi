@@ -5,6 +5,7 @@ using UnityEngine;
 public class OptionsManagerBetweenScenes : MonoBehaviour
 {
     private OptionsMenuLogic optionsScript;
+    private bool isOpened = false;
 
     private void Start()
     {
@@ -27,7 +28,10 @@ public class OptionsManagerBetweenScenes : MonoBehaviour
     public void OpenOptions()
     {
         if(optionsScript != null)
+        {
             optionsScript.OpenOptionsMenu();
+            isOpened = true;
+        }
     }
 
     public void CloseOptions()
@@ -35,6 +39,22 @@ public class OptionsManagerBetweenScenes : MonoBehaviour
         if(optionsScript != null)
         {
             optionsScript.CloseOptionsMenu();
+            isOpened = false;
+        }
+            
+    }
+
+    public void ManageOpenAndCloseOptions()
+    {
+        if (optionsScript != null && !isOpened)
+        {
+            optionsScript.OpenOptionsMenu();
+            isOpened = true;
+        }
+        else if(optionsScript != null && isOpened)
+        {
+            optionsScript.CloseOptionsMenu();
+            isOpened = false ;
         }
     }
 }
