@@ -28,7 +28,7 @@ public class RandomInterests : MonoBehaviour
     public Image highInterInterest;
 
     [Header("Days")]
-    public int dayCount = 1;
+    static public int dayCount = 1;
     public TMP_Text dayText;
 
     private void Start()

@@ -6,7 +6,7 @@ using UnityEngine;
 public class MoneyLogic : MonoBehaviour
 {
     public TMP_Text moneyDisplay;
-    public double totalMoney;
+    static public double totalMoney;
 
     static public double moneyGained;
     private int moneySpent;

@@ -13,7 +13,9 @@ public class AudioManagement : MonoBehaviour
 
     // UI GO
     public Toggle muteFX;
+    static public bool isFxOn;
     public Toggle muteMusic;
+    static public bool isMusicOn;
     public Image volumeImage;
     public Image fxImage;
 
@@ -39,43 +41,43 @@ public class AudioManagement : MonoBehaviour
 
     private void Start()
     {
-        //musicGroup = GameObject.Find("MusicManager").GetComponent<AudioSource>();
-        //fxGroup = GameObject.Find("FXManager").GetComponent<AudioSource>();
-
-        //volumeImage = GameObject.Find("MuteVolumeButton").GetComponent<Image>();
-        //fxImage = GameObject.Find("MuteFXButton").GetComponent<Image>();
+        SetMusicMute();
+        SetFXMute();
     }
 
     public void SetMusicMute()
     {
 
-        if (muteMusic.isOn)
+        if (isMusicOn)
         {
             audioMixer.GetFloat("VolMusic", out lastVolumeMusic);
             audioMixer.SetFloat("VolMusic", -80);
             volumeImage.sprite = mutedMusicImage;
+            isMusicOn = false;
         }
-        else
+        else if(!isMusicOn)
         {
             audioMixer.SetFloat("VolMusic", lastVolumeMusic);
             volumeImage.sprite = unmutedMusicImage;
+            isMusicOn = true;
         }
     }
 
     public void SetFXMute()
     {
 
-        if (muteFX.isOn)
+        if (isFxOn)
         {
             audioMixer.GetFloat("VolFX", out lastVolumeFX);
             audioMixer.SetFloat("VolFX", -80);
             fxImage.sprite = mutedMusicImage;
-
+            isFxOn = false;
         }
-        else
+        else if (!isFxOn)
         {
             audioMixer.SetFloat("VolFX", lastVolumeFX);
             fxImage.sprite = unmutedMusicImage;
+            isFxOn = true;
         }
     }
 }

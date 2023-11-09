@@ -11,6 +11,10 @@ public class GameManagement : MonoBehaviour
     private bool isNewGame = true;
     private string saveFilePath;
 
+    // VALORES INICIALES IN-GAME
+    public const int INITIALMONEY = 500;
+    public const string INITIALCOMPANYNAME = "...";
+
     // Between Scenes Logic
     private bool managerCreated = false;
 
@@ -35,8 +39,7 @@ public class GameManagement : MonoBehaviour
 
         if (isNewGame)
         {
-            SaveGame();
-            LoadGame();
+            StartNewGame();
         }
         else
         {
@@ -52,13 +55,41 @@ public class GameManagement : MonoBehaviour
     public void StartNewGame()
     {
         Debug.Log("Starting a new game...");
-        SaveGame();
-        LoadGame();
 
-        Invoke("NewGameButtonClicked", 3.0f);
+        try
+        {
+            PlayerData playerData = new PlayerData
+            {
+                companyName = INITIALCOMPANYNAME,
+                playerStats = new PlayerStats
+                {
+                    day = 1,
+                    money = INITIALMONEY
+                },
+                settings = new Settings
+                {
+                    isMusicActive = true,
+                    isFxActive = true
+                }
+            };
+
+            string jsonData = JsonConvert.SerializeObject(playerData, Formatting.Indented);
+            File.WriteAllText(saveFilePath, jsonData);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Error al guardar los datos: " + e.Message);
+        }
+
     }
 
-    public void NewGameButtonClicked()
+    public void FirstGameStart()
+    {
+        Invoke("GoToGameplayScene", 3.0f);
+
+    }
+
+    private void GoToGameplayScene()
     {
         SceneManager.LoadScene("GameplayScene");
 
@@ -67,6 +98,7 @@ public class GameManagement : MonoBehaviour
     public void ContinueGame()
     {
         Debug.Log("Continuing the game...");
+
         LoadGame();
     }
 
@@ -74,21 +106,20 @@ public class GameManagement : MonoBehaviour
     {
         Debug.Log("Saving the game...");
 
-        // TODO: Mirar esto ESTA MAL
         try
         {
             PlayerData playerData = new PlayerData
             {
-                companyName = "...",
+                companyName = ChooseNameLogic.nameString,
                 playerStats = new PlayerStats
                 {
-                    day = 1,
-                    money = 500
+                    day = RandomInterests.dayCount,
+                    money = MoneyLogic.totalMoney
                 },
                 settings = new Settings
                 {
-                    music = "on",
-                    fx = "on"
+                    isMusicActive = AudioManagement.isMusicOn,
+                    isFxActive = AudioManagement.isFxOn
                 }
             };
 
@@ -110,15 +141,30 @@ public class GameManagement : MonoBehaviour
             PlayerData playerData = JsonConvert.DeserializeObject<PlayerData>(jsonData);
 
             // ----------------------------------------------- Load All Necessary Data
-            // Company Name (MAIN MEN)
+            // Load Company Name
             ChooseNameLogic.nameString = playerData.companyName;
 
-            // Gameplay Logic (IN-GAME)
-            // Day, money, upgrades
+            // Load Gameplay Logic
+            RandomInterests.dayCount = playerData.playerStats.day;
+            MoneyLogic.totalMoney = playerData.playerStats.money;
+            AudioManagement.isMusicOn = playerData.settings.isMusicActive;
+            AudioManagement.isFxOn = playerData.settings.isFxActive;
+
+            // Checkers LOGS
+            Debug.Log("Loaded company name: " + ChooseNameLogic.nameString);
+            Debug.Log("Loaded day count: " + RandomInterests.dayCount);
+            Debug.Log("Loaded total money: " + MoneyLogic.totalMoney);
+            Debug.Log("Loaded music active: " + AudioManagement.isMusicOn);
+            Debug.Log("Loaded fx active: " + AudioManagement.isFxOn);
+
+        }
+        else
+        {
+            Debug.LogError("Save file not found.");
         }
     }
 
-    // Save Class
+    // Save Classes
     public class PlayerData
     {
         public string companyName;
@@ -129,14 +175,15 @@ public class GameManagement : MonoBehaviour
 
     public class PlayerStats
     {
-        public int day, money;
+        public int day;
+        public double money;
 
         // ADD UPGRADES
     }
 
     public class Settings
     {
-        public string music;
-        public string fx;
+        public bool isMusicActive;
+        public bool isFxActive;
     }
 }
