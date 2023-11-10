@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class GameManagement : MonoBehaviour
 {
     private bool isNewGame = true;
-    public bool hasPlayed;
+    static public bool hasPlayed;
     private string saveFilePath;
     public GameObject continueButton;
 
@@ -47,7 +47,6 @@ public class GameManagement : MonoBehaviour
         else
         {
             ContinueGame();
-
         }        
     }
 
@@ -65,11 +64,6 @@ public class GameManagement : MonoBehaviour
             continueButton.SetActive(true);
         else if (!hasPlayed)
             continueButton.SetActive(false);
-    }
-
-    public void SetPlayability(bool played)
-    {
-        hasPlayed = played;
     }
 
     public void StartNewGame()
@@ -124,7 +118,7 @@ public class GameManagement : MonoBehaviour
             PlayerData playerData = new PlayerData
             {
                 companyName = ChooseNameLogic.nameString,
-                hasPlayedBefore = hasPlayed,
+                hasPlayedBefore = false,
                 playerStats = new PlayerStats
                 {
                     day = 1,
@@ -214,6 +208,8 @@ public class GameManagement : MonoBehaviour
             AudioManagement.lastVolumeFX = playerData.settings.startFxVolume;
 
             // Checkers LOGS
+            Debug.Log("HAS PLAYED BEFORE: " + hasPlayed);
+
             Debug.Log("Loaded company name: " + ChooseNameLogic.nameString);
             Debug.Log("Loaded day count: " + RandomInterests.dayCount);
             Debug.Log("Loaded total money: " + MoneyLogic.totalMoney);

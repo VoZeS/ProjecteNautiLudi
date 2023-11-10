@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17555936, g: 0.21967109, b: 0.30199528, a: 1}
+  m_IndirectSpecularColor: {r: 0.17555936, g: 0.2196711, b: 0.30199528, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9910,18 +9910,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1937123248}
-        m_TargetAssemblyTypeName: GameManagement, Assembly-CSharp
-        m_MethodName: SetPlayability
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManagement, Assembly-CSharp
         m_MethodName: 
@@ -14124,7 +14112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88b82c40d1b63546af2067a29c90693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasPlayed: 0
   continueButton: {fileID: 1672560483}
 --- !u!4 &1937123249
 Transform:

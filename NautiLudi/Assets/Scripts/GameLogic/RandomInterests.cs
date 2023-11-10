@@ -66,7 +66,8 @@ public class RandomInterests : MonoBehaviour
         dayCount++;
         RandInterests();
 
-        managerScript.SaveGame();
+        if(managerScript != null)
+            managerScript.SaveGame();
     }
 
     public void RandInterests()

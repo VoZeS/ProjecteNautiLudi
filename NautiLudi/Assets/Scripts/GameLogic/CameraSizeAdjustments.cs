@@ -61,6 +61,9 @@ public class CameraSizeAdjustments : MonoBehaviour
                 //float t = Mathf.Clamp01(camMovScript.timer / camMovScript.zoomDuration);
 
                 //camMovScript.cam.orthographicSize = Mathf.Lerp(baseDesktopSize, baseDesktopSize - 30f, t);
+
+                camMovScript.SetCamSize(baseDesktopSize);
+
             }
             else
             {
