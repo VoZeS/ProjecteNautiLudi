@@ -35,7 +35,7 @@ public class RandomInterests : MonoBehaviour
 
     private void Start()
     {
-        managerScript = GameObject.Find("GameManager").GetComponent<GameManagement>();
+        //managerScript = GameObject.Find("GameManager").GetComponent<GameManagement>();
 
         RandInterests();
 
