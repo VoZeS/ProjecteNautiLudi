@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CameraSizeAdjustments : MonoBehaviour
 {
+    public CameraMovement camMovScript;
+
     private float currentWidth;
     private float currentHeight;
 
@@ -13,8 +15,8 @@ public class CameraSizeAdjustments : MonoBehaviour
     public float aspectRatioThreshold = 0.1f;
     private float targetWidth = 1920f;
     private float targetHeight = 1080f;
-    private float baseMobileSize = 50f;
-    private float baseDesktopSize = 13f;
+    public float baseMobileSize = 50f;
+    public float baseDesktopSize = 13f;
 
     [Header("Buttons")]
     public RectTransform buttonRectTransform;
@@ -51,13 +53,39 @@ public class CameraSizeAdjustments : MonoBehaviour
 
         if (Mathf.Abs(targetAspect - currentAspect) < aspectRatioThreshold)
         {
-            mainCamera.orthographicSize = baseDesktopSize;
+            //mainCamera.orthographicSize = baseDesktopSize;
+
+            if (camMovScript.end)
+            {
+                //camMovScript.timer += Time.deltaTime;
+                //float t = Mathf.Clamp01(camMovScript.timer / camMovScript.zoomDuration);
+
+                //camMovScript.cam.orthographicSize = Mathf.Lerp(baseDesktopSize, baseDesktopSize - 30f, t);
+            }
+            else
+            {
+                camMovScript.SetCamSize(baseDesktopSize);
+
+            }
         }
         else
         {
             //float baseSize = (currentWidth < currentHeight) ? baseMobileSize : baseDesktopSize;
             //float newSize = baseSize * (targetAspect / currentAspect);
-            mainCamera.orthographicSize = baseMobileSize;
+            //mainCamera.orthographicSize = baseMobileSize;
+
+            if (camMovScript.end)
+            {
+                camMovScript.timer += Time.deltaTime;
+                float t = Mathf.Clamp01(camMovScript.timer / camMovScript.zoomDuration);
+
+                camMovScript.cam.orthographicSize = Mathf.Lerp(baseMobileSize, baseMobileSize - 30f, t);
+            }
+            else
+            {
+                camMovScript.SetCamSize(baseMobileSize);
+
+            }
         }
     }
 

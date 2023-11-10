@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    private Camera cam;
+    public Camera cam;
     private Transform target; 
     public float smoothSpeed = 5.0f;
     public float rotationSpeed = 45.0f;
 
     private bool isMoving = false;
-    private bool end = false;
+    public bool end = false;
 
-    private float timer = 0.0f;
+    public float timer = 0.0f;
 
     public float zoomDuration = 50.0f;
 
@@ -39,18 +39,6 @@ public class CameraMovement : MonoBehaviour
             }
         }
 
-        if (end)
-        {
-            timer += Time.deltaTime;
-            float t = Mathf.Clamp01(timer / zoomDuration);
-
-            cam.orthographicSize = Mathf.Lerp(50f, 20f, t);
-        }
-        else
-        {
-            SetCamSize(50);
-
-        }
     }
 
     public void MoveCamera(Transform targetFinal)
@@ -64,7 +52,7 @@ public class CameraMovement : MonoBehaviour
         end = hasFinished;
     }
 
-    public void SetCamSize(int size)
+    public void SetCamSize(float size)
     {
         cam.orthographicSize = size;
     }

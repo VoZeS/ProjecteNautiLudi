@@ -35,7 +35,21 @@ public class RandomInterests : MonoBehaviour
 
     private void Start()
     {
-        //managerScript = GameObject.Find("GameManager").GetComponent<GameManagement>();
+
+        GameObject gameManager = GameObject.Find("GameManager");
+        if (gameManager != null)
+        {
+            managerScript = gameManager.GetComponent<GameManagement>();
+            if (managerScript == null)
+            {
+                Debug.Log("El GameObject optionsGroup no tiene el componente GameManagement adjunto.");
+            }
+        }
+        else
+        {
+            Debug.Log("El GameObject gameManager no se ha encontrado en la escena. Asegúrate de que está presente y tiene el nombre 'GameManager'.");
+        }
+       
 
         RandInterests();
 
