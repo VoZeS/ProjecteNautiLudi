@@ -2543,7 +2543,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 75679917}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1424875895}
+        m_TargetAssemblyTypeName: UpgradesLogic, Assembly-CSharp
+        m_MethodName: ImpressionsUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &75679917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12479,7 +12491,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1424875890}
         m_TargetAssemblyTypeName: NewsLogic, Assembly-CSharp
-        m_MethodName: SetNewsPos
+        m_MethodName: SetQuantityNews
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1424875890}
+        m_TargetAssemblyTypeName: NewsLogic, Assembly-CSharp
+        m_MethodName: SetFreeNews
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14335,7 +14359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d35828feb9ce51c448efbe8fcce36ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMoneyReward: 1000
 --- !u!1001 &509539952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21589,7 +21612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -95.00006, y: 77.99986}
+  m_AnchoredPosition: {x: -31.000015, y: 77.99986}
   m_SizeDelta: {x: -881.2853, y: 101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767063328
@@ -21794,66 +21817,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 449516711}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &774505706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 774505709}
-  - component: {fileID: 774505708}
-  - component: {fileID: 774505707}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &774505707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774505706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e81456567b7993f489a6c61bfe2c93ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputName: {fileID: 0}
-  nameText: {fileID: 0}
---- !u!114 &774505708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774505706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88b82c40d1b63546af2067a29c90693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  continueButton: {fileID: 0}
---- !u!4 &774505709
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774505706}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 507.7887, y: 17.2865, z: -587.79395}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774944282
 GameObject:
@@ -23964,6 +23927,18 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 709810809}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 744739412}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -35341,7 +35316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1322025008
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38001,6 +37976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6367365dd891a4f90b2d90b130b7da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerScript: {fileID: 0}
   quantityButton: {fileID: 251308748}
   quantityLevelImage:
   - {fileID: 1144816472}
@@ -38011,10 +37987,16 @@ MonoBehaviour:
   freeButton: {fileID: 531491391}
   freeLevelImage:
   - {fileID: 767063328}
-  - {fileID: 1322025009}
   - {fileID: 1728273733}
   freeCostDisplay: {fileID: 1572118168}
-  freeCost: 1000
+  freeCost: 1500
+  impressionsButton: {fileID: 75679916}
+  impressionsLevelImage:
+  - {fileID: 1459434315}
+  - {fileID: 844927399}
+  - {fileID: 76256420}
+  impressionsCostDisplay: {fileID: 1143502502}
+  impressionsCost: 2000
 --- !u!4 &1428091756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2020972028435613691, guid: 4edd1d31c79d31e4f8118f45a0d9d35b, type: 3}
@@ -41431,7 +41413,7 @@ GameObject:
   - component: {fileID: 1586258786}
   - component: {fileID: 1586258785}
   m_Layer: 5
-  m_Name: WriteNewspaperButton
+  m_Name: UpdatesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41535,7 +41517,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 744739412}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 41131152}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -45479,7 +45473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 165.99991, y: 77.49986}
+  m_AnchoredPosition: {x: 108, y: 77.49986}
   m_SizeDelta: {x: -881.2853, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728273733
@@ -57551,4 +57545,3 @@ SceneRoots:
   - {fileID: 1424875887}
   - {fileID: 340820180}
   - {fileID: 1514454185}
-  - {fileID: 774505709}

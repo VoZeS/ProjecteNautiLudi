@@ -54,12 +54,28 @@ public class NewsLogic : MonoBehaviour
 
     }
 
-    public void SetNewsPos()
+    public void SetFreeNews()
     {
-        switch (UpgradesLogic.newsQuantity)
+        switch(UpgradesLogic.freeLevel)
         {
-            case 4:
+            case 1:
+                news[0].GetComponent<News>().moneyCost = 0;
+                break;
+            case 2:
+                news[0].GetComponent<News>().moneyCost = 0;
+                news[1].GetComponent<News>().moneyCost = 0;
+                break;
+            default:
+                break;
+        }
+    }
 
+    public void SetQuantityNews()
+    {
+        switch (UpgradesLogic.quantityLevel)
+        {
+            case 0:
+                UpgradesLogic.newsQuantity = 4;
                 rectTransform.sizeDelta = new Vector2(750f, 2200f);
                 scrollBar.value = 1;
 
@@ -72,8 +88,8 @@ public class NewsLogic : MonoBehaviour
                 news[6].SetActive(false);
 
                 break;
-            case 5:
-
+            case 1:
+                UpgradesLogic.newsQuantity = 5;
                 rectTransform.sizeDelta = new Vector2(750f, 2700f);
                 scrollBar.value = 1;
 
@@ -85,8 +101,8 @@ public class NewsLogic : MonoBehaviour
                 news[6].SetActive(false);
 
                 break;
-            case 6:
-
+            case 2:
+                UpgradesLogic.newsQuantity = 6;
                 rectTransform.sizeDelta = new Vector2(750f, 3200f);
                 scrollBar.value = 1;
 
@@ -97,8 +113,8 @@ public class NewsLogic : MonoBehaviour
                 news[6].SetActive(false);
 
                 break;
-            case 7:
-
+            case 3:
+                UpgradesLogic.newsQuantity = 7;
                 rectTransform.sizeDelta = new Vector2(750f, 3700f);
                 scrollBar.value = 1;
 

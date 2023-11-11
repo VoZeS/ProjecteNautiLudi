@@ -6,7 +6,7 @@ public class ScoreLogic : MonoBehaviour
 {
     private int[] points;
 
-    public int maxMoneyReward = 500;
+    private int maxMoneyReward;
 
     static public double[] newWins;
 
@@ -17,12 +17,37 @@ public class ScoreLogic : MonoBehaviour
         newWins = new double[NewsLogic.newsSelectedList.Count];
 
         //Phase 0: Stablish Reward
+        maxMoneyReward = 0;
         for (int j = 0; j < NewsLogic.newsSelectedList.Count; j++)
         {
             maxMoneyReward += NewsLogic.newsSelectedList[j].moneyCost;
         }
 
-        maxMoneyReward /= NewsLogic.newsSelectedList.Count;
+        switch(UpgradesLogic.impressionsLevel)
+        {
+            case 0:
+                maxMoneyReward /= NewsLogic.newsSelectedList.Count;
+                break;
+
+            case 1:
+                maxMoneyReward += 100;
+                maxMoneyReward /= NewsLogic.newsSelectedList.Count;
+                break;
+
+            case 2:
+                maxMoneyReward += 200;
+                maxMoneyReward /= NewsLogic.newsSelectedList.Count;
+                break;
+
+            case 3:
+                maxMoneyReward += 300;
+                maxMoneyReward /= NewsLogic.newsSelectedList.Count;
+                break;
+
+            default:
+                maxMoneyReward /= NewsLogic.newsSelectedList.Count;
+                break;
+        }
 
         for (int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
         {

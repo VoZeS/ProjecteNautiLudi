@@ -8,10 +8,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManagement : MonoBehaviour
 {
+    [Header("Main Menu Logic")]
+    public GameObject continueButton;
+    
     private bool isNewGame = true;
     static public bool hasPlayed;
     private string saveFilePath;
-    public GameObject continueButton;
 
     // VALORES INICIALES IN-GAME
     public const int INITIALMONEY = 500;
@@ -88,6 +90,12 @@ public class GameManagement : MonoBehaviour
                     isFxActive = true,
                     startFxVolume = 0,
                     startMusicVolume = 0
+                },
+                upgrades = new Upgrades
+                {
+                    quantityNewsLevel = 0,
+                    freeNewsLevel = 0,
+                    moreImpressionsLevel = 0
                 }
             };
 
@@ -109,7 +117,7 @@ public class GameManagement : MonoBehaviour
     {
         SetInitialStatsNewGame();
 
-        Invoke("GoToGameplayScene", 2.0f);
+        Invoke("GoToGameplayScene", 1.0f);
     }
 
     public void SetInitialStatsNewGame()
@@ -129,6 +137,12 @@ public class GameManagement : MonoBehaviour
                 {
                     isMusicActive = AudioManagement.isMusicOn,
                     isFxActive = AudioManagement.isFxOn
+                },
+                upgrades = new Upgrades
+                {
+                    quantityNewsLevel = 0,
+                    freeNewsLevel = 0,
+                    moreImpressionsLevel = 0
                 }
             };
 
@@ -175,6 +189,12 @@ public class GameManagement : MonoBehaviour
                 {
                     isMusicActive = AudioManagement.isMusicOn,
                     isFxActive = AudioManagement.isFxOn
+                },
+                upgrades = new Upgrades
+                {
+                    quantityNewsLevel = UpgradesLogic.quantityLevel,
+                    freeNewsLevel = UpgradesLogic.freeLevel,
+                    moreImpressionsLevel = UpgradesLogic.impressionsLevel
                 }
             };
 
@@ -208,6 +228,11 @@ public class GameManagement : MonoBehaviour
             AudioManagement.lastVolumeMusic = playerData.settings.startMusicVolume;
             AudioManagement.lastVolumeFX = playerData.settings.startFxVolume;
 
+            // Load Upgrades
+            UpgradesLogic.quantityLevel = playerData.upgrades.quantityNewsLevel;
+            UpgradesLogic.freeLevel = playerData.upgrades.freeNewsLevel;
+            UpgradesLogic.impressionsLevel = playerData.upgrades.moreImpressionsLevel;
+
             // Checkers LOGS
             Debug.Log("HAS PLAYED BEFORE: " + hasPlayed);
 
@@ -216,6 +241,10 @@ public class GameManagement : MonoBehaviour
             Debug.Log("Loaded total money: " + MoneyLogic.totalMoney);
             Debug.Log("Loaded music active: " + AudioManagement.isMusicOn);
             Debug.Log("Loaded fx active: " + AudioManagement.isFxOn);
+
+            Debug.Log("Quantity Level: " + UpgradesLogic.quantityLevel);
+            Debug.Log("Free News Level: " + UpgradesLogic.freeLevel);
+            Debug.Log("Impressions Level: " + UpgradesLogic.impressionsLevel);
 
         }
         else
@@ -232,14 +261,13 @@ public class GameManagement : MonoBehaviour
 
         public PlayerStats playerStats;
         public Settings settings;
+        public Upgrades upgrades;
     }
 
     public class PlayerStats
     {
         public int day;
         public double money;
-
-        // ADD UPGRADES
     }
 
     public class Settings
@@ -249,5 +277,12 @@ public class GameManagement : MonoBehaviour
 
         public float startMusicVolume;
         public float startFxVolume;
+    }
+
+    public class Upgrades
+    {
+        public int quantityNewsLevel;
+        public int freeNewsLevel;
+        public int moreImpressionsLevel;
     }
 }
