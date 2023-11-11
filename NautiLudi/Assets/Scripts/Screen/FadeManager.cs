@@ -16,6 +16,7 @@ public class FadeManager : MonoBehaviour
     public CameraMovement cam;
     public ButtonLogic buttonScript;
     public RandomInterests interestScript;
+    public GameObject bottomBackgroundUI;
 
     [Header("Selection Button")]
     public Image[] selectionButtonBackground;
@@ -49,6 +50,7 @@ public class FadeManager : MonoBehaviour
                 {
                     // New Day Logic
                     NewDayLogic();
+                    bottomBackgroundUI.SetActive(true);
 
                 }
                 else if (targetAlpha == 0.0f) // Fade out completed

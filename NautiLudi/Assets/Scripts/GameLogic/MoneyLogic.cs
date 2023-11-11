@@ -37,8 +37,10 @@ public class MoneyLogic : MonoBehaviour
 
     public void NewspaperBenefits()
     {
-        totalMoney += moneyGained;
-        moneyGained = 0;
+        for(int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
+        {
+            totalMoney += ScoreLogic.newWins[i];
+        }
     }
 
     public void SetMoneyTextColor(Color color)

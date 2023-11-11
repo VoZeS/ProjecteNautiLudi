@@ -6,14 +6,28 @@ public class ScoreLogic : MonoBehaviour
 {
     private int[] points;
 
-    public int maxMoneyReward = 1000;
+    public int maxMoneyReward = 500;
+
+    static public double[] newWins;
 
     public void CheckNewspaper()
     {
         points = new int[NewsLogic.newsSelectedList.Count];
 
-        for(int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
+        newWins = new double[NewsLogic.newsSelectedList.Count];
+
+        //Phase 0: Stablish Reward
+        for (int j = 0; j < NewsLogic.newsSelectedList.Count; j++)
         {
+            maxMoneyReward += NewsLogic.newsSelectedList[j].moneyCost;
+        }
+
+        maxMoneyReward /= NewsLogic.newsSelectedList.Count;
+
+        for (int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
+        {
+            
+
             // Phase 1: Comparison
             int socialComparison, sportsComparison, interComparison;
 
@@ -71,7 +85,9 @@ public class ScoreLogic : MonoBehaviour
             }
 
             // Phase 3: Transformation
-            switch(points[i])
+            MoneyLogic.moneyGained = 0;
+
+            switch (points[i])
             {
                 case 9:
                     MoneyLogic.moneyGained += maxMoneyReward;
@@ -101,6 +117,8 @@ public class ScoreLogic : MonoBehaviour
                     MoneyLogic.moneyGained += maxMoneyReward * 0;
                     break;
             }
+
+            newWins[i] = MoneyLogic.moneyGained;
 
             Debug.Log(MoneyLogic.moneyGained);
 

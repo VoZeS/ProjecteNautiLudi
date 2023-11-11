@@ -28,11 +28,13 @@ public class TutorialLogic : MonoBehaviour
 
         if (GameManagement.hasPlayed)
         {
-            for(int i = 0; i< tutorialImages.Length; i++)
+            for (int i = 0; i < tutorialImages.Length; i++)
             {
                 tutorialImages[i].SetActive(false);
             }
         }
+        else if (!GameManagement.hasPlayed)
+            tutorialImages[0].SetActive(true);
     }
 
     public void SetPlayability(bool played)

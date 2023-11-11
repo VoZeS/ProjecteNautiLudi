@@ -1,18 +1,90 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class WinLoseManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TMP_Text[] newsTitle;
+    public TMP_Text[] newsLoses;
+    public TMP_Text[] newsWins;
+    [Space(10)]
+    public TMP_Text totalLost;
+    public TMP_Text totalWon;
+    [Space(10)]
+    public TMP_Text totalBalance;
+
+    public void SetAllBalances()
     {
-        
+        SetTitles();
+        SetNewsBalance();
+        SetTotalLost();
+        SetTotalWon();
+        SetTotalBalance();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetTitles()
     {
-        
+        for (int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
+        {
+            newsTitle[i].text = NewsLogic.newsSelectedList[i].GetTitle();
+        }
+    }
+
+    public void SetNewsBalance()
+    {
+        for (int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
+        {
+            newsLoses[i].text = "-" + NewsLogic.newsSelectedList[i].moneyCost.ToString();
+            newsWins[i].text = "+" + ScoreLogic.newWins[i].ToString();
+        }
+    }
+
+    public void SetTotalLost()
+    {
+        double negativeBalance = 0;
+
+        for(int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
+        {
+            negativeBalance -= NewsLogic.newsSelectedList[i].moneyCost;
+        }
+
+        totalLost.text = negativeBalance.ToString();
+    }
+
+    public void SetTotalWon()
+    {
+        double positiveBalance = 0;
+
+        for(int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
+        {
+            positiveBalance += ScoreLogic.newWins[i];
+        }
+
+        totalWon.text = "+" + positiveBalance.ToString();
+    }
+
+    public void SetTotalBalance()
+    {
+        double totalBal = 0;
+
+        for(int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
+        {
+            totalBal -= NewsLogic.newsSelectedList[i].moneyCost;
+            totalBal += ScoreLogic.newWins[i];
+        }
+
+        if (totalBal >= 0)
+        {
+            totalBalance.text = "+" + totalBal.ToString();
+            totalBalance.color = new Color(60 / 255f, 180 / 255f, 70 / 255f, 1); // GREEN
+        }
+        else if (totalBal < 0)
+        {
+            totalBalance.text = totalBal.ToString();
+            totalBalance.color = new Color(230 / 255f, 100 / 255f, 100 / 255f, 1); // RED
+            
+        }
+            
     }
 }
