@@ -71,4 +71,5 @@ public class ButtonLogic : MonoBehaviour
     {
         fadingScript.StartToVisibleFading(winloseImages);
     }
+
 }
