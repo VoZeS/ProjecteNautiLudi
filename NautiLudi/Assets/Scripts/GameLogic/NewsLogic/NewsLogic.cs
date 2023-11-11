@@ -8,6 +8,10 @@ public class NewsLogic : MonoBehaviour
 {
     [Header("General Panel")]
     public TMP_Text newsSelectedText;
+    public GameObject contentObject;
+    public GameObject[] news;
+    private RectTransform rectTransform;
+    public Scrollbar scrollBar;
 
     [Header("Info Panel")]
     public TMP_Text[] infoNewsSelectedText;
@@ -25,6 +29,7 @@ public class NewsLogic : MonoBehaviour
     {
         selectedNews = newsSelectedList.Count;
 
+        rectTransform = contentObject.GetComponent<RectTransform>();
     }
 
     // Update is called once per frame
@@ -47,7 +52,73 @@ public class NewsLogic : MonoBehaviour
             newsSelectedList[i].isBlocked = false;
         }
 
+    }
 
+    public void SetNewsPos()
+    {
+        switch (UpgradesLogic.newsQuantity)
+        {
+            case 4:
+
+                rectTransform.sizeDelta = new Vector2(750f, 2200f);
+                scrollBar.value = 1;
+
+                for (int i = 0; i < 4; i++)
+                {
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                }
+                news[4].SetActive(false);
+                news[5].SetActive(false);
+                news[6].SetActive(false);
+
+                break;
+            case 5:
+
+                rectTransform.sizeDelta = new Vector2(750f, 2700f);
+                scrollBar.value = 1;
+
+                for (int i = 0; i < 5; i++)
+                {
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                }
+                news[5].SetActive(false);
+                news[6].SetActive(false);
+
+                break;
+            case 6:
+
+                rectTransform.sizeDelta = new Vector2(750f, 3200f);
+                scrollBar.value = 1;
+
+                for (int i = 0; i < 6; i++)
+                {
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                }
+                news[6].SetActive(false);
+
+                break;
+            case 7:
+
+                rectTransform.sizeDelta = new Vector2(750f, 3700f);
+                scrollBar.value = 1;
+
+                for (int i = 0; i < 7; i++)
+                {
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                }
+
+                break;
+            default:
+                rectTransform.sizeDelta = new Vector2(750f, 2200f);
+                scrollBar.value = 1;
+
+                for (int i = 0; i < 4; i++)
+                {
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                }
+
+                break;
+        }
     }
 
     public void DisplaySelectedNews()

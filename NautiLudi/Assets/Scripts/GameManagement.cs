@@ -54,7 +54,8 @@ public class GameManagement : MonoBehaviour
     {
         if (hasPlayed)
         {
-            continueButton.SetActive(true);
+            if(continueButton != null)
+                continueButton.SetActive(true);
         }
     }
 
