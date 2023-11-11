@@ -13,6 +13,11 @@ public class WinLoseManager : MonoBehaviour
     public TMP_Text totalWon;
     [Space(10)]
     public TMP_Text totalBalance;
+    [Space(10)]
+    public TMP_Text actualMoney;
+
+    static public bool hasLost = false;
+    static public double totalBal;
 
     public void SetAllBalances()
     {
@@ -35,8 +40,8 @@ public class WinLoseManager : MonoBehaviour
     {
         for (int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
         {
-            newsLoses[i].text = "-" + NewsLogic.newsSelectedList[i].moneyCost.ToString();
-            newsWins[i].text = "+" + ScoreLogic.newWins[i].ToString();
+            newsLoses[i].text = "-" + NewsLogic.newsSelectedList[i].moneyCost.ToString("F2") + "€";
+            newsWins[i].text = "+" + ScoreLogic.newWins[i].ToString("F2") + "€";
         }
     }
 
@@ -49,7 +54,7 @@ public class WinLoseManager : MonoBehaviour
             negativeBalance -= NewsLogic.newsSelectedList[i].moneyCost;
         }
 
-        totalLost.text = negativeBalance.ToString();
+        totalLost.text = negativeBalance.ToString("F2") + "€";
     }
 
     public void SetTotalWon()
@@ -61,12 +66,12 @@ public class WinLoseManager : MonoBehaviour
             positiveBalance += ScoreLogic.newWins[i];
         }
 
-        totalWon.text = "+" + positiveBalance.ToString();
+        totalWon.text = "+" + positiveBalance.ToString("F2") + "€";
     }
 
     public void SetTotalBalance()
     {
-        double totalBal = 0;
+        totalBal = 0;
 
         for(int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
         {
@@ -76,15 +81,27 @@ public class WinLoseManager : MonoBehaviour
 
         if (totalBal >= 0)
         {
-            totalBalance.text = "+" + totalBal.ToString();
+            totalBalance.text = "+" + totalBal.ToString("F2") + "€";
             totalBalance.color = new Color(60 / 255f, 180 / 255f, 70 / 255f, 1); // GREEN
         }
         else if (totalBal < 0)
         {
-            totalBalance.text = totalBal.ToString();
-            totalBalance.color = new Color(230 / 255f, 100 / 255f, 100 / 255f, 1); // RED
-            
+            totalBalance.text = totalBal.ToString() + "€";
+            totalBalance.color = new Color(200 / 255f, 50 / 255f, 50 / 255f, 1); // RED
         }
-            
+
+        actualMoney.text = MoneyLogic.totalMoney.ToString("F2") + "€";
+
+        if (MoneyLogic.totalMoney < 0)
+        {
+            actualMoney.color = new Color(200 / 255f, 50 / 255f, 50 / 255f, 1); // RED
+            hasLost = true;
+        }
+        else if (MoneyLogic.totalMoney >= 0)
+        {
+            actualMoney.color = new Color(60 / 255f, 180 / 255f, 70 / 255f, 1); // GREEN
+            hasLost = false;
+        }
+
     }
 }

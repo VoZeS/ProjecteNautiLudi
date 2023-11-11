@@ -13,7 +13,7 @@ public class MoneyLogic : MonoBehaviour
 
     private void Update()
     {
-        moneyDisplay.text = totalMoney.ToString() + "€";
+        moneyDisplay.text = totalMoney.ToString("F2") + "€";
 
         if (totalMoney < 0)
             SetMoneyTextColor(new Color(230 / 255f, 100 / 255f, 100 / 255f, 1)); // RED

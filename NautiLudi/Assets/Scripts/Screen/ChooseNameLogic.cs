@@ -17,7 +17,8 @@ public class ChooseNameLogic : MonoBehaviour
 
     private void Start()
     {
-        nameText.text = nameString;
+        if(nameText != null)
+            nameText.text = nameString;
     }
 
 }
