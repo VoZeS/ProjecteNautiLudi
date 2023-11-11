@@ -345,10 +345,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.9
+  m_fontSize: 43.1
   m_fontSizeBase: 48.9
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.36644, y: 11.239735, z: 6.556549, w: 6.5564957}
+  m_margin: {x: 36.634193, y: 11.239735, z: 23.673828, w: 6.5564957}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10489,9 +10489,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 2131388909}
   buttonBackground: {fileID: 488334215}
-  associateSelectButton: {fileID: 0}
-  associateButtonText: {fileID: 0}
-  associateButtonBackground: {fileID: 0}
+  associateSelectButton: {fileID: 981460928}
+  associateButtonText: {fileID: 1087317385}
+  associateButtonBackground: {fileID: 981460929}
 --- !u!114 &488334214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10818,10 +10818,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.9
+  m_fontSize: 46.6
   m_fontSizeBase: 48.9
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -10854,7 +10854,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.36644, y: 11.239735, z: 6.556549, w: 6.5564957}
+  m_margin: {x: 20.333511, y: 11.239735, z: 18.910248, w: 6.5564957}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12254,10 +12254,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 34.05
   m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17
@@ -13291,10 +13291,9 @@ MonoBehaviour:
   titleNews: {fileID: 2014952317}
   shortDescription: {fileID: 1793637830}
   costDisplay: {fileID: 209455118}
-  titleInfo: {fileID: 0}
-  extendedDescription: {fileID: 0}
-  infoImage: {fileID: 0}
-  link: {fileID: 0}
+  titleInfo: {fileID: 1433760021}
+  extendedDescription: {fileID: 751671822}
+  infoImage: {fileID: 1668615562}
 --- !u!1001 &627633843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14987,7 +14986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7516552, y: 0.022223763}
   m_AnchorMax: {x: 0.9665797, y: 0.093}
-  m_AnchoredPosition: {x: 17.650024, y: 29.900146}
+  m_AnchoredPosition: {x: 17.650024, y: 29.900208}
   m_SizeDelta: {x: -154.5, y: -10.5998535}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &726131878
@@ -15083,10 +15082,9 @@ MonoBehaviour:
   titleNews: {fileID: 1066859076}
   shortDescription: {fileID: 8613425}
   costDisplay: {fileID: 14826109}
-  titleInfo: {fileID: 0}
-  extendedDescription: {fileID: 0}
-  infoImage: {fileID: 0}
-  link: {fileID: 0}
+  titleInfo: {fileID: 1454760430}
+  extendedDescription: {fileID: 1270652660}
+  infoImage: {fileID: 707872830}
 --- !u!1 &726171657
 GameObject:
   m_ObjectHideFlags: 0
@@ -15450,10 +15448,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.9
+  m_fontSize: 45.45
   m_fontSizeBase: 48.9
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -15486,7 +15484,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.36644, y: 11.239735, z: 6.556549, w: 6.5564957}
+  m_margin: {x: 24.53125, y: 11.239735, z: 21.645874, w: 6.5564957}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20142,10 +20140,9 @@ MonoBehaviour:
   titleNews: {fileID: 1977207704}
   shortDescription: {fileID: 1751985990}
   costDisplay: {fileID: 1946428485}
-  titleInfo: {fileID: 1813304151}
-  extendedDescription: {fileID: 0}
-  infoImage: {fileID: 0}
-  link: {fileID: 0}
+  titleInfo: {fileID: 569251289}
+  extendedDescription: {fileID: 370955085}
+  infoImage: {fileID: 709032738}
 --- !u!1 &986814069
 GameObject:
   m_ObjectHideFlags: 0
@@ -20533,8 +20530,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286874756
-  m_fontColor: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
+    rgba: 4288651167
+  m_fontColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -20559,7 +20556,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 33
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -22289,10 +22286,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.9
+  m_fontSize: 43.05
   m_fontSizeBase: 48.9
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -22325,7 +22322,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.36644, y: 11.239735, z: 6.556549, w: 6.5564957}
+  m_margin: {x: 36.19185, y: 11.239735, z: 24.608353, w: 6.5564957}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -25020,7 +25017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7516552, y: 0.022223763}
   m_AnchorMax: {x: 0.9665797, y: 0.093}
-  m_AnchoredPosition: {x: 25.200073, y: 26.300537}
+  m_AnchoredPosition: {x: 25.200073, y: 26.300598}
   m_SizeDelta: {x: -173, y: -8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1234349854
@@ -26101,10 +26098,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.9
+  m_fontSize: 45
   m_fontSizeBase: 48.9
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -26137,7 +26134,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.36644, y: 11.239735, z: 6.556549, w: 6.5564957}
+  m_margin: {x: 22.694916, y: 11.239735, z: 26.242325, w: 6.5564957}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -28203,9 +28200,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 1005698035}
   buttonBackground: {fileID: 1410957829}
-  associateSelectButton: {fileID: 0}
-  associateButtonText: {fileID: 0}
-  associateButtonBackground: {fileID: 0}
+  associateSelectButton: {fileID: 1175945306}
+  associateButtonText: {fileID: 13998585}
+  associateButtonBackground: {fileID: 1175945307}
 --- !u!114 &1410957828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28462,10 +28459,10 @@ MonoBehaviour:
   newsSelectedText: {fileID: 282632630}
   infoNewsSelectedText:
   - {fileID: 306392560}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 136873036}
+  - {fileID: 1832060898}
+  - {fileID: 1563559494}
+  - {fileID: 122647359}
   titleNewspaper:
   - {fileID: 1779403848}
   - {fileID: 871552011}
@@ -28599,10 +28596,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 34.05
   m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17
@@ -28771,10 +28768,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 34.05
   m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17
@@ -29056,10 +29053,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 34.05
   m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17
@@ -35743,10 +35740,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 34.05
   m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17
@@ -36404,10 +36401,9 @@ MonoBehaviour:
   titleNews: {fileID: 542614178}
   shortDescription: {fileID: 1171795276}
   costDisplay: {fileID: 1057795503}
-  titleInfo: {fileID: 0}
-  extendedDescription: {fileID: 0}
-  infoImage: {fileID: 0}
-  link: {fileID: 0}
+  titleInfo: {fileID: 1463869081}
+  extendedDescription: {fileID: 963228880}
+  infoImage: {fileID: 366396073}
 --- !u!1001 &1845842538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39203,9 +39199,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 855331906}
   buttonBackground: {fileID: 2036261212}
-  associateSelectButton: {fileID: 0}
-  associateButtonText: {fileID: 0}
-  associateButtonBackground: {fileID: 0}
+  associateSelectButton: {fileID: 980382888}
+  associateButtonText: {fileID: 739326446}
+  associateButtonBackground: {fileID: 980382889}
 --- !u!114 &2036261211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39704,7 +39700,6 @@ MonoBehaviour:
   titleInfo: {fileID: 1813304151}
   extendedDescription: {fileID: 1975083014}
   infoImage: {fileID: 1509402210}
-  link: {fileID: 69562920}
 --- !u!1001 &2049434002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40213,9 +40208,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: {fileID: 1482728948}
   buttonBackground: {fileID: 2075418621}
-  associateSelectButton: {fileID: 0}
-  associateButtonText: {fileID: 0}
-  associateButtonBackground: {fileID: 0}
+  associateSelectButton: {fileID: 761429300}
+  associateButtonText: {fileID: 500692712}
+  associateButtonBackground: {fileID: 761429301}
 --- !u!114 &2075418620
 MonoBehaviour:
   m_ObjectHideFlags: 0

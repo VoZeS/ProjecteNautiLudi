@@ -13,7 +13,13 @@ public class MoneyLogic : MonoBehaviour
 
     private void Update()
     {
-        moneyDisplay.text = totalMoney.ToString();
+        moneyDisplay.text = totalMoney.ToString() + "€";
+
+        if (totalMoney < 0)
+            SetMoneyTextColor(new Color(230 / 255f, 100 / 255f, 100 / 255f, 1)); // RED
+        else if (totalMoney >= 0)
+            SetMoneyTextColor(new Color(60/255f, 180/255f, 70/255f, 1)); // GREEN
+
     }
 
     public void BuyNew(News news)
@@ -33,5 +39,10 @@ public class MoneyLogic : MonoBehaviour
     {
         totalMoney += moneyGained;
         moneyGained = 0;
+    }
+
+    public void SetMoneyTextColor(Color color)
+    {
+        moneyDisplay.color = color;
     }
 }

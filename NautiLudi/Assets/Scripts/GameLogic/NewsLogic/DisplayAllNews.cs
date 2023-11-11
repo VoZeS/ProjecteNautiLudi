@@ -17,7 +17,7 @@ public class DisplayAllNews : MonoBehaviour
     public TMP_Text titleInfo;
     public TMP_Text extendedDescription;
     public Image infoImage;
-    public TMP_Text link;
+    //public TMP_Text link;
 
     private void Start()
     {
@@ -37,7 +37,7 @@ public class DisplayAllNews : MonoBehaviour
         infoImage.sprite = news.newsImage;
         //newspaperImage.sprite = news.newsImage;
 
-        link.text = news.url;
+        //link.text = news.url;
 
         costDisplay.text = news.moneyCost.ToString();
     }
