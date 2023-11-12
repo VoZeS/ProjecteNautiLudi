@@ -1,44 +1,73 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DisplayAllNews : MonoBehaviour
 {
-    private News news;
+    //private News news;
 
-    [Header("Selection Panel")]
-    public TMP_Text titleNews;
-    public TMP_Text shortDescription;
-    public TMP_Text costDisplay;
+    //[Header("Selection Panel")]
+    //public TMP_Text titleNews;
+    //public TMP_Text shortDescription;
+    //public TMP_Text costDisplay;
 
-    [Header("Info Panel")]
-    public TMP_Text titleInfo;
-    public TMP_Text extendedDescription;
-    public Image infoImage;
+    //[Header("Info Panel")]
+    //public TMP_Text titleInfo;
+    //public TMP_Text extendedDescription;
+    //public Image infoImage;
     //public TMP_Text link;
+
+    public List<News> newsList;
+    public List<NewsObject> newsObjects = new List<NewsObject>();
+
+    [System.Serializable]
+    private class NewsList
+    {
+        public List<News> news;
+    }
 
     private void Start()
     {
-        news = GetComponent<News>();
+        // Leer el archivo JSON
+        string json = File.ReadAllText(Application.persistentDataPath + "/newsData.json");
+
+        Debug.Log(json);
+
+        try
+        {
+            // Deserializar el JSON a una lista de noticias
+            NewsList newsData = JsonUtility.FromJson<NewsList>(json);
+            newsList = newsData.news;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Error al deserializar JSON: " + e.Message);
+        }
+
+        // Asignar noticias aleatorias a tus Game Objects de tipo News
+        AssignRandomNews();
     }
 
-    private void Update()
+    private void AssignRandomNews()
     {
-        titleNews.text = news.title;
-        titleInfo.text = news.title;
-        //titleNewspaper.text = news.title;
+        if (newsList != null && newsList.Count > 0)
+        {
+            foreach (NewsObject newsObject in newsObjects)
+            {
+                // Selecciona una noticia aleatoria
+                News randomNews = newsList[Random.Range(0, newsList.Count)];
 
-        shortDescription.text = news.shortDescription;
-        extendedDescription.text = news.extendedDescription;
-        //shortNewspaperDescription.text = news.shortDescription;
-
-        infoImage.sprite = news.newsImage;
-        //newspaperImage.sprite = news.newsImage;
-
-        //link.text = news.url;
-
-        costDisplay.text = news.moneyCost.ToString();
+                // Asigna los datos de la noticia al GameObject
+                newsObject.DisplayNews(randomNews);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("La lista de noticias está vacía o no ha sido inicializada.");
+        }
     }
 }
+

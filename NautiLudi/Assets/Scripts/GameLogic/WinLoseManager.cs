@@ -35,7 +35,7 @@ public class WinLoseManager : MonoBehaviour
     {
         for (int i = 0; i < NewsLogic.newsSelectedList.Count; i++)
         {
-            newsTitle[i].text = NewsLogic.newsSelectedList[i].GetTitle();
+            newsTitle[i].text = NewsLogic.newsSelectedList[i].title;
         }
     }
 

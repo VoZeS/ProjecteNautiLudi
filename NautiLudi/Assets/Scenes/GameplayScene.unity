@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1837491, g: 0.22823466, b: 0.29935044, a: 1}
+  m_IndirectSpecularColor: {r: 0.18374944, g: 0.22823541, b: 0.29935133, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4310,7 +4310,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049082552}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: News, Assembly-CSharp
         m_MethodName: OpenLink
         m_Mode: 1
@@ -6888,7 +6888,7 @@ MonoBehaviour:
         m_MethodName: RealSelectionLogic
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 953263965}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6900,7 +6900,7 @@ MonoBehaviour:
         m_MethodName: BuyNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 953263965}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -10078,7 +10078,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 340820181}
         m_TargetAssemblyTypeName: OptionsManagerBetweenScenes, Assembly-CSharp
-        m_MethodName: OpenOptions
+        m_MethodName: ManageOpenAndCloseOptions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14640,7 +14640,7 @@ MonoBehaviour:
         m_MethodName: RealSelectionLogic
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1844251618}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14652,7 +14652,7 @@ MonoBehaviour:
         m_MethodName: BuyNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1844251618}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -16725,7 +16725,6 @@ GameObject:
   m_Component:
   - component: {fileID: 547941365}
   - component: {fileID: 547941366}
-  - component: {fileID: 547941367}
   m_Layer: 5
   m_Name: SixthNew
   m_TagString: Untagged
@@ -16770,47 +16769,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 547941364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7dc6b457d4282408eb0ab954a3cf18, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f919ce72a16d404298ebabeb28326ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: The siiiiiiix six six number of hell!
-  shortDescription: 'LOREM IPSUM DOLOR SIT AMET, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut pharetra sit
-    amet aliquam id. Elit ut aliquam purus sit amet luctus venenatis lectus. At tempor
-    commodo ullamcorper a lacus vestibulum sed. A erat nam at lectus. Libero nunc
-    consequat interdum varius sit amet mattis vulputate enim. '
-  extendedDescription: 'LOREM IPSUM DOLOR SIT AMET, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui sapien
-    eget mi proin sed libero enim. Quis eleifend quam adipiscing vitae proin sagittis
-    nisl rhoncus.   Volutpat commodo sed egestas egestas fringilla phasellus faucibus
-    scelerisque eleifend. Quis viverra nibh cras pulvinar mattis nunc sed blandit
-    libero. Ut consequat semper viverra nam libero justo laoreet sit amet. Id diam
-    maecenas ultricies mi eget. '
-  newsImage: {fileID: 21300000, guid: e5d07a0025f9f754cb67dde839390110, type: 3}
-  url: https://loremipsum.io/es/generator/?n=5&t=p
-  socialValue: 3
-  sportsValue: 2
-  internationalValue: 2
-  moneyCost: 200
-  isBlocked: 1
---- !u!114 &547941367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547941364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6f49fd147283248bfaabdae156ccb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleNews: {fileID: 1909053394}
-  shortDescription: {fileID: 333472480}
-  costDisplay: {fileID: 1372737129}
-  titleInfo: {fileID: 723890844}
-  extendedDescription: {fileID: 1740376166}
-  infoImage: {fileID: 875344731}
+  titleText: {fileID: 1909053394}
+  titleInfoText: {fileID: 723890844}
+  shortDescriptionText: {fileID: 333472480}
+  longDescriptionText: {fileID: 1740376166}
+  newsImage: {fileID: 875344731}
+  referenceLinkButton: {fileID: 1653130221}
+  newsCost: {fileID: 1372737129}
 --- !u!1 &551939330
 GameObject:
   m_ObjectHideFlags: 0
@@ -18365,7 +18333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back
+  m_text: Enrere
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -18632,7 +18600,6 @@ GameObject:
   m_Component:
   - component: {fileID: 626168330}
   - component: {fileID: 626168331}
-  - component: {fileID: 626168332}
   m_Layer: 5
   m_Name: FifthNew
   m_TagString: Untagged
@@ -18677,47 +18644,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 626168329}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7dc6b457d4282408eb0ab954a3cf18, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f919ce72a16d404298ebabeb28326ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Title five let's goo!
-  shortDescription: 'LOREM IPSUM DOLOR SIT AMET, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut pharetra sit
-    amet aliquam id. Elit ut aliquam purus sit amet luctus venenatis lectus. At tempor
-    commodo ullamcorper a lacus vestibulum sed. A erat nam at lectus. Libero nunc
-    consequat interdum varius sit amet mattis vulputate enim. '
-  extendedDescription: 'LOREM IPSUM DOLOR SIT AMET, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui sapien
-    eget mi proin sed libero enim. Quis eleifend quam adipiscing vitae proin sagittis
-    nisl rhoncus.   Volutpat commodo sed egestas egestas fringilla phasellus faucibus
-    scelerisque eleifend. Quis viverra nibh cras pulvinar mattis nunc sed blandit
-    libero. Ut consequat semper viverra nam libero justo laoreet sit amet. Id diam
-    maecenas ultricies mi eget. '
-  newsImage: {fileID: 21300000, guid: a4adf1a452c63ba4eb7bfa197768bd54, type: 3}
-  url: https://loremipsum.io/es/generator/?n=5&t=p
-  socialValue: 1
-  sportsValue: 2
-  internationalValue: 2
-  moneyCost: 150
-  isBlocked: 1
---- !u!114 &626168332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626168329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6f49fd147283248bfaabdae156ccb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleNews: {fileID: 2014952317}
-  shortDescription: {fileID: 1793637830}
-  costDisplay: {fileID: 209455118}
-  titleInfo: {fileID: 1433760021}
-  extendedDescription: {fileID: 751671822}
-  infoImage: {fileID: 1668615562}
+  titleText: {fileID: 2014952317}
+  titleInfoText: {fileID: 1433760021}
+  shortDescriptionText: {fileID: 1793637830}
+  longDescriptionText: {fileID: 751671822}
+  newsImage: {fileID: 1668615562}
+  referenceLinkButton: {fileID: 126156898}
+  newsCost: {fileID: 209455118}
 --- !u!1001 &627633843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21006,7 +20942,6 @@ GameObject:
   m_Component:
   - component: {fileID: 726131879}
   - component: {fileID: 726131880}
-  - component: {fileID: 726131881}
   m_Layer: 5
   m_Name: SecondNew
   m_TagString: Untagged
@@ -21051,47 +20986,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 726131878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7dc6b457d4282408eb0ab954a3cf18, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f919ce72a16d404298ebabeb28326ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Second TITLE 2!
-  shortDescription: 'LOREM IPSUM dolor sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut pharetra sit
-    amet aliquam id. Elit ut aliquam purus sit amet luctus venenatis lectus. At tempor
-    commodo ullamcorper a lacus vestibulum sed. A erat nam at lectus. Libero nunc
-    consequat interdum varius sit amet mattis vulputate enim. '
-  extendedDescription: 'LOREM IPSUM dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui sapien
-    eget mi proin sed libero enim. Quis eleifend quam adipiscing vitae proin sagittis
-    nisl rhoncus.   Volutpat commodo sed egestas egestas fringilla phasellus faucibus
-    scelerisque eleifend. Quis viverra nibh cras pulvinar mattis nunc sed blandit
-    libero. Ut consequat semper viverra nam libero justo laoreet sit amet. Id diam
-    maecenas ultricies mi eget. '
-  newsImage: {fileID: 21300000, guid: 323d33633372b1b4ca258fdd4496d69e, type: 3}
-  url: https://loremipsum.io/es/generator/?n=5&t=p
-  socialValue: 1
-  sportsValue: 2
-  internationalValue: 3
-  moneyCost: 150
-  isBlocked: 1
---- !u!114 &726131881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726131878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6f49fd147283248bfaabdae156ccb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleNews: {fileID: 1066859076}
-  shortDescription: {fileID: 8613425}
-  costDisplay: {fileID: 14826109}
-  titleInfo: {fileID: 1454760430}
-  extendedDescription: {fileID: 1270652660}
-  infoImage: {fileID: 707872830}
+  titleText: {fileID: 1066859076}
+  titleInfoText: {fileID: 1454760430}
+  shortDescriptionText: {fileID: 8613425}
+  longDescriptionText: {fileID: 1270652660}
+  newsImage: {fileID: 707872830}
+  referenceLinkButton: {fileID: 2087199606}
+  newsCost: {fileID: 14826109}
 --- !u!1 &726171657
 GameObject:
   m_ObjectHideFlags: 0
@@ -25680,7 +25584,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049082552}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: News, Assembly-CSharp
         m_MethodName: OpenLink
         m_Mode: 1
@@ -26317,7 +26221,6 @@ GameObject:
   m_Component:
   - component: {fileID: 953263964}
   - component: {fileID: 953263965}
-  - component: {fileID: 953263966}
   m_Layer: 5
   m_Name: SeventhNew
   m_TagString: Untagged
@@ -26362,47 +26265,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 953263963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7dc6b457d4282408eb0ab954a3cf18, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f919ce72a16d404298ebabeb28326ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: This is 777 WooWooW!
-  shortDescription: 'LOREM IPSUM DOLOR SIT AMET, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut pharetra sit
-    amet aliquam id. Elit ut aliquam purus sit amet luctus venenatis lectus. At tempor
-    commodo ullamcorper a lacus vestibulum sed. A erat nam at lectus. Libero nunc
-    consequat interdum varius sit amet mattis vulputate enim. '
-  extendedDescription: 'LOREM IPSUM DOLOR SIT AMET, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui sapien
-    eget mi proin sed libero enim. Quis eleifend quam adipiscing vitae proin sagittis
-    nisl rhoncus.   Volutpat commodo sed egestas egestas fringilla phasellus faucibus
-    scelerisque eleifend. Quis viverra nibh cras pulvinar mattis nunc sed blandit
-    libero. Ut consequat semper viverra nam libero justo laoreet sit amet. Id diam
-    maecenas ultricies mi eget. '
-  newsImage: {fileID: 21300000, guid: a4adf1a452c63ba4eb7bfa197768bd54, type: 3}
-  url: https://loremipsum.io/es/generator/?n=5&t=p
-  socialValue: 1
-  sportsValue: 3
-  internationalValue: 2
-  moneyCost: 100
-  isBlocked: 1
---- !u!114 &953263966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953263963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6f49fd147283248bfaabdae156ccb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleNews: {fileID: 545244081}
-  shortDescription: {fileID: 1782298211}
-  costDisplay: {fileID: 1652736626}
-  titleInfo: {fileID: 252477653}
-  extendedDescription: {fileID: 1771944967}
-  infoImage: {fileID: 1225882872}
+  titleText: {fileID: 545244081}
+  titleInfoText: {fileID: 252477653}
+  shortDescriptionText: {fileID: 1782298211}
+  longDescriptionText: {fileID: 1771944967}
+  newsImage: {fileID: 1225882872}
+  referenceLinkButton: {fileID: 981086793}
+  newsCost: {fileID: 1652736626}
 --- !u!1 &959414703
 GameObject:
   m_ObjectHideFlags: 0
@@ -27184,7 +27056,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049082552}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: News, Assembly-CSharp
         m_MethodName: OpenLink
         m_Mode: 1
@@ -27617,7 +27489,6 @@ GameObject:
   m_Component:
   - component: {fileID: 986373376}
   - component: {fileID: 986373377}
-  - component: {fileID: 986373378}
   m_Layer: 5
   m_Name: ThirdNew
   m_TagString: Untagged
@@ -27662,47 +27533,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 986373375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7dc6b457d4282408eb0ab954a3cf18, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f919ce72a16d404298ebabeb28326ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: TITLE 3 Come on!
-  shortDescription: 'LOREM IPSUM DOLOR sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut pharetra sit
-    amet aliquam id. Elit ut aliquam purus sit amet luctus venenatis lectus. At tempor
-    commodo ullamcorper a lacus vestibulum sed. A erat nam at lectus. Libero nunc
-    consequat interdum varius sit amet mattis vulputate enim. '
-  extendedDescription: 'LOREM IPSUM DOLOR sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui sapien
-    eget mi proin sed libero enim. Quis eleifend quam adipiscing vitae proin sagittis
-    nisl rhoncus.   Volutpat commodo sed egestas egestas fringilla phasellus faucibus
-    scelerisque eleifend. Quis viverra nibh cras pulvinar mattis nunc sed blandit
-    libero. Ut consequat semper viverra nam libero justo laoreet sit amet. Id diam
-    maecenas ultricies mi eget. '
-  newsImage: {fileID: 21300000, guid: 94a844941ee9a2b438efbba580c3e0c2, type: 3}
-  url: https://loremipsum.io/es/generator/?n=5&t=p
-  socialValue: 3
-  sportsValue: 2
-  internationalValue: 1
-  moneyCost: 300
-  isBlocked: 1
---- !u!114 &986373378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986373375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6f49fd147283248bfaabdae156ccb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleNews: {fileID: 1977207704}
-  shortDescription: {fileID: 1751985990}
-  costDisplay: {fileID: 1946428485}
-  titleInfo: {fileID: 569251289}
-  extendedDescription: {fileID: 370955085}
-  infoImage: {fileID: 709032738}
+  titleText: {fileID: 1977207704}
+  titleInfoText: {fileID: 569251289}
+  shortDescriptionText: {fileID: 1751985990}
+  longDescriptionText: {fileID: 370955085}
+  newsImage: {fileID: 709032738}
+  referenceLinkButton: {fileID: 909459353}
+  newsCost: {fileID: 1946428485}
 --- !u!1 &986431958
 GameObject:
   m_ObjectHideFlags: 0
@@ -31528,7 +31368,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 17.01007, y: 25.3709, z: 12.449692, w: 11.809662}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -34839,7 +34679,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049082552}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: News, Assembly-CSharp
         m_MethodName: OpenLink
         m_Mode: 1
@@ -35989,7 +35829,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.1
+  m_fontSize: 62.2
   m_fontSizeBase: 48.9
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -36145,7 +35985,7 @@ MonoBehaviour:
         m_MethodName: RealSelectionLogic
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 547941366}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -36157,7 +35997,7 @@ MonoBehaviour:
         m_MethodName: BuyNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 547941366}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -39335,7 +39175,7 @@ MonoBehaviour:
         m_MethodName: RealSelectionLogic
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 726131880}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -39347,7 +39187,7 @@ MonoBehaviour:
         m_MethodName: BuyNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 726131880}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -39453,6 +39293,8 @@ GameObject:
   - component: {fileID: 1424875893}
   - component: {fileID: 1424875894}
   - component: {fileID: 1424875895}
+  - component: {fileID: 1424875896}
+  - component: {fileID: 1424875897}
   m_Layer: 0
   m_Name: GameLogicManager
   m_TagString: Untagged
@@ -39692,6 +39534,110 @@ MonoBehaviour:
   impressionsCost: 2000
   error: {fileID: 642034514}
   success: {fileID: 209906706}
+--- !u!114 &1424875896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424875885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa806b92fb83373468e7a56795a611a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newsList: []
+--- !u!114 &1424875897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424875885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f49fd147283248bfaabdae156ccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newsList:
+  - title: 
+    shortDescription: 
+    extendedDescription: 
+    newsImage: 
+    url: 
+    socialValue: 0
+    sportsValue: 0
+    internationalValue: 0
+    moneyCost: 0
+    isBlocked: 1
+  - title: 
+    shortDescription: 
+    extendedDescription: 
+    newsImage: 
+    url: 
+    socialValue: 0
+    sportsValue: 0
+    internationalValue: 0
+    moneyCost: 0
+    isBlocked: 1
+  - title: 
+    shortDescription: 
+    extendedDescription: 
+    newsImage: 
+    url: 
+    socialValue: 0
+    sportsValue: 0
+    internationalValue: 0
+    moneyCost: 0
+    isBlocked: 1
+  - title: 
+    shortDescription: 
+    extendedDescription: 
+    newsImage: 
+    url: 
+    socialValue: 0
+    sportsValue: 0
+    internationalValue: 0
+    moneyCost: 0
+    isBlocked: 1
+  - title: 
+    shortDescription: 
+    extendedDescription: 
+    newsImage: 
+    url: 
+    socialValue: 0
+    sportsValue: 0
+    internationalValue: 0
+    moneyCost: 0
+    isBlocked: 1
+  - title: 
+    shortDescription: 
+    extendedDescription: 
+    newsImage: 
+    url: 
+    socialValue: 0
+    sportsValue: 0
+    internationalValue: 0
+    moneyCost: 0
+    isBlocked: 1
+  - title: 
+    shortDescription: 
+    extendedDescription: 
+    newsImage: 
+    url: 
+    socialValue: 0
+    sportsValue: 0
+    internationalValue: 0
+    moneyCost: 0
+    isBlocked: 1
+  newsObjects:
+  - {fileID: 2049082552}
+  - {fileID: 726131880}
+  - {fileID: 986373377}
+  - {fileID: 1844251618}
+  - {fileID: 626168331}
+  - {fileID: 547941366}
+  - {fileID: 953263965}
 --- !u!4 &1428091756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2020972028435613691, guid: 4edd1d31c79d31e4f8118f45a0d9d35b, type: 3}
@@ -42700,7 +42646,7 @@ MonoBehaviour:
         m_MethodName: RealSelectionLogic
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2049082552}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -42712,7 +42658,7 @@ MonoBehaviour:
         m_MethodName: BuyNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2049082552}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -45325,7 +45271,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049082552}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: News, Assembly-CSharp
         m_MethodName: OpenLink
         m_Mode: 1
@@ -49194,7 +49140,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049082552}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: News, Assembly-CSharp
         m_MethodName: OpenLink
         m_Mode: 1
@@ -50386,7 +50332,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.05
+  m_fontSize: 33.5
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -50964,7 +50910,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1844251617}
   - component: {fileID: 1844251618}
-  - component: {fileID: 1844251619}
   m_Layer: 5
   m_Name: FourthNew
   m_TagString: Untagged
@@ -51009,47 +50954,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1844251616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7dc6b457d4282408eb0ab954a3cf18, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f919ce72a16d404298ebabeb28326ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Iphone 4 is in the market now!!
-  shortDescription: 'LOREM IPSUM DOLOR SIT amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut pharetra sit
-    amet aliquam id. Elit ut aliquam purus sit amet luctus venenatis lectus. At tempor
-    commodo ullamcorper a lacus vestibulum sed. A erat nam at lectus. Libero nunc
-    consequat interdum varius sit amet mattis vulputate enim. '
-  extendedDescription: 'LOREM IPSUM DOLOR SIT amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui sapien
-    eget mi proin sed libero enim. Quis eleifend quam adipiscing vitae proin sagittis
-    nisl rhoncus.   Volutpat commodo sed egestas egestas fringilla phasellus faucibus
-    scelerisque eleifend. Quis viverra nibh cras pulvinar mattis nunc sed blandit
-    libero. Ut consequat semper viverra nam libero justo laoreet sit amet. Id diam
-    maecenas ultricies mi eget. '
-  newsImage: {fileID: 21300000, guid: 586325fb75d2ad54386cf93b987bf408, type: 3}
-  url: https://loremipsum.io/es/generator/?n=5&t=p
-  socialValue: 2
-  sportsValue: 2
-  internationalValue: 2
-  moneyCost: 200
-  isBlocked: 1
---- !u!114 &1844251619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844251616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6f49fd147283248bfaabdae156ccb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleNews: {fileID: 542614178}
-  shortDescription: {fileID: 1171795276}
-  costDisplay: {fileID: 1057795503}
-  titleInfo: {fileID: 1463869081}
-  extendedDescription: {fileID: 963228880}
-  infoImage: {fileID: 366396073}
+  titleText: {fileID: 542614178}
+  titleInfoText: {fileID: 1463869081}
+  shortDescriptionText: {fileID: 1171795276}
+  longDescriptionText: {fileID: 963228880}
+  newsImage: {fileID: 366396073}
+  referenceLinkButton: {fileID: 1770745521}
+  newsCost: {fileID: 1057795503}
 --- !u!1001 &1845842538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54448,7 +54362,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.5
+  m_fontSize: 53.9
   m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -55804,7 +55718,7 @@ MonoBehaviour:
         m_MethodName: RealSelectionLogic
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 626168331}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -55816,7 +55730,7 @@ MonoBehaviour:
         m_MethodName: BuyNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 626168331}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -56179,7 +56093,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2049082551}
   - component: {fileID: 2049082552}
-  - component: {fileID: 2049082553}
   m_Layer: 5
   m_Name: FirstNew
   m_TagString: Untagged
@@ -56224,47 +56137,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2049082550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7dc6b457d4282408eb0ab954a3cf18, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f919ce72a16d404298ebabeb28326ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: This is title 1.
-  shortDescription: 'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut pharetra sit
-    amet aliquam id. Elit ut aliquam purus sit amet luctus venenatis lectus. At tempor
-    commodo ullamcorper a lacus vestibulum sed. A erat nam at lectus. Libero nunc
-    consequat interdum varius sit amet mattis vulputate enim. '
-  extendedDescription: 'LOREM ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui sapien
-    eget mi proin sed libero enim. Quis eleifend quam adipiscing vitae proin sagittis
-    nisl rhoncus.   Volutpat commodo sed egestas egestas fringilla phasellus faucibus
-    scelerisque eleifend. Quis viverra nibh cras pulvinar mattis nunc sed blandit
-    libero. Ut consequat semper viverra nam libero justo laoreet sit amet. Id diam
-    maecenas ultricies mi eget. '
-  newsImage: {fileID: 21300000, guid: 4f735ff1d8ae60d45875e2cf37b697cc, type: 3}
-  url: https://loremipsum.io/es/generator/?n=5&t=p
-  socialValue: 1
-  sportsValue: 1
-  internationalValue: 1
-  moneyCost: 100
-  isBlocked: 1
---- !u!114 &2049082553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049082550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6f49fd147283248bfaabdae156ccb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleNews: {fileID: 1513342226}
-  shortDescription: {fileID: 1761742490}
-  costDisplay: {fileID: 551939332}
-  titleInfo: {fileID: 1813304151}
-  extendedDescription: {fileID: 1975083014}
-  infoImage: {fileID: 1509402210}
+  titleText: {fileID: 1513342226}
+  titleInfoText: {fileID: 1813304151}
+  shortDescriptionText: {fileID: 1761742490}
+  longDescriptionText: {fileID: 1975083014}
+  newsImage: {fileID: 1509402210}
+  referenceLinkButton: {fileID: 1241703420}
+  newsCost: {fileID: 551939332}
 --- !u!1001 &2049434002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56952,7 +56834,7 @@ MonoBehaviour:
         m_MethodName: RealSelectionLogic
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 986373377}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -56964,7 +56846,7 @@ MonoBehaviour:
         m_MethodName: BuyNew
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 986373377}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: News, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -57242,7 +57124,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049082552}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: News, Assembly-CSharp
         m_MethodName: OpenLink
         m_Mode: 1

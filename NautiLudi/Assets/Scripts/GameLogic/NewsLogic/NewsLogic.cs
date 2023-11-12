@@ -143,7 +143,7 @@ public class NewsLogic : MonoBehaviour
         {
             titleNewspaper[i].text = newsSelectedList[i].title;
             shortNewspaperDescription[i].text = newsSelectedList[i].shortDescription;
-            newspaperImage[i].sprite = newsSelectedList[i].newsImage;
+            //newspaperImage[i].sprite = newsSelectedList[i].newsImage;
         }
     }
 }
