@@ -32,6 +32,9 @@ public class FadeManager : MonoBehaviour
     public GameObject loseScreen;
     public GameManagement managerScript;
 
+    public AudioSource nightTime;
+    public AudioSource dayTime;
+
     void Start()
     {
         panelImage = GetComponent<Image>();
@@ -60,6 +63,7 @@ public class FadeManager : MonoBehaviour
             Color newColor = panelImage.color;
             newColor.a = Mathf.Lerp(actualAlpha, targetAlpha, t);
             panelImage.color = newColor;
+            nightTime.Play();
 
             if (t >= 1.0f)
             {
@@ -107,6 +111,9 @@ public class FadeManager : MonoBehaviour
 
         buttonScript.WinLose_VisibleFading();
         interestScript.SetNewDay();
+
+        nightTime.Stop();
+        //dayTime.Play();
 
         ResetNews();
     }

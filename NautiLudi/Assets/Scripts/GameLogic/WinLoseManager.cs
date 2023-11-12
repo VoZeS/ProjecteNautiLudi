@@ -16,6 +16,9 @@ public class WinLoseManager : MonoBehaviour
     [Space(10)]
     public TMP_Text actualMoney;
 
+    public AudioSource moneyGained;
+    public AudioSource moneyLost;   
+
     static public bool hasLost = false;
     static public double totalBal;
 
@@ -83,11 +86,15 @@ public class WinLoseManager : MonoBehaviour
         {
             totalBalance.text = "+" + totalBal.ToString("F2") + "€";
             totalBalance.color = new Color(60 / 255f, 180 / 255f, 70 / 255f, 1); // GREEN
+
+            moneyGained.PlayDelayed(4);  
         }
         else if (totalBal < 0)
         {
             totalBalance.text = totalBal.ToString() + "€";
             totalBalance.color = new Color(200 / 255f, 50 / 255f, 50 / 255f, 1); // RED
+
+            moneyLost.PlayDelayed(4);
         }
 
         actualMoney.text = MoneyLogic.totalMoney.ToString("F2") + "€";

@@ -8,6 +8,8 @@ public class RandomInterests : MonoBehaviour
 {
     public GameManagement managerScript;
 
+
+
     // SLIDERS
     [Header("Interests")]
     static public int socialInterestSlider;
@@ -66,7 +68,8 @@ public class RandomInterests : MonoBehaviour
         dayCount++;
         RandInterests();
 
-        if(managerScript != null)
+
+        if (managerScript != null)
             managerScript.SaveGame();
     }
 

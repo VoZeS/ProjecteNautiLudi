@@ -35,6 +35,8 @@ public class UpgradesLogic : MonoBehaviour
     public TMP_Text impressionsCostDisplay;
     public int impressionsCost;
 
+    public AudioSource error;
+    public AudioSource success;
     private void Start()
     {
         // ----------------------------------------------------------------- GAME MANAGER
@@ -110,6 +112,7 @@ public class UpgradesLogic : MonoBehaviour
             newsQuantity++;
             quantityLevel++;
 
+            success.Play();
             UpdateQuantityUpgradeDisplay();
 
             if (managerScript != null)
@@ -118,6 +121,7 @@ public class UpgradesLogic : MonoBehaviour
         else
         {
             // SONIDO DE ERROR
+            error.Play();
         }
         
     }
@@ -131,6 +135,7 @@ public class UpgradesLogic : MonoBehaviour
             //freeNews++;
             freeLevel++;
 
+            success.Play();
             UpdateFreeUpgradeDisplay();
 
             if(managerScript != null)
@@ -139,6 +144,7 @@ public class UpgradesLogic : MonoBehaviour
         else
         {
             // SONIDO DE ERROR
+            error.Play();
         }
 
     }
@@ -151,6 +157,7 @@ public class UpgradesLogic : MonoBehaviour
 
             impressionsLevel++;
 
+            success.Play();
             UpdateImpressionsUpgradeDisplay();
 
             if (managerScript != null)
@@ -159,6 +166,7 @@ public class UpgradesLogic : MonoBehaviour
         else
         {
             // SONIDO DE ERROR
+            error.Play();
         }
     }
 
