@@ -22,7 +22,7 @@ public class MoneyLogic : MonoBehaviour
 
     }
 
-    public void BuyNew(News news)
+    public void BuyNew(NewsObject news)
     {
         moneySpent = news.moneyCost;
 

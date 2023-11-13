@@ -6,13 +6,21 @@ using UnityEngine.UI;
 
 public class NewsObject : MonoBehaviour
 {
+    [Header("Visual")]
     public TMP_Text titleText;
     public TMP_Text titleInfoText;
     public TMP_Text shortDescriptionText;
     public TMP_Text longDescriptionText;
-    public Image newsImage;
+    public Image newImage;
     public Button referenceLinkButton;
     public TMP_Text newsCost;
+
+    [Header("Logic")]
+    public int socialValue;
+    public int sportsValue;
+    public int internationalValue;
+    public int moneyCost;
+    public bool isBlocked = true;
 
     public void DisplayNews(News news)
     {
@@ -23,11 +31,29 @@ public class NewsObject : MonoBehaviour
         longDescriptionText.text = news.extendedDescription;
         newsCost.text = news.moneyCost.ToString();
 
+        Sprite loadedSprite = Resources.Load<Sprite>(news.newsImage);
 
-        newsImage.sprite = Resources.Load<Sprite>(news.newsImage);
+        if (loadedSprite != null)
+        {
+            Debug.Log("Sprite cargado correctamente");
+            newImage.sprite = loadedSprite;
+        }
+        else
+        {
+            Debug.LogError("No se pudo cargar el sprite desde la ruta: " + news.newsImage);
+        }
 
         
         referenceLinkButton.onClick.AddListener(() => OpenLink(news.url));
+    }
+
+    public void GetNewsData(News news)
+    {
+        socialValue = news.socialValue;
+        sportsValue = news.sportsValue;
+        internationalValue = news.internationalValue;
+        moneyCost = news.moneyCost;
+        isBlocked = news.isBlocked;
     }
 
     private void OpenLink(string link)

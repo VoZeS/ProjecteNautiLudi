@@ -18,7 +18,8 @@ public class NewsLogic : MonoBehaviour
 
     static public double selectedNews;
 
-    static public List<News> newsSelectedList = new List<News>();
+    static public List<NewsObject> newsSelectedList = new List<NewsObject>();
+    //static public List<NewsObject> newsObjectSelectedList = new List<NewsObject>();
 
     [Header("Newspaper Panel")]
     public TMP_Text[] titleNewspaper;
@@ -81,7 +82,7 @@ public class NewsLogic : MonoBehaviour
 
                 for (int i = 0; i < 4; i++)
                 {
-                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                 }
                 news[4].SetActive(false);
                 news[5].SetActive(false);
@@ -95,7 +96,7 @@ public class NewsLogic : MonoBehaviour
 
                 for (int i = 0; i < 5; i++)
                 {
-                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                 }
                 news[5].SetActive(false);
                 news[6].SetActive(false);
@@ -108,7 +109,7 @@ public class NewsLogic : MonoBehaviour
 
                 for (int i = 0; i < 6; i++)
                 {
-                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                 }
                 news[6].SetActive(false);
 
@@ -120,7 +121,7 @@ public class NewsLogic : MonoBehaviour
 
                 for (int i = 0; i < 7; i++)
                 {
-                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                 }
 
                 break;
@@ -130,7 +131,7 @@ public class NewsLogic : MonoBehaviour
 
                 for (int i = 0; i < 4; i++)
                 {
-                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (400f * i), news[i].transform.position.z);
+                    news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                 }
 
                 break;
@@ -141,8 +142,8 @@ public class NewsLogic : MonoBehaviour
     {
         for(int i = 0; i < newsSelectedList.Count; i++)
         {
-            titleNewspaper[i].text = newsSelectedList[i].title;
-            shortNewspaperDescription[i].text = newsSelectedList[i].shortDescription;
+            titleNewspaper[i].text = newsSelectedList[i].titleText.text;
+            shortNewspaperDescription[i].text = newsSelectedList[i].shortDescriptionText.text;
             //newspaperImage[i].sprite = newsSelectedList[i].newsImage;
         }
     }

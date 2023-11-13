@@ -98,7 +98,7 @@ public class NewsSelection : MonoBehaviour
         }
     }
 
-    public void RealSelectionLogic(News news)
+    public void RealSelectionLogic(NewsObject news)
     {
         if ((buttonText.text == "Seleccionar" || associateButtonText.text == "Seleccionar") && NewsLogic.selectedNews < 3)
         {

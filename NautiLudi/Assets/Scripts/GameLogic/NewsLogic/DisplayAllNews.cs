@@ -7,19 +7,6 @@ using UnityEngine.UI;
 
 public class DisplayAllNews : MonoBehaviour
 {
-    //private News news;
-
-    //[Header("Selection Panel")]
-    //public TMP_Text titleNews;
-    //public TMP_Text shortDescription;
-    //public TMP_Text costDisplay;
-
-    //[Header("Info Panel")]
-    //public TMP_Text titleInfo;
-    //public TMP_Text extendedDescription;
-    //public Image infoImage;
-    //public TMP_Text link;
-
     public List<News> newsList;
     public List<NewsObject> newsObjects = new List<NewsObject>();
 
@@ -62,6 +49,7 @@ public class DisplayAllNews : MonoBehaviour
 
                 // Asigna los datos de la noticia al GameObject
                 newsObject.DisplayNews(randomNews);
+                newsObject.GetNewsData(randomNews);
             }
         }
         else
