@@ -34,6 +34,7 @@ public class RandomInterests : MonoBehaviour
     [Header("Days")]
     static public int dayCount;
     public TMP_Text dayText;
+    public TMP_Text dayLoseText;
 
     private void Start()
     {
@@ -61,6 +62,7 @@ public class RandomInterests : MonoBehaviour
     private void Update()
     {
         dayText.text = dayCount.ToString();
+        dayLoseText.text = dayCount.ToString();
     }
 
     public void SetNewDay()

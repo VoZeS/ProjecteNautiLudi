@@ -91,7 +91,7 @@ public class NewsLogic : MonoBehaviour
                 break;
             case 1:
                 UpgradesLogic.newsQuantity = 5;
-                rectTransform.sizeDelta = new Vector2(750f, 2700f);
+                rectTransform.sizeDelta = new Vector2(750f,3000f);
                 scrollBar.value = 1;
 
                 for (int i = 0; i < 5; i++)
@@ -104,7 +104,7 @@ public class NewsLogic : MonoBehaviour
                 break;
             case 2:
                 UpgradesLogic.newsQuantity = 6;
-                rectTransform.sizeDelta = new Vector2(750f, 3200f);
+                rectTransform.sizeDelta = new Vector2(750f, 3800f);
                 scrollBar.value = 1;
 
                 for (int i = 0; i < 6; i++)
@@ -116,7 +116,7 @@ public class NewsLogic : MonoBehaviour
                 break;
             case 3:
                 UpgradesLogic.newsQuantity = 7;
-                rectTransform.sizeDelta = new Vector2(750f, 3700f);
+                rectTransform.sizeDelta = new Vector2(750f, 4600f);
                 scrollBar.value = 1;
 
                 for (int i = 0; i < 7; i++)

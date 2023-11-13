@@ -45,7 +45,7 @@ public class DisplayAllNews : MonoBehaviour
             foreach (NewsObject newsObject in newsObjects)
             {
                 // Selecciona una noticia aleatoria
-                News randomNews = newsList[Random.Range(0, newsList.Count)];
+                News randomNews = GetUnusedRandomNews();
 
                 // Asigna los datos de la noticia al GameObject
                 newsObject.DisplayNews(randomNews);
@@ -55,6 +55,38 @@ public class DisplayAllNews : MonoBehaviour
         else
         {
             Debug.LogWarning("La lista de noticias está vacía o no ha sido inicializada.");
+        }
+    }
+
+    private News GetUnusedRandomNews()
+    {
+        List<News> unusedNews = newsList.FindAll(news => !news.isSelected);
+
+        if (unusedNews.Count > 0)
+        {
+            // Selecciona una noticia aleatoria que aún no ha sido seleccionada
+            int randomIndex = Random.Range(0, unusedNews.Count);
+            News selectedNews = unusedNews[randomIndex];
+
+            // Marca la noticia como seleccionada para que no se repita
+            selectedNews.isSelected = true;
+
+            return selectedNews;
+        }
+        else
+        {
+            // Todas las noticias han sido seleccionadas, reinicia el estado
+            ResetNewsSelectionState();
+            // Selecciona una noticia aleatoria después de reiniciar el estado
+            return GetUnusedRandomNews();
+        }
+    }
+
+    private void ResetNewsSelectionState()
+    {
+        foreach (News news in newsList)
+        {
+            news.isSelected = false;
         }
     }
 }

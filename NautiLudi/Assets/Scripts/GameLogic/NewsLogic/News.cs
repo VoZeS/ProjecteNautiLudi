@@ -18,4 +18,6 @@ public class News
     public int internationalValue;
     public int moneyCost;
     public bool isBlocked = true;
+    public bool isSelected = false;
+
 }
