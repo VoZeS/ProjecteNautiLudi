@@ -8,12 +8,13 @@ public class NewsObject : MonoBehaviour
 {
     [Header("Visual")]
     public TMP_Text titleText;
-    public TMP_Text titleInfoText;
     public TMP_Text shortDescriptionText;
+    public TMP_Text newsCost;
+    [Space(10)]
+    public TMP_Text titleInfoText;
     public TMP_Text longDescriptionText;
     public Image newImage;
     public Button referenceLinkButton;
-    public TMP_Text newsCost;
 
     [Header("Logic")]
     public int socialValue;

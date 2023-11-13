@@ -1963,12 +1963,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.55
+  m_fontSize: 40
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
@@ -16773,12 +16773,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 1909053394}
-  titleInfoText: {fileID: 723890844}
   shortDescriptionText: {fileID: 333472480}
+  newsCost: {fileID: 1372737129}
+  titleInfoText: {fileID: 723890844}
   longDescriptionText: {fileID: 1740376166}
   newImage: {fileID: 875344731}
   referenceLinkButton: {fileID: 1653130221}
-  newsCost: {fileID: 1372737129}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -18653,12 +18653,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 2014952317}
-  titleInfoText: {fileID: 1433760021}
   shortDescriptionText: {fileID: 1793637830}
+  newsCost: {fileID: 209455118}
+  titleInfoText: {fileID: 1433760021}
   longDescriptionText: {fileID: 751671822}
   newImage: {fileID: 1668615562}
   referenceLinkButton: {fileID: 126156898}
-  newsCost: {fileID: 209455118}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -21000,12 +21000,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 1066859076}
-  titleInfoText: {fileID: 1454760430}
   shortDescriptionText: {fileID: 8613425}
+  newsCost: {fileID: 14826109}
+  titleInfoText: {fileID: 1454760430}
   longDescriptionText: {fileID: 1270652660}
   newImage: {fileID: 707872830}
   referenceLinkButton: {fileID: 2087199606}
-  newsCost: {fileID: 14826109}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -23072,12 +23072,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.55
+  m_fontSize: 40
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
@@ -26284,12 +26284,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 545244081}
-  titleInfoText: {fileID: 252477653}
   shortDescriptionText: {fileID: 1782298211}
+  newsCost: {fileID: 1652736626}
+  titleInfoText: {fileID: 252477653}
   longDescriptionText: {fileID: 1771944967}
   newImage: {fileID: 1225882872}
   referenceLinkButton: {fileID: 981086793}
-  newsCost: {fileID: 1652736626}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -27557,12 +27557,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 1977207704}
-  titleInfoText: {fileID: 569251289}
   shortDescriptionText: {fileID: 1751985990}
+  newsCost: {fileID: 1946428485}
+  titleInfoText: {fileID: 569251289}
   longDescriptionText: {fileID: 370955085}
   newImage: {fileID: 709032738}
   referenceLinkButton: {fileID: 909459353}
-  newsCost: {fileID: 1946428485}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -39340,6 +39340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   managerScript: {fileID: 0}
+  displayScript: {fileID: 1424875897}
   lowSocialInterest: {fileID: 379500152}
   midSocialInterest: {fileID: 1819501066}
   highSocialInterest: {fileID: 1152676952}
@@ -39439,6 +39440,7 @@ MonoBehaviour:
   - {fileID: 1832060898}
   - {fileID: 1563559494}
   - {fileID: 122647359}
+  companyName: {fileID: 1691480169}
   titleNewspaper:
   - {fileID: 1779403848}
   - {fileID: 871552011}
@@ -50991,12 +50993,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 542614178}
-  titleInfoText: {fileID: 1463869081}
   shortDescriptionText: {fileID: 1171795276}
+  newsCost: {fileID: 1057795503}
+  titleInfoText: {fileID: 1463869081}
   longDescriptionText: {fileID: 963228880}
   newImage: {fileID: 366396073}
   referenceLinkButton: {fileID: 1770745521}
-  newsCost: {fileID: 1057795503}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -51275,7 +51277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 58, y: -21}
+  m_AnchoredPosition: {x: 48.1, y: -21}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851777336
@@ -51332,7 +51334,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -55465,12 +55467,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.55
+  m_fontSize: 40
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
@@ -56179,12 +56181,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 1513342226}
-  titleInfoText: {fileID: 1813304151}
   shortDescriptionText: {fileID: 1761742490}
+  newsCost: {fileID: 551939332}
+  titleInfoText: {fileID: 1813304151}
   longDescriptionText: {fileID: 1975083014}
   newImage: {fileID: 1509402210}
   referenceLinkButton: {fileID: 1241703420}
-  newsCost: {fileID: 551939332}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0

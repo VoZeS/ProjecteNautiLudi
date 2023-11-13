@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class RandomInterests : MonoBehaviour
 {
     public GameManagement managerScript;
-
+    public DisplayAllNews displayScript;
 
 
     // SLIDERS
@@ -69,7 +69,7 @@ public class RandomInterests : MonoBehaviour
     {
         dayCount++;
         RandInterests();
-
+        displayScript.AssignRandomNews();
 
         if (managerScript != null)
             managerScript.SaveGame();

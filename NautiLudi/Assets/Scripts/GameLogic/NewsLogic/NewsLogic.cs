@@ -22,6 +22,7 @@ public class NewsLogic : MonoBehaviour
     //static public List<NewsObject> newsObjectSelectedList = new List<NewsObject>();
 
     [Header("Newspaper Panel")]
+    public TMP_Text companyName;
     public TMP_Text[] titleNewspaper;
     public TMP_Text[] shortNewspaperDescription;
     public Image[] newspaperImage;
@@ -140,11 +141,13 @@ public class NewsLogic : MonoBehaviour
 
     public void DisplaySelectedNews()
     {
+        companyName.text = ChooseNameLogic.nameString;
+
         for(int i = 0; i < newsSelectedList.Count; i++)
         {
             titleNewspaper[i].text = newsSelectedList[i].titleText.text;
             shortNewspaperDescription[i].text = newsSelectedList[i].shortDescriptionText.text;
-            //newspaperImage[i].sprite = newsSelectedList[i].newsImage;
+            newspaperImage[i].sprite = newsSelectedList[i].newImage.sprite;
         }
     }
 }

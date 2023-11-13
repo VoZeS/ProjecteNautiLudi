@@ -179,7 +179,7 @@ public class UpgradesLogic : MonoBehaviour
                 quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
                 quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
-                quantityCost = 0;
+                quantityCost = 550;
 
                 break;
             case 1:
@@ -187,7 +187,7 @@ public class UpgradesLogic : MonoBehaviour
                 quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
                 quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
-                quantityCost = 0;
+                quantityCost = 750;
 
                 break;
             case 2:
@@ -195,7 +195,7 @@ public class UpgradesLogic : MonoBehaviour
                 quantityLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
                 quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
-                quantityCost = 0;
+                quantityCost = 1000;
 
                 break;
             case 3:
@@ -209,7 +209,7 @@ public class UpgradesLogic : MonoBehaviour
                 quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
                 quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
-                quantityCost = 0;
+                quantityCost = 550;
 
                 break;
         }

@@ -138,7 +138,146 @@ public class NewsManager : MonoBehaviour
                 internationalValue = 3,
                 moneyCost = 175,
                 isBlocked = true},
+            
+            // ------------------------------------------------------ Noticia 8
+            new News { 
+                // 90 caracters
+                title = "A subhasta un barret que va portar Napoleó i que podria arribar als 800.000 euros.",
+                // 120 caracters
+                shortDescription = "Un barret de feltre negre amb forma de bicorn. És una peça que se subhastarà a finals de novembre a París.",
+                // 415 caracters
+                extendedDescription = "Segons han explicat, la peça podria sortir a la venda per 800.000 euros i es tracta d'un barret amb marca registrada per Napoleó, és a dir, que es portava 'en bataille', és a dir, paral·lel a les espatlles, i no perpendicular com els duien la majoria dels seus oficials.\n" +
+                "La venda la farà el 19 de novembre la casa de subhastes Osenat.",
+                newsImage = "Sprites/NewsImages/ImageNew8",
+                url = "https://www.ccma.cat/324/a-subhasta-un-barret-que-va-portar-napoleo-i-que-podria-arribar-als-800000-euros/noticia/3259619/",
+                socialValue = 2,
+                sportsValue = 1,
+                internationalValue = 3,
+                moneyCost = 150,
+                isBlocked = true},
+            
+            // ------------------------------------------------------ Noticia 9
+            new News { 
+                // 90 caracters
+                title = "Què ha convertit una petita illa del Pacífic en capital mundial de la dark web i el cibercrim.",
+                // 120 caracters
+                shortDescription = "Aquest petit atol sense gairebé connexió amb l'exterior se li va assignar un domini propi (.tk) que no havia demanat ni sabia o podia gestionar.",
+                // 415 caracters
+                extendedDescription = "Els responsables de Teletok van admetre que els va sorprendre l'èxit que tenia el seu domini, que de seguida va tenir més usuaris que la Xina, " +
+                "però al principi no sabien que al darrere començava a haver-hi el pitjor de la dark web, que s'aprofitava dels avantatges de poder registrar gratuïtament tantes webs com vulguessin amb el domini de Tokelau. ",
+                newsImage = "Sprites/NewsImages/ImageNew9",
+                url = "https://www.ccma.cat/324/que-ha-convertit-una-petita-illa-del-pacific-en-capital-mundial-de-la-dark-web-i-el-cibercrim/noticia/3259417/",
+                socialValue = 2,
+                sportsValue = 1,
+                internationalValue = 3,
+                moneyCost = 150,
+                isBlocked = true},
+            
+            // ------------------------------------------------------ Noticia 10
+            new News { 
+                // 90 caracters
+                title = "Llum verda de la Comissió Europea per negociar l'adhesió d'Ucraïna.",
+                // 120 caracters
+                shortDescription = "La Comissió Europea ha donat llum verda perquè el Consell obri negociacions amb els governs d'Ucraïna, Moldàvia i Bòsnia i Hercegovina.",
+                // 415 caracters
+                extendedDescription = "Les negociacions amb Ucraïna i Moldàvia ja es podrien obrir de forma immediata i, en el cas de Bòsnia i Hercegovina, quan hagi acomplert 'els criteris necessaris' per convertir-se en estat membre.\n" +
+                "La presidenta de la Comissió ha destacat, en un missatge a X, l'esforç que ha fet Ucraïna, malgrat la guerra amb Rússia, per adaptar el país i preparar-lo per entrar a la Unió Europea. Un esforç que també ha reconegut a Moldàvia. ",
+                newsImage = "Sprites/NewsImages/ImageNew10",
+                url = "https://www.ccma.cat/324/llum-verda-de-la-comissio-europea-per-negociar-ladhesio-ducraina/noticia/3259707/",
+                socialValue = 3,
+                sportsValue = 1,
+                internationalValue = 3,
+                moneyCost = 175,
+                isBlocked = true},
 
+            
+            // ------------------------------------------------------ Noticia 11
+            new News { 
+                // 90 caracters
+                title = "Calafell, Reus i Lleida es classifiquen per a la fase regular de la Champions.",
+                // 120 caracters
+                shortDescription = "L'hoquei català tindrà quatre representants a la màxima competició continental.",
+                // 415 caracters
+                extendedDescription = "Al pavelló Joan Ortoll de Calafell, on s'ha disputat el grup D, l'equip amfitrió s'ha imposat al La Vendéenne (4-1) per acabar primer de grup i el Reus també ha golejat el Sarzana (7-3). També jugant com a amfitrió, en el seu cas del grup C, el Lleida s'ha desfet del Noisy (4-1).\n" +
+                "L'Igualada, per la seva banda, ha superat el Diessbach (3-1) mentre el Noia ha aconseguit una golejada estèril contra el Herringen (8-0). ",
+                newsImage = "Sprites/NewsImages/ImageNew11",
+                url = "https://www.ccma.cat/esport3/calafell-reus-i-lleida-es-classifiquen-per-a-la-fase-regular-de-la-champions/noticia/3259190/ ",
+                socialValue = 2,
+                sportsValue = 3,
+                internationalValue = 3,
+                moneyCost = 200,
+                isBlocked = true},
+
+            
+            // ------------------------------------------------------ Noticia 12
+            new News { 
+                // 90 caracters
+                title = "Els tres motius pels quals el Madrid descarta el fitxatge de Mbappé.",
+                // 120 caracters
+                shortDescription = "La SER ha informat aquest dimecres que el club hauria descartat el fitxatge del davanter a finals d'aquesta temporada.",
+                // 415 caracters
+                extendedDescription = "En aquest sentit, segons la SER, el Madrid ha tingut en compte tres raons: la imatge del jugador entre el madridisme, l'escala salarial de la plantilla i la política de fitxatges actual.\n" +
+                "La setmana passada, el Madrid ja va emetre un comunicat desmentint que estigués negociant amb Mbappé, però es va interpretar com un moviment per cobrir-se les esquenes de cara a la FIFA.",
+                newsImage = "Sprites/NewsImages/ImageNew12",
+                url = "https://www.ccma.cat/esport3/els-tres-motius-pels-que-el-madrid-descarta-el-fitxatge-de-mbappe/noticia/3259835/ ",
+                socialValue = 1,
+                sportsValue = 3,
+                internationalValue = 2,
+                moneyCost = 150,
+                isBlocked = true},
+            
+            
+            // ------------------------------------------------------ Noticia 13
+            new News { 
+                // 90 caracters
+                title = "Max Verstappen s'imposa també en el Gran Premi de Sao Paulo i Fernando Alonso torna al podi.",
+                // 120 caracters
+                shortDescription = "El tricampió mundial ha dominat de principi a final el Gran Premi de Sao Paulo per continuar trencant registres.",
+                // 415 caracters
+                extendedDescription = "Darrere Verstappen, Lando Norris no ha tingut problemes per consolidar el segon lloc, però on hi ha hagut una bona batalla ha estat en el tercer lloc: Fernando Alonso i Checo l'han lluitat fins al final.\n" +
+                "El mexicà ha aconseguit avançar el pilot d'Aston Martin, però a l'últim revolt, l'asturià l'hi ha tornat amb un moviment de màxim nivell. ",
+                newsImage = "Sprites/NewsImages/ImageNew13",
+                url = "https://www.ccma.cat/esport3/en-directe-gp-de-sao-paulo-de-f1/noticia/3259020/",
+                socialValue = 1,
+                sportsValue = 3,
+                internationalValue = 2,
+                moneyCost = 150,
+                isBlocked = true},
+            
+            
+            // ------------------------------------------------------ Noticia 14
+            new News { 
+                // 90 caracters
+                title = "El miracle del Joventut s'esvaeix davant dels London Lions (76-87).",
+                // 120 caracters
+                shortDescription = "El Joventut no ha pogut amb els London Lions i ha caigut per 76 a 87 a l'Olímpic de Badalona en partit de l'Eurocopa de bàsquet.",
+                // 415 caracters
+                extendedDescription = "El primer període ha estat elèctric. Amb un encert espectacular en el tir exterior i un joc molt viu els badalonins han arribat als 10 minuts amb un esperençador 28 a 20. Però un demolidor parcial de 8 a 24 ha fet baixar del núvol als catalans.\n" +
+                "Els Lions han apujat considerablement la seva potència defensiva i han bloquejat l'atac català. L'aportació del pivot Gabe Olaseni ha estat fonamental.",
+                newsImage = "Sprites/NewsImages/ImageNew14",
+                url = "https://www.ccma.cat/esport3/el-miracle-del-joventut-sesvaeix-davant-dels-london-lions-76-87/noticia/3259856/",
+                socialValue = 2,
+                sportsValue = 3,
+                internationalValue = 3,
+                moneyCost = 200,
+                isBlocked = true},
+            
+            // ------------------------------------------------------ Noticia 15
+            new News { 
+                // 90 caracters
+                title = "Iga Swiatek recupera el número 1 mundial.",
+                // 120 caracters
+                shortDescription = "Era la gran favorita per coronar-se campiona i no ha fallat. ",
+                // 415 caracters
+                extendedDescription = "Pegula, número 4 del món i que havia arribat a la final després de signar un torneig sensacional, només ha resistit el tenis de la polonesa fins al segon joc del partit. Era l'1 a 1.\n" +
+                "Ningú es podia imaginar aleshores que Swiatek encadenaria 11 jocs consecutius per tancar la final amb un espectacular 6 a 1 i 6 a 0 en una hora exacta de partit.",
+                newsImage = "Sprites/NewsImages/ImageNew15",
+                url = "https://www.ccma.cat/esport3/iga-swiatek-recupera-el-numero-1-mundial/noticia/3259403/ ",
+                socialValue = 2,
+                sportsValue = 3,
+                internationalValue = 3,
+                moneyCost = 200,
+                isBlocked = true},
             
         };
 

@@ -38,7 +38,7 @@ public class DisplayAllNews : MonoBehaviour
         AssignRandomNews();
     }
 
-    private void AssignRandomNews()
+    public void AssignRandomNews()
     {
         if (newsList != null && newsList.Count > 0)
         {
