@@ -6,6 +6,9 @@ using UnityEngine;
 public class MoneyLogic : MonoBehaviour
 {
     public TMP_Text moneyDisplay;
+    [Space(10)]
+    public TMP_Text PC_moneyDisplay;
+
     static public double totalMoney;
 
     static public double moneyGained;
@@ -13,7 +16,14 @@ public class MoneyLogic : MonoBehaviour
 
     private void Update()
     {
-        moneyDisplay.text = totalMoney.ToString("F2") + "€";
+        if(UIDisplay.isPC)
+        {
+            PC_moneyDisplay.text = totalMoney.ToString("F2") + "€";
+        }
+        else
+        {
+            moneyDisplay.text = totalMoney.ToString("F2") + "€";
+        }
 
         if (totalMoney < 0)
             SetMoneyTextColor(new Color(230 / 255f, 100 / 255f, 100 / 255f, 1)); // RED
@@ -45,6 +55,13 @@ public class MoneyLogic : MonoBehaviour
 
     public void SetMoneyTextColor(Color color)
     {
-        moneyDisplay.color = color;
+        if (UIDisplay.isPC)
+        {
+            PC_moneyDisplay.color = color;
+        }
+        else
+        {
+            moneyDisplay.color = color;
+        }
     }
 }

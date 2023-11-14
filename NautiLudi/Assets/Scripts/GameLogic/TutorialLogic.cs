@@ -6,7 +6,8 @@ public class TutorialLogic : MonoBehaviour
 {
     public GameManagement managerScript;
 
-    public GameObject[] tutorialImages;
+    public GameObject[] tutorialMobileImages;
+    public GameObject[] tutorialPCImages;
 
     // Start is called before the first frame update
     void Start()
@@ -28,20 +29,25 @@ public class TutorialLogic : MonoBehaviour
 
         if (GameManagement.hasPlayed)
         {
-            for (int i = 0; i < tutorialImages.Length; i++)
+            for (int i = 0; i < tutorialMobileImages.Length; i++)
             {
-                tutorialImages[i].SetActive(false);
+                tutorialMobileImages[i].SetActive(false);
+                tutorialPCImages[i].SetActive(false);
             }
         }
         else if (!GameManagement.hasPlayed)
-            tutorialImages[0].SetActive(true);
+        {
+            tutorialMobileImages[0].SetActive(true);
+            tutorialPCImages[0].SetActive(true);
+
+        }
     }
 
     public void SetPlayability(bool played)
     {
         GameManagement.hasPlayed = played;
 
-        if(managerScript != null)
+        if (managerScript != null)
             managerScript.SaveGame();
     }
 
@@ -49,7 +55,8 @@ public class TutorialLogic : MonoBehaviour
     {
         if (!GameManagement.hasPlayed)
         {
-            tutorialImages[2].SetActive(true);
+            tutorialMobileImages[2].SetActive(true);
+            tutorialPCImages[2].SetActive(true);
         }
     }
 }

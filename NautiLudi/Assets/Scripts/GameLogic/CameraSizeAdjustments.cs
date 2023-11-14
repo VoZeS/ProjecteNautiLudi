@@ -26,7 +26,6 @@ public class CameraSizeAdjustments : MonoBehaviour
     void Start()
     {
         mainCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
-        //AdjustButtonsSize();
 
         UpdateScreenSize();
         AdjustCameraSize();
@@ -48,35 +47,13 @@ public class CameraSizeAdjustments : MonoBehaviour
 
     void AdjustCameraSize()
     {
-        float targetAspect = targetWidth / targetHeight;
-        float currentAspect = currentWidth / currentHeight;
-
-        if (Mathf.Abs(targetAspect - currentAspect) < aspectRatioThreshold)
+        if (UIDisplay.isPC)
         {
-            //mainCamera.orthographicSize = baseDesktopSize;
+            camMovScript.SetCamSize(baseDesktopSize);
 
-            if (camMovScript.end)
-            {
-                //camMovScript.timer += Time.deltaTime;
-                //float t = Mathf.Clamp01(camMovScript.timer / camMovScript.zoomDuration);
-
-                //camMovScript.cam.orthographicSize = Mathf.Lerp(baseDesktopSize, baseDesktopSize - 30f, t);
-
-                camMovScript.SetCamSize(baseDesktopSize);
-
-            }
-            else
-            {
-                camMovScript.SetCamSize(baseDesktopSize);
-
-            }
         }
         else
         {
-            //float baseSize = (currentWidth < currentHeight) ? baseMobileSize : baseDesktopSize;
-            //float newSize = baseSize * (targetAspect / currentAspect);
-            //mainCamera.orthographicSize = baseMobileSize;
-
             if (camMovScript.end)
             {
                 camMovScript.timer += Time.deltaTime;
@@ -90,15 +67,5 @@ public class CameraSizeAdjustments : MonoBehaviour
 
             }
         }
-    }
-
-    void AdjustButtonsSize()
-    {
-        //float widthRatio = currentWidth / targetWidth;
-        //float heightRatio = currentHeight / targetHeight;
-
-        // Buttons config
-        //buttonRectTransform.anchoredPosition += new Vector2(positionOffset.x * widthRatio, positionOffset.y * heightRatio);
-        //buttonRectTransform.sizeDelta += new Vector2(sizeOffset.x * widthRatio, sizeOffset.y * heightRatio);
     }
 }

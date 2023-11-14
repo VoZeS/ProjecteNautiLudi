@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class DisplayAllNews : MonoBehaviour
 {
     public List<News> newsList;
-    public List<NewsObject> newsObjects = new List<NewsObject>();
+    public List<NewsObject> newsMobileObjects = new List<NewsObject>();
+    public List<NewsObject> newsPCObjects = new List<NewsObject>();
 
     [System.Serializable]
     private class NewsList
@@ -42,14 +43,29 @@ public class DisplayAllNews : MonoBehaviour
     {
         if (newsList != null && newsList.Count > 0)
         {
-            foreach (NewsObject newsObject in newsObjects)
+            if(UIDisplay.isPC) // PC
             {
-                // Selecciona una noticia aleatoria
-                News randomNews = GetUnusedRandomNews();
+                foreach (NewsObject newsObject in newsPCObjects)
+                {
+                    // Selecciona una noticia aleatoria
+                    News randomNews = GetUnusedRandomNews();
 
-                // Asigna los datos de la noticia al GameObject
-                newsObject.DisplayNews(randomNews);
-                newsObject.GetNewsData(randomNews);
+                    // Asigna los datos de la noticia al GameObject
+                    newsObject.DisplayNews(randomNews);
+                    newsObject.GetNewsData(randomNews);
+                }
+            }
+            else  // MOBILE
+            {
+                foreach (NewsObject newsObject in newsMobileObjects)
+                {
+                    // Selecciona una noticia aleatoria
+                    News randomNews = GetUnusedRandomNews();
+
+                    // Asigna los datos de la noticia al GameObject
+                    newsObject.DisplayNews(randomNews);
+                    newsObject.GetNewsData(randomNews);
+                }
             }
         }
         else

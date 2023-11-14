@@ -14,8 +14,11 @@ public class UpgradesLogic : MonoBehaviour
     static public int quantityLevel;
     public Button quantityButton;
     public Image[] quantityLevelImage;
+    public Button PC_quantityButton;
+    public Image[] PC_quantityLevelImage;
     [Space(10)]
     public TMP_Text quantityCostDisplay;
+    public TMP_Text PC_quantityCostDisplay;
     public int quantityCost;
 
     [Header("Free News Upgrade")]
@@ -23,20 +26,27 @@ public class UpgradesLogic : MonoBehaviour
     static public int freeLevel;
     public Button freeButton;
     public Image[] freeLevelImage;
+    public Button PC_freeButton;
+    public Image[] PC_freeLevelImage;
     [Space(10)]
     public TMP_Text freeCostDisplay;
+    public TMP_Text PC_freeCostDisplay;
     public int freeCost;
 
     [Header("More Impressions Upgrade")]
     static public int impressionsLevel;
     public Button impressionsButton;
     public Image[] impressionsLevelImage;
+    public Button PC_impressionsButton;
+    public Image[] PC_impressionsLevelImage;
     [Space(10)]
     public TMP_Text impressionsCostDisplay;
+    public TMP_Text PC_impressionsCostDisplay;
     public int impressionsCost;
 
     public AudioSource error;
     public AudioSource success;
+
     private void Start()
     {
         // ----------------------------------------------------------------- GAME MANAGER
@@ -75,31 +85,73 @@ public class UpgradesLogic : MonoBehaviour
     private void Update()
     {
         // ----------------------------------------------------------------- QUANTITY UPGRADE
-        if (quantityLevel < 3)
-            quantityCostDisplay.text = quantityCost.ToString();
-        else if(quantityLevel >= 3)
+        if(UIDisplay.isPC)
         {
-            quantityCostDisplay.text = "Màxim";
-            quantityButton.gameObject.SetActive(false);
-        }  
-        
-        // ----------------------------------------------------------------- FREE NEWS UPGRADE
-        if (freeLevel < 2)
-            freeCostDisplay.text = freeCost.ToString();
-        else if(freeLevel >= 2)
+            if (quantityLevel < 3)
+                PC_quantityCostDisplay.text = quantityCost.ToString();
+            else if (quantityLevel >= 3)
+            {
+                PC_quantityCostDisplay.text = "Màxim";
+                PC_quantityButton.gameObject.SetActive(false);
+            }
+        }
+        else
         {
-            freeCostDisplay.text = "Màxim";
-            freeButton.gameObject.SetActive(false);
+            if (quantityLevel < 3)
+                quantityCostDisplay.text = quantityCost.ToString();
+            else if (quantityLevel >= 3)
+            {
+                quantityCostDisplay.text = "Màxim";
+                quantityButton.gameObject.SetActive(false);
+            }
         }
         
+        
         // ----------------------------------------------------------------- FREE NEWS UPGRADE
-        if (impressionsLevel < 3)
-            impressionsCostDisplay.text = impressionsCost.ToString();
-        else if(impressionsLevel >= 3)
+        if(UIDisplay.isPC)
         {
-            impressionsCostDisplay.text = "Màxim";
-            impressionsButton.gameObject.SetActive(false);
+            if (freeLevel < 2)
+                PC_freeCostDisplay.text = freeCost.ToString();
+            else if (freeLevel >= 2)
+            {
+                PC_freeCostDisplay.text = "Màxim";
+                PC_freeButton.gameObject.SetActive(false);
+            }
         }
+        else
+        {
+            if (freeLevel < 2)
+                freeCostDisplay.text = freeCost.ToString();
+            else if (freeLevel >= 2)
+            {
+                freeCostDisplay.text = "Màxim";
+                freeButton.gameObject.SetActive(false);
+            }
+        }
+        
+        
+        // ----------------------------------------------------------------- FREE NEWS UPGRADE
+        if(UIDisplay.isPC)
+        {
+            if (impressionsLevel < 3)
+                PC_impressionsCostDisplay.text = impressionsCost.ToString();
+            else if (impressionsLevel >= 3)
+            {
+                PC_impressionsCostDisplay.text = "Màxim";
+                PC_impressionsButton.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            if (impressionsLevel < 3)
+                impressionsCostDisplay.text = impressionsCost.ToString();
+            else if (impressionsLevel >= 3)
+            {
+                impressionsCostDisplay.text = "Màxim";
+                impressionsButton.gameObject.SetActive(false);
+            }
+        }
+       
 
     }
 
@@ -175,39 +227,89 @@ public class UpgradesLogic : MonoBehaviour
         switch (quantityLevel)
         {
             case 0:
-                quantityLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
-                quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
-                quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
+                if(!UIDisplay.isPC)
+                {
+                    quantityLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                else
+                {
+                    PC_quantityLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                
                 quantityCost = 550;
 
                 break;
             case 1:
-                quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
-                quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
+                if(!UIDisplay.isPC)
+                {
+                    quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                else
+                {
+                    PC_quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                
                 quantityCost = 750;
 
                 break;
             case 2:
-                quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                quantityLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
+                if(!UIDisplay.isPC)
+                {
+                    quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    quantityLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                else
+                {
+                    PC_quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_quantityLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                }
+               
                 quantityCost = 1000;
 
                 break;
             case 3:
-                quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                quantityLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                quantityLevelImage[2].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                if (!UIDisplay.isPC)
+                {
+                    quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    quantityLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    quantityLevelImage[2].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                }
+                else
+                {
+                    PC_quantityLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_quantityLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_quantityLevelImage[2].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                }
 
                 break;
             default:
-                quantityLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
-                quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
-                quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                if (!UIDisplay.isPC)
+                {
+                    quantityLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+
+                }
+                else
+                {
+                    PC_quantityLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_quantityLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_quantityLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+
+                }
 
                 quantityCost = 550;
 
@@ -220,24 +322,53 @@ public class UpgradesLogic : MonoBehaviour
         switch (freeLevel)
         {
             case 0:
-                freeLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
-                freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+
+                if (!UIDisplay.isPC)
+                {
+                    freeLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                else
+                {
+                    PC_freeLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                }
+
                 //freeLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
                 freeCost = 1500;
 
                 break;
             case 1:
-                freeLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+
+                if (!UIDisplay.isPC)
+                {
+                    freeLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                else
+                {
+                    PC_freeLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                }
+               
                 //freeLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
                 freeCost = 3000;
 
                 break;
             case 2:
-                freeLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                freeLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                if (!UIDisplay.isPC)
+                {
+                    freeLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    freeLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                }
+                else
+                {
+                    PC_freeLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_freeLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                }
+                
                 //freeLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
                 //freeCost = 3000;
@@ -250,8 +381,17 @@ public class UpgradesLogic : MonoBehaviour
 
                 //break;
             default:
-                freeLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
-                freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                if (!UIDisplay.isPC)
+                {
+                    freeLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                else
+                {
+                    PC_freeLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_freeLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                }
+               
                 //freeLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
 
                 freeCost = 1500;
@@ -265,39 +405,91 @@ public class UpgradesLogic : MonoBehaviour
         switch (impressionsLevel)
         {
             case 0:
-                impressionsLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
-                impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
-                impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
-
+                if (!UIDisplay.isPC)
+                {
+                    impressionsLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                else
+                {
+                    PC_impressionsLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                }
+                
                 impressionsCost = 2000;
 
                 break;
             case 1:
-                impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
-                impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                if (!UIDisplay.isPC)
+                {
+                    impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+
+                }
+                else
+                {
+                    PC_impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+
+                }
 
                 impressionsCost = 4000;
 
                 break;
             case 2:
-                impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                impressionsLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                if (!UIDisplay.isPC)
+                {
+                    impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    impressionsLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+
+                }
+                else
+                {
+                    PC_impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_impressionsLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+
+                }
 
                 impressionsCost = 8000;
 
                 break;
             case 3:
-                impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                impressionsLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
-                impressionsLevelImage[2].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                if (!UIDisplay.isPC)
+                {
+                    impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    impressionsLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    impressionsLevelImage[2].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                }
+                else
+                {
+                    PC_impressionsLevelImage[0].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_impressionsLevelImage[1].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                    PC_impressionsLevelImage[2].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1); // GREEN
+                }
+               
 
                 break;
             default:
-                impressionsLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
-                impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
-                impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+                if (!UIDisplay.isPC)
+                {
+                    impressionsLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+
+                }
+                else
+                {
+                    PC_impressionsLevelImage[0].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_impressionsLevelImage[1].color = new Color(1, 1, 1, 1); //WHITE
+                    PC_impressionsLevelImage[2].color = new Color(1, 1, 1, 1); //WHITE
+
+                }
 
                 impressionsCost = 2000;
 
