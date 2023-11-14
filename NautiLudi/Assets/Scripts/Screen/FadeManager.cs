@@ -63,13 +63,14 @@ public class FadeManager : MonoBehaviour
             Color newColor = panelImage.color;
             newColor.a = Mathf.Lerp(actualAlpha, targetAlpha, t);
             panelImage.color = newColor;
-            nightTime.Play();
 
             if (t >= 1.0f)
             {
                 isFadingToBlack = false;
                 if (targetAlpha == 1.0f) // Fade in completed
                 {
+                    nightTime.Play();
+
                     bottomBackgroundUI.SetActive(true);
 
                     if (WinLoseManager.hasLost)
@@ -94,6 +95,8 @@ public class FadeManager : MonoBehaviour
                 }
                 else if (targetAlpha == 0.0f) // Fade out completed
                 {
+                    //nightTime.Stop();
+
                     isFadingToBlack = false;
                     gameObject.SetActive(false);
 
@@ -112,8 +115,7 @@ public class FadeManager : MonoBehaviour
         buttonScript.WinLose_VisibleFading();
         interestScript.SetNewDay();
 
-        nightTime.Stop();
-        //dayTime.Play();
+        dayTime.Play();
 
         ResetNews();
     }

@@ -17,7 +17,7 @@ public class ScoreLogic : MonoBehaviour
         newWins = new double[NewsLogic.newsSelectedList.Count];
 
         //Phase 0: Stablish Reward
-        maxMoneyReward = 500;
+        maxMoneyReward = 1000;
         for (int j = 0; j < NewsLogic.newsSelectedList.Count; j++)
         {
             maxMoneyReward += NewsLogic.newsSelectedList[j].moneyCost;

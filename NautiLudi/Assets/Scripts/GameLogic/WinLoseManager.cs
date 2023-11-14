@@ -82,19 +82,19 @@ public class WinLoseManager : MonoBehaviour
             totalBal += ScoreLogic.newWins[i];
         }
 
-        if (totalBal >= 0)
+        if (totalBal >= 0) // ---------------------------------------- WIN
         {
             totalBalance.text = "+" + totalBal.ToString("F2") + "€";
             totalBalance.color = new Color(60 / 255f, 180 / 255f, 70 / 255f, 1); // GREEN
 
-            moneyGained.PlayDelayed(4);  
+            moneyGained.Play();  
         }
-        else if (totalBal < 0)
+        else if (totalBal < 0) // ------------------------------------- LOSE
         {
             totalBalance.text = totalBal.ToString() + "€";
             totalBalance.color = new Color(200 / 255f, 50 / 255f, 50 / 255f, 1); // RED
 
-            moneyLost.PlayDelayed(4);
+            moneyLost.Play();
         }
 
         actualMoney.text = MoneyLogic.totalMoney.ToString("F2") + "€";
