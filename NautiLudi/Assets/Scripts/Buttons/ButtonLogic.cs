@@ -51,7 +51,6 @@ public class ButtonLogic : MonoBehaviour
         }
         
     }
-
     public void Start_InvisibleFading()
     {
         fadingScript.StartToInvisibleFading(startImages);
