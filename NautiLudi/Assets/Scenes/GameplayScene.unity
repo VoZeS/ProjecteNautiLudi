@@ -3181,12 +3181,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51635481}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 593.89, y: 164.92, z: -574.6}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 14.797363, y: 3.50177, z: -1.6599121}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &53594209
 GameObject:
@@ -6339,8 +6339,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 485625708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.19319232}
-  m_AnchorMax: {x: 1, y: 0.80680776}
+  m_AnchorMin: {x: 0, y: 0.19316545}
+  m_AnchorMax: {x: 1, y: 0.8068346}
   m_AnchoredPosition: {x: 0.000091552734, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8245,12 +8245,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123295145}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 595.9, y: 165.54, z: -550.49}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 16.807373, y: 4.121765, z: 22.450073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &125265367
 GameObject:
@@ -8673,10 +8673,10 @@ RectTransform:
   - {fileID: 865760856}
   m_Father: {fileID: 924818834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6268491, y: 0.208}
-  m_AnchorMax: {x: 0.74263686, y: 0.909711}
-  m_AnchoredPosition: {x: -67.39, y: -65.504}
-  m_SizeDelta: {x: -15.9198, y: -67.900024}
+  m_AnchorMin: {x: 0.45220494, y: 0.208}
+  m_AnchorMax: {x: 0.5573852, y: 0.8428555}
+  m_AnchoredPosition: {x: -1, y: -56.148003}
+  m_SizeDelta: {x: -1.9197998, y: -50.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &128119814
 GameObject:
@@ -10812,6 +10812,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 752002259}
   newImage: {fileID: 930677592}
   referenceLinkButton: {fileID: 1635731964}
+  lowSocialInterest: {fileID: 95334398}
+  midSocialInterest: {fileID: 1696256976}
+  highSocialInterest: {fileID: 786752196}
+  lowSportsInterest: {fileID: 60657575}
+  midSportsInterest: {fileID: 1930725553}
+  highSportsInterest: {fileID: 53810812}
+  lowInterInterest: {fileID: 335223235}
+  midInterInterest: {fileID: 2007168269}
+  highInterInterest: {fileID: 1570762824}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -12081,12 +12090,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187613398}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 567.42, y: 167.23, z: -537.9}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.672668, y: 5.8117676, z: 35.04004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &189457740
 GameObject:
@@ -21490,6 +21499,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 90142921}
   newImage: {fileID: 242565159}
   referenceLinkButton: {fileID: 694442169}
+  lowSocialInterest: {fileID: 1532874683}
+  midSocialInterest: {fileID: 1656812544}
+  highSocialInterest: {fileID: 1556247097}
+  lowSportsInterest: {fileID: 1721274291}
+  midSportsInterest: {fileID: 2015151171}
+  highSportsInterest: {fileID: 1300888144}
+  lowInterInterest: {fileID: 1649118953}
+  midInterInterest: {fileID: 1560231457}
+  highInterInterest: {fileID: 1512278451}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -21957,7 +21975,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22705,12 +22723,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352850137}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 574.45, y: 167.23, z: -547.54}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -4.642639, y: 5.8117676, z: 25.400085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &353263897
 GameObject:
@@ -23214,6 +23232,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 319910299}
   newImage: {fileID: 273976394}
   referenceLinkButton: {fileID: 1779247473}
+  lowSocialInterest: {fileID: 160529251}
+  midSocialInterest: {fileID: 1287223310}
+  highSocialInterest: {fileID: 82631134}
+  lowSportsInterest: {fileID: 1371585017}
+  midSportsInterest: {fileID: 262181663}
+  highSportsInterest: {fileID: 233356212}
+  lowInterInterest: {fileID: 968762467}
+  midInterInterest: {fileID: 1767497569}
+  highInterInterest: {fileID: 1391695904}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -31039,7 +31066,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31102,7 +31129,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &512058863
@@ -32100,7 +32127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -202}
+  m_AnchoredPosition: {x: -15.999985, y: -202}
   m_SizeDelta: {x: -159.59991, y: 263.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &525426253
@@ -33386,7 +33413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.234}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.45, y: -1988.574}
+  m_AnchoredPosition: {x: 457.45, y: -1988.7892}
   m_SizeDelta: {x: 700, y: 432.8867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547941366
@@ -33408,6 +33435,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 1740376166}
   newImage: {fileID: 875344731}
   referenceLinkButton: {fileID: 1653130221}
+  lowSocialInterest: {fileID: 1796808588}
+  midSocialInterest: {fileID: 1527861895}
+  highSocialInterest: {fileID: 588464236}
+  lowSportsInterest: {fileID: 1656803674}
+  midSportsInterest: {fileID: 1933473063}
+  highSportsInterest: {fileID: 1350096369}
+  lowInterInterest: {fileID: 400422131}
+  midInterInterest: {fileID: 1776186184}
+  highInterInterest: {fileID: 2146581433}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -36696,10 +36732,10 @@ RectTransform:
   - {fileID: 1693841725}
   m_Father: {fileID: 924818834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.29542458, y: 0.17271093}
-  m_AnchorMax: {x: 0.4072123, y: 0.909711}
-  m_AnchoredPosition: {x: 46.313995, y: -68.336}
-  m_SizeDelta: {x: -12.9198, y: -76.900024}
+  m_AnchorMin: {x: 0.5606148, y: 0.17271093}
+  m_AnchorMax: {x: 0.7345655, y: 0.88600004}
+  m_AnchoredPosition: {x: 0, y: -62.952003}
+  m_SizeDelta: {x: -90.9198, y: -70.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &602429913
 GameObject:
@@ -37883,7 +37919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.234}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.45, y: -1645.1969}
+  m_AnchoredPosition: {x: 457.45, y: -1645.3729}
   m_SizeDelta: {x: 700, y: 432.8867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &626168331
@@ -37905,6 +37941,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 751671822}
   newImage: {fileID: 1668615562}
   referenceLinkButton: {fileID: 126156898}
+  lowSocialInterest: {fileID: 308142946}
+  midSocialInterest: {fileID: 288971141}
+  highSocialInterest: {fileID: 1391351885}
+  lowSportsInterest: {fileID: 1207510205}
+  midSportsInterest: {fileID: 494998090}
+  highSportsInterest: {fileID: 1614461902}
+  lowInterInterest: {fileID: 636276492}
+  midInterInterest: {fileID: 1839855444}
+  highInterInterest: {fileID: 461508902}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -40619,7 +40664,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 94566778}
   m_Direction: 2
   m_Value: 0.5
-  m_Size: 0.61361545
+  m_Size: 0.6136691
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -42381,12 +42426,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705825674}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 579.09265, y: 161.41823, z: -572.94006}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707872828
 GameObject:
@@ -43414,7 +43459,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.378}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.45, y: -615.0656}
+  m_AnchoredPosition: {x: 457.45, y: -615.1243}
   m_SizeDelta: {x: 700, y: 432.8867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726131880
@@ -43436,6 +43481,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 1270652660}
   newImage: {fileID: 707872830}
   referenceLinkButton: {fileID: 2087199606}
+  lowSocialInterest: {fileID: 1986448991}
+  midSocialInterest: {fileID: 1955733056}
+  highSocialInterest: {fileID: 2089459319}
+  lowSportsInterest: {fileID: 190610125}
+  midSportsInterest: {fileID: 177346387}
+  highSportsInterest: {fileID: 1254505588}
+  lowInterInterest: {fileID: 1495934807}
+  midInterInterest: {fileID: 1741775718}
+  highInterInterest: {fileID: 1443654718}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -43922,7 +43976,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -43985,7 +44039,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &731811132
@@ -44977,7 +45031,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -45040,7 +45094,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &749493635
@@ -47207,7 +47261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.280029, y: -49.55652}
+  m_AnchoredPosition: {x: 12.280029, y: -49.556396}
   m_SizeDelta: {x: 0.15999794, y: -645.71313}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &775602933
@@ -47902,7 +47956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.589}
   m_AnchorMin: {x: 0, y: 0.46386525}
   m_AnchorMax: {x: 1, y: 0.84000003}
-  m_AnchoredPosition: {x: -10.998505, y: 7.500061}
+  m_AnchoredPosition: {x: -10.998535, y: 7.500061}
   m_SizeDelta: {x: -63.900024, y: 24.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &787640469
@@ -48813,8 +48867,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1391662383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.19998102}
-  m_AnchorMax: {x: 1, y: 0.8000191}
+  m_AnchorMin: {x: 0, y: 0.199981}
+  m_AnchorMax: {x: 1, y: 0.800019}
   m_AnchoredPosition: {x: 0.000091552734, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -51553,7 +51607,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -53865,7 +53919,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.45
+  m_fontSize: 18
   m_fontSizeBase: 48.6
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -56123,7 +56177,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.234}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.45, y: -2331.951}
+  m_AnchoredPosition: {x: 457.45, y: -2332.2053}
   m_SizeDelta: {x: 700, y: 432.8867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953263965
@@ -56145,6 +56199,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 1771944967}
   newImage: {fileID: 1225882872}
   referenceLinkButton: {fileID: 981086793}
+  lowSocialInterest: {fileID: 742358682}
+  midSocialInterest: {fileID: 1439760089}
+  highSocialInterest: {fileID: 512916388}
+  lowSportsInterest: {fileID: 935393045}
+  midSportsInterest: {fileID: 794673561}
+  highSportsInterest: {fileID: 2017569723}
+  lowInterInterest: {fileID: 1777618858}
+  midInterInterest: {fileID: 782510431}
+  highInterInterest: {fileID: 1722061845}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -56518,11 +56581,11 @@ Transform:
   m_GameObject: {fileID: 962240275}
   serializedVersion: 2
   m_LocalRotation: {x: 0.040963843, y: -0.9249818, z: 0.10435393, w: 0.36309913}
-  m_LocalPosition: {x: 629.3057, y: 179.6896, z: -538.18005}
+  m_LocalPosition: {x: 50.213074, y: 18.271378, z: 34.76001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 12.873, y: -47.135, z: 0}
 --- !u!108 &962240277
 Light:
@@ -57363,6 +57426,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 290545146}
   newImage: {fileID: 93883278}
   referenceLinkButton: {fileID: 260271053}
+  lowSocialInterest: {fileID: 1792499321}
+  midSocialInterest: {fileID: 1313417049}
+  highSocialInterest: {fileID: 515773383}
+  lowSportsInterest: {fileID: 1818711639}
+  midSportsInterest: {fileID: 1796512452}
+  highSportsInterest: {fileID: 996167489}
+  lowInterInterest: {fileID: 1499543767}
+  midInterInterest: {fileID: 1225121410}
+  highInterInterest: {fileID: 32823956}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -58639,7 +58711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.173}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.45, y: -958.4427}
+  m_AnchoredPosition: {x: 457.45, y: -958.5405}
   m_SizeDelta: {x: 700, y: 432.8867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986373377
@@ -58661,6 +58733,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 370955085}
   newImage: {fileID: 709032738}
   referenceLinkButton: {fileID: 909459353}
+  lowSocialInterest: {fileID: 940914785}
+  midSocialInterest: {fileID: 832341353}
+  highSocialInterest: {fileID: 1734048503}
+  lowSportsInterest: {fileID: 1338923415}
+  midSportsInterest: {fileID: 1558357112}
+  highSportsInterest: {fileID: 1294252623}
+  lowInterInterest: {fileID: 1531034141}
+  midInterInterest: {fileID: 1811364202}
+  highInterInterest: {fileID: 1856463708}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -60423,7 +60504,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -64802,10 +64883,10 @@ RectTransform:
   - {fileID: 260059242}
   m_Father: {fileID: 966844189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.29542458, y: 0.17271093}
-  m_AnchorMax: {x: 0.4072123, y: 0.909711}
-  m_AnchoredPosition: {x: 46.313995, y: -68.336}
-  m_SizeDelta: {x: -12.9198, y: -76.900024}
+  m_AnchorMin: {x: 0.600466, y: 0.17271093}
+  m_AnchorMax: {x: 0.7391592, y: 0.94900006}
+  m_AnchoredPosition: {x: -26, y: -75}
+  m_SizeDelta: {x: -52.9198, y: -86.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1082291684
 GameObject:
@@ -66095,12 +66176,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095463641}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 625.46, y: 167.31, z: -600.08}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 46.36737, y: 5.8917694, z: -27.139954}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1096928330
 GameObject:
@@ -71861,7 +71942,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85368294}
   m_AnchorMax: {x: 0.8626698, y: 1}
-  m_AnchoredPosition: {x: -31.99414, y: 9.5}
+  m_AnchoredPosition: {x: -31.994133, y: 9.5000305}
   m_SizeDelta: {x: 23.94458, y: 47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194264424
@@ -73281,12 +73362,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209216896}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 593.64, y: 165.31, z: -534.04}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 14.547363, y: 3.8917694, z: 38.900085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1209270886
 PrefabInstance:
@@ -74249,7 +74330,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -79396,12 +79477,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298943198}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.2588191, y: 0, z: -0, w: -0.9659258}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.2588191, y: -0, z: -0, w: -0.9659258}
+  m_LocalPosition: {x: -579.09265, y: -161.41823, z: 572.94006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 30, y: 360, z: 0}
 --- !u!1001 &1299874918
 PrefabInstance:
@@ -84840,7 +84921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6.7001038, y: 18.929932}
+  m_AnchoredPosition: {x: -6.7001343, y: 18.929932}
   m_SizeDelta: {x: 63.79989, y: -56.859962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401767484
@@ -86490,7 +86571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.444}
   m_AnchorMin: {x: 0.748, y: 0.08721227}
   m_AnchorMax: {x: 1, y: 0.45654142}
-  m_AnchoredPosition: {x: -1.4020996, y: 15.750061}
+  m_AnchoredPosition: {x: -1.4020996, y: 15.75}
   m_SizeDelta: {x: -94.55618, y: -26.90686}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1432828565
@@ -87025,7 +87106,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -87088,7 +87169,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1441291371
@@ -87155,6 +87236,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 1269329836}
   newImage: {fileID: 2032952022}
   referenceLinkButton: {fileID: 483777664}
+  lowSocialInterest: {fileID: 681101602}
+  midSocialInterest: {fileID: 434115382}
+  highSocialInterest: {fileID: 1673842281}
+  lowSportsInterest: {fileID: 799658239}
+  midSportsInterest: {fileID: 918430700}
+  highSportsInterest: {fileID: 1476472837}
+  lowInterInterest: {fileID: 1671643062}
+  midInterInterest: {fileID: 1771145915}
+  highInterInterest: {fileID: 208384637}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -88819,12 +88909,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473657347}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 574.45, y: 167.23, z: -538.31}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -4.642639, y: 5.8117676, z: 34.630066}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1475131494
 GameObject:
@@ -89545,7 +89635,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -90416,6 +90506,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 865887016}
   newImage: {fileID: 764687588}
   referenceLinkButton: {fileID: 70472883}
+  lowSocialInterest: {fileID: 791452841}
+  midSocialInterest: {fileID: 1511943486}
+  highSocialInterest: {fileID: 1545498789}
+  lowSportsInterest: {fileID: 1663794357}
+  midSportsInterest: {fileID: 1091419392}
+  highSportsInterest: {fileID: 177193134}
+  lowInterInterest: {fileID: 898002958}
+  midInterInterest: {fileID: 1502642406}
+  highInterInterest: {fileID: 1219170431}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -90844,7 +90943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1, y: 0.117839165}
   m_AnchorMax: {x: 0.864, y: 0.46386525}
-  m_AnchoredPosition: {x: -1.999939, y: -10.000122}
+  m_AnchoredPosition: {x: -2, y: -10.000122}
   m_SizeDelta: {x: -146, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509402210
@@ -95132,12 +95231,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583830828}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 567.611, y: 167.23, z: -546.539}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.481628, y: 5.8117676, z: 26.401062}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &1584491095 stripped
 Transform:
@@ -97055,7 +97154,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -97454,7 +97553,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -97517,7 +97616,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1612677237
@@ -98794,7 +98893,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.4
+  m_fontSize: 18
   m_fontSizeBase: 32.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -100625,6 +100724,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 611521115}
   newImage: {fileID: 1633022646}
   referenceLinkButton: {fileID: 194633547}
+  lowSocialInterest: {fileID: 348652378}
+  midSocialInterest: {fileID: 2030033140}
+  highSocialInterest: {fileID: 887560089}
+  lowSportsInterest: {fileID: 1053176959}
+  midSportsInterest: {fileID: 1631821031}
+  highSportsInterest: {fileID: 902138824}
+  lowInterInterest: {fileID: 356204006}
+  midInterInterest: {fileID: 2067901364}
+  highInterInterest: {fileID: 1491635180}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -104358,7 +104466,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -104421,7 +104529,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1710445539
@@ -108321,7 +108429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25628588, y: 0.008886302}
   m_AnchorMax: {x: 0.69500005, y: 0.097647764}
-  m_AnchoredPosition: {x: 42, y: -32.23181}
+  m_AnchoredPosition: {x: 42, y: -32.23169}
   m_SizeDelta: {x: -338, y: -91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1766378849
@@ -110176,10 +110284,10 @@ RectTransform:
   - {fileID: 1456253966}
   m_Father: {fileID: 966844189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.45163685, y: 0.17271093}
-  m_AnchorMax: {x: 0.58663684, y: 0.94900006}
-  m_AnchoredPosition: {x: -11.768982, y: -62.334}
-  m_SizeDelta: {x: -40.9198, y: -86.900024}
+  m_AnchorMin: {x: 0.2936136, y: 0.17271093}
+  m_AnchorMax: {x: 0.4376136, y: 0.9725665}
+  m_AnchoredPosition: {x: 22.5, y: -65.112}
+  m_SizeDelta: {x: -55.9198, y: -92.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1791691647
 GameObject:
@@ -111565,7 +111673,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.95
+  m_fontSize: 36.85
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -113250,7 +113358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.513}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.45, y: -1301.8198}
+  m_AnchoredPosition: {x: 457.45, y: -1301.9567}
   m_SizeDelta: {x: 700, y: 432.8867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1844251618
@@ -113272,6 +113380,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 963228880}
   newImage: {fileID: 366396073}
   referenceLinkButton: {fileID: 1770745521}
+  lowSocialInterest: {fileID: 2009020042}
+  midSocialInterest: {fileID: 1884843372}
+  highSocialInterest: {fileID: 772442152}
+  lowSportsInterest: {fileID: 55274274}
+  midSportsInterest: {fileID: 1910247738}
+  highSportsInterest: {fileID: 2144957247}
+  lowInterInterest: {fileID: 632255603}
+  midInterInterest: {fileID: 1316557580}
+  highInterInterest: {fileID: 49243691}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -113737,7 +113854,19 @@ Transform:
   m_LocalPosition: {x: 579.09265, y: 161.41823, z: -572.94006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1298943200}
+  - {fileID: 51635483}
+  - {fileID: 1095463643}
+  - {fileID: 352850139}
+  - {fileID: 1473657349}
+  - {fileID: 187613400}
+  - {fileID: 1583830830}
+  - {fileID: 2061267477}
+  - {fileID: 123295147}
+  - {fileID: 1209216898}
+  - {fileID: 962240276}
+  - {fileID: 705825675}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1850617109
@@ -116292,7 +116421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.194}
   m_AnchorMin: {x: 0.786, y: 0.28356552}
   m_AnchorMax: {x: 0.786, y: 0.28356552}
-  m_AnchoredPosition: {x: 708.98, y: -0.000015258789}
+  m_AnchoredPosition: {x: 708.98, y: 0}
   m_SizeDelta: {x: 115.900024, y: 116.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885719999
@@ -116590,10 +116719,10 @@ RectTransform:
   - {fileID: 660407457}
   m_Father: {fileID: 924818834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.45163685, y: 0.17271093}
-  m_AnchorMax: {x: 0.58663684, y: 0.94900006}
-  m_AnchoredPosition: {x: -11.768997, y: -62.334}
-  m_SizeDelta: {x: -40.9198, y: -86.900024}
+  m_AnchorMin: {x: 0.29542458, y: 0.098000005}
+  m_AnchorMax: {x: 0.46500003, y: 0.94900006}
+  m_AnchoredPosition: {x: -3.5, y: -52.611}
+  m_SizeDelta: {x: -83.9198, y: -105.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1888157289
 GameObject:
@@ -122471,7 +122600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.4749756, y: -8.000137}
+  m_AnchoredPosition: {x: 0.4749756, y: -8.000122}
   m_SizeDelta: {x: 26.349957, y: 66.60004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1998938652
@@ -125316,7 +125445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.212}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.45, y: -271.68854}
+  m_AnchoredPosition: {x: 457.45, y: -271.7081}
   m_SizeDelta: {x: 700, y: 432.8867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2049082552
@@ -125338,6 +125467,15 @@ MonoBehaviour:
   longDescriptionText: {fileID: 1975083014}
   newImage: {fileID: 1509402210}
   referenceLinkButton: {fileID: 1241703420}
+  lowSocialInterest: {fileID: 1697097689}
+  midSocialInterest: {fileID: 353263899}
+  highSocialInterest: {fileID: 1712276427}
+  lowSportsInterest: {fileID: 1987410625}
+  midSportsInterest: {fileID: 783575459}
+  highSportsInterest: {fileID: 1213517597}
+  lowInterInterest: {fileID: 1152818660}
+  midInterInterest: {fileID: 1984996447}
+  highInterInterest: {fileID: 362523130}
   socialValue: 0
   sportsValue: 0
   internationalValue: 0
@@ -125907,12 +126045,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061267475}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 605.61, y: 165.37, z: -575.5}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 26.517334, y: 3.951767, z: -2.5599365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1849530065}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2062134420
 GameObject:
@@ -128171,7 +128309,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 48.7
   m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -128281,7 +128419,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -128344,7 +128482,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2113605262
@@ -128462,10 +128600,10 @@ RectTransform:
   - {fileID: 1317432438}
   m_Father: {fileID: 966844189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6268491, y: 0.208}
-  m_AnchorMax: {x: 0.74263686, y: 0.909711}
-  m_AnchoredPosition: {x: -67.39, y: -65.504}
-  m_SizeDelta: {x: -15.9198, y: -67.900024}
+  m_AnchorMin: {x: 0.448, y: 0.208}
+  m_AnchorMax: {x: 0.58663684, y: 0.94900006}
+  m_AnchoredPosition: {x: -13, y: -71.024}
+  m_SizeDelta: {x: -47.9198, y: -77.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2115656180
 GameObject:
@@ -129257,7 +129395,7 @@ MonoBehaviour:
   m_text: Seleccionar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -131656,18 +131794,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1234463265}
   - {fileID: 1849530065}
-  - {fileID: 1298943200}
-  - {fileID: 51635483}
-  - {fileID: 1095463643}
-  - {fileID: 352850139}
-  - {fileID: 1473657349}
-  - {fileID: 187613400}
-  - {fileID: 1583830830}
-  - {fileID: 2061267477}
-  - {fileID: 123295147}
-  - {fileID: 1209216898}
-  - {fileID: 962240276}
-  - {fileID: 705825675}
   - {fileID: 815794781}
   - {fileID: 1079016568}
   - {fileID: 1544864493}
