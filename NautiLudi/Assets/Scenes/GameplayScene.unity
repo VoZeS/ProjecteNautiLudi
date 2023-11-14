@@ -766,7 +766,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 18
   m_fontSizeBase: 61.3
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1468,8 +1468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.020000001, y: 0.25384867}
   m_AnchorMax: {x: 0.95762634, y: 0.75830925}
-  m_AnchoredPosition: {x: 657.00006, y: -75}
-  m_SizeDelta: {x: 78.30664, y: 135.11389}
+  m_AnchoredPosition: {x: 657.00006, y: 5.7767}
+  m_SizeDelta: {x: 78.3066, y: -226.6383}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &29698291
 MonoBehaviour:
@@ -8659,7 +8659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.194}
   m_AnchorMin: {x: 0.786, y: 0.28356552}
   m_AnchorMax: {x: 0.786, y: 0.28356552}
-  m_AnchoredPosition: {x: 677.64905, y: -150.62881}
+  m_AnchoredPosition: {x: 648, y: 84}
   m_SizeDelta: {x: 115.900024, y: 116.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129329650
@@ -12276,7 +12276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07300001, y: 0.08800001}
   m_AnchorMax: {x: 0.874, y: 0.926399}
-  m_AnchoredPosition: {x: -63.99997, y: 238.49997}
+  m_AnchoredPosition: {x: -63.99997, y: 197}
   m_SizeDelta: {x: -194, y: -473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &193910848
@@ -12299,11 +12299,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "El bot`t blau d'informaci\xF3 et servir\xE0 per llegir la not\xEDcia completa
-    i veure els valors dels interessos que satisf\xE0.\n\nEls interessos de la poblaci\xF3
-    convien cada dia, encaixa els interessos de las noticies amb els interessos diaris
-    per satisfer a la poblaci\xF3 i, aix\xED, rebre un millor balan\xE7 al final
-    del dia."
+  m_text: "El bot\xF3 blau d'informaci\xF3 et servir\xE0 per llegir la not\xEDcia
+    completa i veure els valors dels interessos que satisf\xE0.\r\n\r\nEncaixa els
+    interessos de les not\xEDcies amb els interessos diaris per satisfer a la poblaci\xF3
+    i, aix\xED, rebre un millor balan\xE7 al final del dia."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -12366,7 +12365,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -18.552048, y: 0, z: -172.24884, w: -456.7293}
+  m_margin: {x: -18.552048, y: 0, z: -161.74854, w: -456.7293}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -16159,7 +16158,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.3
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20920,8 +20919,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.053106785, y: 0.28356552}
   m_AnchorMax: {x: 0.9128399, y: 0.74}
-  m_AnchoredPosition: {x: 656.7521, y: -73.66323}
-  m_SizeDelta: {x: 50.83075, y: 98.29474}
+  m_AnchoredPosition: {x: 660.72, y: -52}
+  m_SizeDelta: {x: 50.8307, y: -212.6252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &327941363
 MonoBehaviour:
@@ -27073,6 +27072,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1134651972}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1234463266}
         m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
         m_MethodName: MoveCamera
@@ -27661,7 +27672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &449516708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30015,6 +30026,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1348604509}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 189457740}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -41487,8 +41510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07300001, y: 0.08800001}
   m_AnchorMax: {x: 0.874, y: 0.926399}
-  m_AnchoredPosition: {x: -63.99997, y: 238.49997}
-  m_SizeDelta: {x: -194, y: -473}
+  m_AnchoredPosition: {x: 13.053955, y: -10}
+  m_SizeDelta: {x: -2.6549, y: -60.0884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702277606
 MonoBehaviour:
@@ -41511,8 +41534,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Has de seleccionar un total de 3 not\xEDcies cada dia per poder escriure
-    el diari.\n\nUn cop escrit i publicat, tendr\xE0 lloc el balcan\xE7 del dia per
-    saber els diners amb els que has acabat per seguir endavant amb la redacci\xF3."
+    el diari."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -41575,7 +41597,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -18.552048, y: 0, z: -172.24884, w: -434.9728}
+  m_margin: {x: 2.8578796, y: 0, z: -1.0495911, w: -3.7012863}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -45143,7 +45165,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 34.1
   m_fontSizeBase: 61.3
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -47259,7 +47281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.589}
   m_AnchorMin: {x: 0, y: 0.46386525}
   m_AnchorMax: {x: 1, y: 0.84000003}
-  m_AnchoredPosition: {x: -10.998596, y: 7.500061}
+  m_AnchoredPosition: {x: -10.998535, y: 7.500061}
   m_SizeDelta: {x: -63.900024, y: 24.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &787640469
@@ -48252,7 +48274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07300001, y: 0.08800001}
   m_AnchorMax: {x: 0.874, y: 0.926399}
-  m_AnchoredPosition: {x: -63.99997, y: 238.49997}
+  m_AnchoredPosition: {x: -63.99997, y: 177}
   m_SizeDelta: {x: -194, y: -473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808350474
@@ -48275,11 +48297,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "El bot`t blau d'informaci\xF3 et servir\xE0 per llegir la not\xEDcia completa
-    i veure els valors dels interessos que satisf\xE0.\n\nEls interessos de la poblaci\xF3
-    convien cada dia, encaixa els interessos de las noticies amb els interessos diaris
-    per satisfer a la poblaci\xF3 i, aix\xED, rebre un millor balan\xE7 al final
-    del dia."
+  m_text: "El bot\xF3 blau d'informaci\xF3 et servir\xE0 per llegir la not\xEDcia
+    completa i veure els valors dels interessos que satisf\xE0.\r\n\r\nEncaixa els
+    interessos de les not\xEDcies amb els interessos diaris per satisfer a la poblaci\xF3
+    i, aix\xED, rebre un millor balan\xE7 al final del dia."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -50193,7 +50214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.924}
   m_AnchorMin: {x: 0.081, y: 0.07700001}
   m_AnchorMax: {x: 0.88584375, y: 0.317}
-  m_AnchoredPosition: {x: 14, y: -31.000305}
+  m_AnchoredPosition: {x: 14, y: -31.000366}
   m_SizeDelta: {x: 5, y: 166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &832341351
@@ -62291,8 +62312,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Amb l'us de les noves tecnologies, els diaris fisics han perdut inter\xE8s.\n\nLa
-    teva empresa \xE9s l'ultima del sector.\n\nDe tu dep\xE9n el seu futur."
+  m_text: "Amb l'\xFAs de les noves tecnologies, els diaris f\xEDsics han perdut
+    inter\xE8s.\r\n\r\nLa teva empresa \xE9s l'\xFAltima del sector.\r\n\r\nDe tu
+    dep\xE8n el seu futur."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -63217,7 +63239,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -63922,7 +63944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.586}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 24.937042, y: -27.019592}
+  m_AnchoredPosition: {x: 24.937042, y: -27.019531}
   m_SizeDelta: {x: -123.799866, y: -3.140007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1070325041
@@ -71065,7 +71087,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 41.3
   m_fontSizeBase: 61.3
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -71389,8 +71411,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Amb l'us de les noves tecnologies, els diaris fisics han perdut inter\xE8s.\n\nLa
-    teva empresa \xE9s l'ultima del sector.\n\nDe tu dep\xE9n el seu futur."
+  m_text: "Amb l'\xFAs de les noves tecnologies, els diaris f\xEDsics han perdut
+    inter\xE8s.\r\n\r\nLa teva empresa \xE9s l'\xFAltima del sector.\r\n\r\nDe tu
+    dep\xE8n el seu futur."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -76875,10 +76898,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cada noticia t\xE8 un preu associat. Cada cop que en seleccionis una,
-    se't restaran aquests dels diners total.\n\nPots passar aquesta amb n\xFAmeros
-    vermells, pe\xF2 si el balan\xE7 posterior no acaba en positiu, la teva empresa
-    haur\xE0 de tancar"
+  m_text: "Cada not\xEDcia t\xE9 un preu associat. Cada cop que en seleccionis una,
+    se't restaran aquests dels diners totals.\r\n\r\nPots passar aquesta amb n\xFAmeros
+    vermells, per\xF2 si el balan\xE7 posterior no acaba en positiu, la teva empresa
+    haur\xE0 de tancar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -77230,10 +77253,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cada noticia t\xE8 un preu associat. Cada cop que en seleccionis una,
-    se't restaran aquests dels diners total.\n\nPots passar aquesta amb n\xFAmeros
-    vermells, pe\xF2 si el balan\xE7 posterior no acaba en positiu, la teva empresa
-    haur\xE0 de tancar"
+  m_text: "Cada not\xEDcia t\xE9 un preu associat. Cada cop que en seleccionis una,
+    se't restaran aquests dels diners totals.\r\n\r\nPots passar aquesta amb n\xFAmeros
+    vermells, per\xF2 si el balan\xE7 posterior no acaba en positiu, la teva empresa
+    haur\xE0 de tancar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -81553,7 +81576,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.7
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -85453,7 +85476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.444}
   m_AnchorMin: {x: 0.748, y: 0.08721227}
   m_AnchorMax: {x: 1, y: 0.45654142}
-  m_AnchoredPosition: {x: -1.4020996, y: 15.750122}
+  m_AnchoredPosition: {x: -1.4020996, y: 15.750061}
   m_SizeDelta: {x: -94.55618, y: -26.90686}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1432828565
@@ -87713,7 +87736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1475131495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88249,8 +88272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07300001, y: 0.08800001}
   m_AnchorMax: {x: 0.874, y: 0.926399}
-  m_AnchoredPosition: {x: -63.99997, y: 238.49997}
-  m_SizeDelta: {x: -194, y: -473}
+  m_AnchoredPosition: {x: 30, y: -31.458}
+  m_SizeDelta: {x: -33, y: -25.5916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481338583
 MonoBehaviour:
@@ -88273,8 +88296,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Has de seleccionar un total de 3 not\xEDcies cada dia per poder escriure
-    el diari.\n\nUn cop escrit i publicat, tendr\xE0 lloc el balcan\xE7 del dia per
-    saber els diners amb els que has acabat per seguir endavant amb la redacci\xF3."
+    el diari."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -88337,7 +88359,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -18.552048, y: 0, z: -172.24884, w: -434.9728}
+  m_margin: {x: -18.552048, y: 0, z: -4.4068756, w: -4.070099}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -89706,7 +89728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1, y: 0.117839165}
   m_AnchorMax: {x: 0.864, y: 0.46386525}
-  m_AnchoredPosition: {x: -1.9999695, y: -10.000122}
+  m_AnchoredPosition: {x: -1.999939, y: -10.000122}
   m_SizeDelta: {x: -146, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509402210
@@ -100920,7 +100942,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.364}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 42.68213, y: -33.55768}
+  m_AnchoredPosition: {x: 42.68213, y: -33.557617}
   m_SizeDelta: {x: -123.799866, y: -3.140007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675896569
@@ -107077,7 +107099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25628588, y: 0.008886302}
   m_AnchorMax: {x: 0.69500005, y: 0.097647764}
-  m_AnchoredPosition: {x: 42, y: -32.231873}
+  m_AnchoredPosition: {x: 42, y: -32.23181}
   m_SizeDelta: {x: -338, y: -91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1766378849
@@ -108556,7 +108578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85368294}
   m_AnchorMax: {x: 0.8626698, y: 1}
-  m_AnchoredPosition: {x: -31.993683, y: 9.5}
+  m_AnchoredPosition: {x: -31.993652, y: 9.5}
   m_SizeDelta: {x: 23.94458, y: 47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779403848
@@ -113709,10 +113731,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cada dia haur\xE0s de redactatar el noticiari de m\xE1xima actualitat.\n\nCada
-    noticia t\xE9 un preu per apar\xE8xier al teu diari. Si ho fas b\xE9, quan s'acabi
-    el dia rebr\xE0s suficients diners per subsistir.\n\nNO acabis amb balan\xE7os
-    negatius al final dia, sin\xF3 la teva empresa es veur\xE0 obligada a tancar.\n"
+  m_text: "Cada dia haur\xE0s de redactar el noticiari de m\xE0xima actualitat.\r\n\r\nCada
+    not\xEDcia t\xE9 un preu per apar\xE8ixer al teu diari. Si ho fas b\xE9, quan
+    s'acabi el dia rebr\xE0s suficients diners per subsistir.\r\n\r\nNO acabis amb
+    balan\xE7os negatius al final dia, sin\xF3 la teva empresa es veur\xE0 obligada
+    a tancar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -114141,10 +114164,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cada dia haur\xE0s de redactatar el noticiari de m\xE1xima actualitat.\n\nCada
-    noticia t\xE9 un preu per apar\xE8xier al teu diari. Si ho fas b\xE9, quan s'acabi
-    el dia rebr\xE0s suficients diners per subsistir.\n\nNO acabis amb balan\xE7os
-    negatius al final dia, sin\xF3 la teva empresa es veur\xE0 obligada a tancar.\n"
+  m_text: "Cada dia haur\xE0s de redactar el noticiari de m\xE0xima actualitat.\r\n\r\nCada
+    not\xEDcia t\xE9 un preu per apar\xE8ixer al teu diari. Si ho fas b\xE9, quan
+    s'acabi el dia rebr\xE0s suficients diners per subsistir.\r\n\r\nNO acabis amb
+    balan\xE7os negatius al final dia, sin\xF3 la teva empresa es veur\xE0 obligada
+    a tancar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -115015,7 +115039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.194}
   m_AnchorMin: {x: 0.786, y: 0.28356552}
   m_AnchorMax: {x: 0.786, y: 0.28356552}
-  m_AnchoredPosition: {x: 677.64905, y: -150.62881}
+  m_AnchoredPosition: {x: 708.98, y: -0.000015258789}
   m_SizeDelta: {x: 115.900024, y: 116.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885719999
@@ -121103,7 +121127,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.7
+  m_fontSize: 72
   m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -126100,8 +126124,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.020000001, y: 0.25384867}
   m_AnchorMax: {x: 0.95762634, y: 0.75830925}
-  m_AnchoredPosition: {x: 657.00006, y: -75}
-  m_SizeDelta: {x: 78.30664, y: 135.11389}
+  m_AnchoredPosition: {x: 657.0001, y: -50.784378}
+  m_SizeDelta: {x: 78.3066, y: -155.7835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099522405
 MonoBehaviour:
@@ -128483,8 +128507,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.053106785, y: 0.28356552}
   m_AnchorMax: {x: 0.9128399, y: 0.74}
-  m_AnchoredPosition: {x: 656.7521, y: -73.66323}
-  m_SizeDelta: {x: 50.83075, y: 98.29474}
+  m_AnchoredPosition: {x: 656.7521, y: -0.13310242}
+  m_SizeDelta: {x: 50.8307, y: -262.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140426283
 MonoBehaviour:
