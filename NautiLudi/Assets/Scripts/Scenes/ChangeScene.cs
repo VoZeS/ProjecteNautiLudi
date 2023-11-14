@@ -9,4 +9,5 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(newScene);
     }
+
 }

@@ -11,10 +11,7 @@ public class CameraSizeAdjustments : MonoBehaviour
     private float currentHeight;
 
     [Header("Camera")]
-    private Camera mainCamera;
     public float aspectRatioThreshold = 0.1f;
-    private float targetWidth = 1920f;
-    private float targetHeight = 1080f;
     public float baseMobileSize = 50f;
     public float baseDesktopSize = 13f;
 
@@ -25,8 +22,6 @@ public class CameraSizeAdjustments : MonoBehaviour
 
     void Start()
     {
-        mainCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
-
         UpdateScreenSize();
         AdjustCameraSize();
 
