@@ -139,7 +139,6 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 4; i++)
                     {
-                        PC_news[i].transform.position = new Vector3(PC_news[i].transform.position.x, 650f - (350f * i), PC_news[i].transform.position.z);
                         PC_news[i].SetActive(true);
                     }
                     PC_news[4].SetActive(false);
@@ -154,7 +153,6 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 4; i++)
                     {
-                        news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                         news[i].SetActive(true);
 
                     }
@@ -175,7 +173,6 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 5; i++)
                     {
-                        PC_news[i].transform.position = new Vector3(PC_news[i].transform.position.x, 650f - (350f * i), PC_news[i].transform.position.z);
                         PC_news[i].SetActive(true);
 
                     }
@@ -190,7 +187,6 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 5; i++)
                     {
-                        news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                         news[i].SetActive(true);
                     }
                     news[5].SetActive(false);
@@ -209,7 +205,6 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 6; i++)
                     {
-                        PC_news[i].transform.position = new Vector3(PC_news[i].transform.position.x, 650f - (350f * i), PC_news[i].transform.position.z);
                         PC_news[i].SetActive(true);
                     }
                     PC_news[6].SetActive(false);
@@ -223,7 +218,6 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 6; i++)
                     {
-                        news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                         news[i].SetActive(true);
                     }
                     news[6].SetActive(false);
@@ -241,7 +235,6 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 7; i++)
                     {
-                        PC_news[i].transform.position = new Vector3(PC_news[i].transform.position.x, 650f - (350f * i), PC_news[i].transform.position.z);
                         PC_news[i].SetActive(true);
                     }
 
@@ -254,7 +247,6 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 7; i++)
                     {
-                        news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
                         news[i].SetActive(true);
                     }
 
@@ -270,7 +262,8 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 4; i++)
                     {
-                        PC_news[i].transform.position = new Vector3(PC_news[i].transform.position.x, 650f - (350f * i), PC_news[i].transform.position.z);
+                        PC_news[i].SetActive(true);
+
                     }
 
                 }
@@ -281,7 +274,7 @@ public class NewsLogic : MonoBehaviour
 
                     for (int i = 0; i < 4; i++)
                     {
-                        news[i].transform.position = new Vector3(news[i].transform.position.x, 750f - (450f * i), news[i].transform.position.z);
+                        news[i].SetActive(true);
                     }
 
                 }
