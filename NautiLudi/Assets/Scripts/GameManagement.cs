@@ -10,6 +10,7 @@ public class GameManagement : MonoBehaviour
 {
     [Header("Main Menu Logic")]
     public GameObject continueButton;
+    public GameObject PC_ContinueButton;
     
     private bool isNewGame = true;
     static public bool hasPlayed;
@@ -56,17 +57,30 @@ public class GameManagement : MonoBehaviour
     {
         if (hasPlayed)
         {
-            if(continueButton != null)
+            if(!UIDisplay.isPC && continueButton != null)
                 continueButton.SetActive(true);
+
+            if(UIDisplay.isPC && PC_ContinueButton != null)
+                PC_ContinueButton.SetActive(true);
         }
     }
 
     public void ContinueButtonActivation()
     {
-        if (hasPlayed)
-            continueButton.SetActive(true);
-        else if (!hasPlayed)
-            continueButton.SetActive(false);
+        if(UIDisplay.isPC)
+        {
+            if (hasPlayed)
+                PC_ContinueButton.SetActive(true);
+            else if (!hasPlayed)
+                PC_ContinueButton.SetActive(false);
+        }
+        else
+        {
+            if (hasPlayed)
+                continueButton.SetActive(true);
+            else if (!hasPlayed)
+                continueButton.SetActive(false);
+        }
     }
 
     public void StartNewGame()

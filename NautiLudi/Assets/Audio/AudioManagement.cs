@@ -18,11 +18,9 @@ public class AudioManagement : MonoBehaviour
     public Toggle muteMusic;
     static public bool isMusicOn;
     public Image volumeImage;
+    public Image volumeMainMenuImage;
     public Image fxImage;
-
-    // Music Image GO
-    public Sprite mutedMusicImage;
-    public Sprite unmutedMusicImage;
+    public Image fxMainMenuImage;
 
     // Between Scenes Logic
     private static bool audioCreated = false;
@@ -45,51 +43,59 @@ public class AudioManagement : MonoBehaviour
         GetMusicVolume();
         GetFxVolume();
     }
-
     private void GetFxVolume()
     {
-        if (isFxOn)
+        if (isFxOn) // IS ON
         {
             audioMixer.SetFloat("VolFX", lastVolumeFX);
-            fxImage.sprite = unmutedMusicImage;
+            fxMainMenuImage.color = new Color(1, 1, 1, 1); // WHITE
+            fxImage.color = new Color(1, 1, 1, 1); // WHITE
         }
-        else if (!isFxOn)
+        else if (!isFxOn) // IS MUTED
         {
             audioMixer.GetFloat("VolFX", out lastVolumeFX);
             audioMixer.SetFloat("VolFX", -80);
-            fxImage.sprite = mutedMusicImage;
+            fxMainMenuImage.color = new Color(118 / 255f, 118 / 255f, 118 / 255f, 1); // GREY
+            fxImage.color = new Color(118 / 255f, 118 / 255f, 118 / 255f, 1); // GREY
+
         }
     }
 
     private void GetMusicVolume()
     {
-        if (isMusicOn)
+        if (isMusicOn) // IS ON
         {
             audioMixer.SetFloat("VolMusic", lastVolumeMusic);
-            volumeImage.sprite = unmutedMusicImage;
+            volumeMainMenuImage.color = new Color(1, 1, 1, 1); // WHITE
+            volumeImage.color = new Color(1, 1, 1, 1); // WHITE
         }
-        else if (!isMusicOn)
+        else if (!isMusicOn) // IS MUTED
         {
             audioMixer.GetFloat("VolMusic", out lastVolumeMusic);
             audioMixer.SetFloat("VolMusic", -80);
-            volumeImage.sprite = mutedMusicImage;
+            volumeMainMenuImage.color = new Color(118 / 255f, 118 / 255f, 118 / 255f, 1); // GREY
+            volumeImage.color = new Color(118 / 255f, 118 / 255f, 118 / 255f, 1); // GREY
         }
     }
 
     public void SetMusicMute()
     {
 
-        if (isMusicOn)
+        if (isMusicOn) // MUTE
         {
             audioMixer.GetFloat("VolMusic", out lastVolumeMusic);
             audioMixer.SetFloat("VolMusic", -80);
-            volumeImage.sprite = mutedMusicImage;
+            volumeMainMenuImage.color = new Color(118 / 255f, 118 / 255f, 118 / 255f, 1); // GREY
+            volumeImage.color = new Color(118 / 255f, 118 / 255f, 118 / 255f, 1); // GREY
+
             isMusicOn = false;
         }
-        else if(!isMusicOn)
+        else if(!isMusicOn) // UNMUTE
         {
             audioMixer.SetFloat("VolMusic", lastVolumeMusic);
-            volumeImage.sprite = unmutedMusicImage;
+            volumeMainMenuImage.color = new Color(1, 1, 1, 1); // WHITE
+            volumeImage.color = new Color(1, 1, 1, 1); // WHITE
+
             isMusicOn = true;
         }
     }
@@ -97,17 +103,21 @@ public class AudioManagement : MonoBehaviour
     public void SetFXMute()
     {
 
-        if (isFxOn)
+        if (isFxOn) // MUTE
         {
             audioMixer.GetFloat("VolFX", out lastVolumeFX);
             audioMixer.SetFloat("VolFX", -80);
-            fxImage.sprite = mutedMusicImage;
+            fxMainMenuImage.color = new Color(118 / 255f, 118 / 255f, 118 / 255f, 1); // GREY
+            fxImage.color = new Color(118 / 255f, 118 / 255f, 118 / 255f, 1); // GREY
+
             isFxOn = false;
         }
-        else if (!isFxOn)
+        else if (!isFxOn) // UNMUTE
         {
             audioMixer.SetFloat("VolFX", lastVolumeFX);
-            fxImage.sprite = unmutedMusicImage;
+            fxMainMenuImage.color = new Color(1, 1, 1, 1); // WHITE
+            fxImage.color = new Color(1, 1, 1, 1); // WHITE
+
             isFxOn = true;
         }
     }
