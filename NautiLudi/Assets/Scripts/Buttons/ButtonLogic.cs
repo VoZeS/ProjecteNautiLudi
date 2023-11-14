@@ -8,16 +8,16 @@ public class ButtonLogic : MonoBehaviour
     public BlackSmooth fadingScript;
 
     [Header("StartImages")]
-    public Image[] startImages;
+    public Renderer startRender;
 
     [Header("RedactImages")]
-    public Image[] redactImages;
+    public Renderer redactRender;
 
     [Header("UpgradesImages")]
-    public Image[] upgradesImages;
+    public Renderer upgradesRender;
 
     [Header("WinLoseImages")]
-    public Image[] winloseImages;
+    public Renderer winloseRender;
 
     [Header("Write Button")]
     public GameObject writeNewspaper;
@@ -53,39 +53,39 @@ public class ButtonLogic : MonoBehaviour
     }
     public void Start_InvisibleFading()
     {
-        fadingScript.StartToInvisibleFading(startImages);
+        fadingScript.StartToInvisibleFading(startRender);
     }
 
     public void Start_VisibleFading()
     {
-        fadingScript.StartToVisibleFading(startImages);
+        fadingScript.StartToVisibleFading(startRender);
     }
     public void Redact_InvisibleFading()
     {
-        fadingScript.StartToInvisibleFading(redactImages);
+        fadingScript.StartToInvisibleFading(redactRender);
     }
 
     public void Redact_VisibleFading()
     {
-        fadingScript.StartToVisibleFading(redactImages);
+        fadingScript.StartToVisibleFading(redactRender);
     }
     public void Upgrades_InvisibleFading()
     {
-        fadingScript.StartToInvisibleFading(upgradesImages);
+        fadingScript.StartToInvisibleFading(upgradesRender);
     }
 
     public void Upgrades_VisibleFading()
     {
-        fadingScript.StartToVisibleFading(upgradesImages);
+        fadingScript.StartToVisibleFading(upgradesRender);
     }
     public void WinLose_InvisibleFading()
     {
-        fadingScript.StartToInvisibleFading(winloseImages);
+        fadingScript.StartToInvisibleFading(winloseRender);
     }
 
     public void WinLose_VisibleFading()
     {
-        fadingScript.StartToVisibleFading(winloseImages);
+        fadingScript.StartToVisibleFading(winloseRender);
     }
 
 }

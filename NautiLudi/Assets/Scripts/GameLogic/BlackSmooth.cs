@@ -6,22 +6,22 @@ using UnityEngine.UI;
 public class BlackSmooth : MonoBehaviour
 {
     // To Invisible
-    private Image[] targetImage; 
+    private Renderer targetImage; 
     private float targetAlpha;
 
-    private Color[] originalColor;
-    private Color[] targetColor;
+    private Color originalColor;
+    private Color targetColor;
     private bool isFading = false;
     private float timer = 0.0f;
 
     public float fadeDuration = 1.0f;
 
     // To Visible (2)
-    private Image[] targetImage2;
+    private Renderer targetImage2;
     private float targetAlpha2;
 
-    private Color[] originalColor2;
-    private Color[] targetColor2;
+    private Color originalColor2;
+    private Color targetColor2;
     private bool isFading2 = false;
     private float timer2 = 0.0f;
 
@@ -32,10 +32,7 @@ public class BlackSmooth : MonoBehaviour
             timer += Time.deltaTime;
             float t = Mathf.Clamp01(timer / fadeDuration);
 
-            for (int i = 0; i < targetImage.Length; i++)
-            {
-                targetImage[i].color = Color.Lerp(originalColor[i], targetColor[i], t);
-            }
+            targetImage.material.color = Color.Lerp(originalColor, targetColor, t);
 
             if (t >= 1.0f)
             {
@@ -47,10 +44,7 @@ public class BlackSmooth : MonoBehaviour
             timer2 += Time.deltaTime;
             float t = Mathf.Clamp01(timer2 / fadeDuration);
 
-            for (int i = 0; i < targetImage2.Length; i++)
-            {
-                targetImage2[i].color = Color.Lerp(originalColor2[i], targetColor2[i], t);
-            }
+            targetImage2.material.color = Color.Lerp(originalColor2, targetColor2, t);
 
             if (t >= 1.0f)
             {
@@ -59,36 +53,31 @@ public class BlackSmooth : MonoBehaviour
         }
     }
 
-    public void StartToInvisibleFading(Image[] image)
+    public void StartToInvisibleFading(Renderer image)
     {
         isFading = true;
         targetAlpha = 0.0f;
         targetImage = image;
-        originalColor = new Color[targetImage.Length];
-        targetColor = new Color[targetImage.Length];
+        originalColor = new Color();
+        targetColor = new Color();
 
-        for (int i = 0; i < targetImage.Length; i++)
-        {
-            originalColor[i] = targetImage[i].color;
-            targetColor[i] = new Color(originalColor[i].r, originalColor[i].g, originalColor[i].b, targetAlpha);
-        }
+        originalColor = targetImage.material.color;
+        targetColor = new Color(originalColor.r, originalColor.g, originalColor.b, targetAlpha);
+        
         timer = 0.0f;
     }
 
-    public void StartToVisibleFading(Image[] image)
+    public void StartToVisibleFading(Renderer image)
     {
         isFading2 = true;
         targetAlpha2 = 1.0f;
         targetImage2 = image;
-        originalColor2 = new Color[targetImage2.Length];
-        targetColor2 = new Color[targetImage2.Length];
+        originalColor2 = new Color();
+        targetColor2 = new Color();
 
-        for (int i = 0; i < targetImage2.Length; i++)
-        {
-            originalColor2[i] = targetImage2[i].color;
-            targetColor2[i] = new Color(originalColor2[i].r, originalColor2[i].g, originalColor2[i].b, targetAlpha2);
-        }
-
+        originalColor2 = targetImage2.material.color;
+        targetColor2 = new Color(originalColor2.r, originalColor2.g, originalColor2.b, targetAlpha2);
+        
         timer2 = 0.0f;
     }
 

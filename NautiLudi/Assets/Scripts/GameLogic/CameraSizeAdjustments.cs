@@ -54,7 +54,7 @@ public class CameraSizeAdjustments : MonoBehaviour
                 camMovScript.timer += Time.deltaTime;
                 float t = Mathf.Clamp01(camMovScript.timer / camMovScript.zoomDuration);
 
-                camMovScript.cam.orthographicSize = Mathf.Lerp(baseMobileSize, baseMobileSize - 35f, t);
+                camMovScript.cam.orthographicSize = Mathf.Lerp(baseMobileSize, baseMobileSize - 30f, t);
             }
             else
             {
