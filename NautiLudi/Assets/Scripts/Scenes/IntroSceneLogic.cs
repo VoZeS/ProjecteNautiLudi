@@ -1,23 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class IntroSceneLogic : MonoBehaviour
 {
-    public VideoPlayer videoPlayer;
     private ChangeScene sceneManager;
+    public BlackSmooth fadeMan;
+    public Image foreground;
+
+    private float timer;
+    private bool startFade = false;
 
     private void Start()
     {
         sceneManager = GetComponent<ChangeScene>();
+
+        timer = 0f;
+        startFade = false;
+
+        fadeMan.Image_StartToInvisibleFading(foreground);
     }
    
     void Update()
     {
-        if(videoPlayer.isPaused)
+        timer += Time.deltaTime;
+
+        if (timer >= 2.0f && !startFade)
         {
-            sceneManager.GoToScene("MainMenuScene");
+            fadeMan.Image_StartToVisibleFading(foreground);
+            startFade = true;
         }
+
     }
 }
