@@ -10,7 +10,7 @@ public class UIDisplay : MonoBehaviour
     private float targetWidth = 1920f;
     private float targetHeight = 1080f;
 
-    private float aspectRatioThreshold = 0.1f;
+    private float aspectRatioThreshold = 0.2f;
 
     public GameObject UI_PC;
     public GameObject UI_Mobile;

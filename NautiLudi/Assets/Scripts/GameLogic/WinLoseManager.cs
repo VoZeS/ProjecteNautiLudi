@@ -15,6 +15,8 @@ public class WinLoseManager : MonoBehaviour
     public TMP_Text totalBalance;
     [Space(10)]
     public TMP_Text actualMoney;
+    [Space(10)]
+    public ParticleSystem[] confetiParticles;
 
     public AudioSource moneyGained;
     public AudioSource moneyLost;   
@@ -86,6 +88,12 @@ public class WinLoseManager : MonoBehaviour
         {
             totalBalance.text = "+" + totalBal.ToString("F2") + "€";
             totalBalance.color = new Color(60 / 255f, 180 / 255f, 70 / 255f, 1); // GREEN
+
+            // CONFETI
+            for(int i = 0; i < confetiParticles.Length; i++)
+            {
+                confetiParticles[i].Play();
+            }
 
             moneyGained.Play();  
         }

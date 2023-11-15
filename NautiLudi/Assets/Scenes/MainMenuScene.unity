@@ -16120,9 +16120,9 @@ MonoBehaviour:
   m_fontSizeBase: 18.76
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 8
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
-  m_fontStyle: 5
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -20230,9 +20230,9 @@ MonoBehaviour:
   m_fontSizeBase: 18.76
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 8
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
-  m_fontStyle: 5
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -30470,6 +30470,7 @@ SceneRoots:
   - {fileID: 415357147}
   - {fileID: 1088425268}
   - {fileID: 1672826063}
+  - {fileID: 881871308}
   - {fileID: 294697788}
   - {fileID: 96939273}
   - {fileID: 568307576}
@@ -30480,5 +30481,4 @@ SceneRoots:
   - {fileID: 458124266}
   - {fileID: 1295086120}
   - {fileID: 270690869}
-  - {fileID: 881871308}
   - {fileID: 1056111048}

@@ -17,6 +17,7 @@ public class FadeManager : MonoBehaviour
     public ButtonLogic buttonScript;
     public RandomInterests interestScript;
     public GameObject bottomBackgroundUI;
+    public GameObject topBackgroundUI;
 
     [Header("Selection Button")]
     public Image[] selectionButtonBackground;
@@ -72,6 +73,7 @@ public class FadeManager : MonoBehaviour
                     nightTime.Play();
 
                     bottomBackgroundUI.SetActive(true);
+                    topBackgroundUI.SetActive(true);
 
                     if (WinLoseManager.hasLost)
                     {
@@ -127,13 +129,13 @@ public class FadeManager : MonoBehaviour
         for (int i = 0; i < selectionButtonText.Length; i++)
         {
             selectionButtonText[i].text = "Seleccionar";
-            selectionButtonBackground[i].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1);
+            selectionButtonBackground[i].color = new Color(140f / 255f, 220f / 255f, 140f / 255f, 1);
         }
 
         for (int i = 0; i < associateButtonText.Length; i++)
         {
             associateButtonText[i].text = "Seleccionar";
-            associateButtonBackground[i].color = new Color(60f / 255f, 180f / 255f, 70f / 255f, 1);
+            associateButtonBackground[i].color = new Color(140f / 255f, 220f / 255f, 140f / 255f, 1);
         }
     }
 

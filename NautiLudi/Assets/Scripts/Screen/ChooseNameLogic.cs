@@ -14,11 +14,17 @@ public class ChooseNameLogic : MonoBehaviour
 
     public void ChangeName()
     {
-        nameString = inputName.text;
-        nameText.text = nameString;
+        if(!UIDisplay.isPC)
+        {
+            nameString = inputName.text;
+            nameText.text = nameString;
+        }
+        else
+        {
+            nameString = PC_InputName.text;
+            PC_NameText.text = nameString;
+        }
 
-        nameString = PC_InputName.text;
-        PC_NameText.text = nameString;
     }
 
     private void Start()

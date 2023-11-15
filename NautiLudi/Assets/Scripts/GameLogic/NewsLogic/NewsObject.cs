@@ -56,7 +56,7 @@ public class NewsObject : MonoBehaviour
             Debug.LogError("No se pudo cargar el sprite desde la ruta: " + news.newsImage);
         }
 
-        
+        referenceLinkButton.onClick.RemoveAllListeners();
         referenceLinkButton.onClick.AddListener(() => OpenLink(news.url));
     }
 
@@ -68,6 +68,11 @@ public class NewsObject : MonoBehaviour
         moneyCost = news.moneyCost;
         isBlocked = news.isBlocked;
 
+        DisplayValues();
+    }
+
+    private void DisplayValues()
+    {
         switch (socialValue)
         {
             case 1:

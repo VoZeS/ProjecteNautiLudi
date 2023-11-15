@@ -11,7 +11,7 @@ public class CameraSizeAdjustments : MonoBehaviour
     private float currentHeight;
 
     [Header("Camera")]
-    public float aspectRatioThreshold = 0.1f;
+    public float aspectRatioThreshold = 0.2f;
     public float baseMobileSize = 50f;
     public float baseDesktopSize = 13f;
 
