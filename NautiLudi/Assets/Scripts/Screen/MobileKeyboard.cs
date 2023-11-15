@@ -6,15 +6,17 @@ using UnityEngine.UI;
 
 public class MobileKeyboard : MonoBehaviour
 {
-    public TMP_InputField inputField;
+    private TouchScreenKeyboard keyboard;
 
     public void OpenKeyboard()
     {
-        inputField.ActivateInputField();
+        keyboard.active = true;
+        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
     }
 
     public void CloseKeyboard()
     {
-        inputField.DeactivateInputField();
+        keyboard.active = false;
     }
+
 }
