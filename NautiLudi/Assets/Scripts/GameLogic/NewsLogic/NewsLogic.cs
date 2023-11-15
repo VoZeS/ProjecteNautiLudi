@@ -96,12 +96,12 @@ public class NewsLogic : MonoBehaviour
 
                 if(UIDisplay.isPC)
                 {
-                    PC_news[0].GetComponent<News>().moneyCost = 0;
+                    PC_news[0].GetComponent<NewsObject>().moneyCost = 0;
 
                 }
                 else
                 {
-                    news[0].GetComponent<News>().moneyCost = 0;
+                    news[0].GetComponent<NewsObject>().moneyCost = 0;
 
                 }
 
@@ -110,13 +110,13 @@ public class NewsLogic : MonoBehaviour
 
                 if (UIDisplay.isPC)
                 {
-                    PC_news[0].GetComponent<News>().moneyCost = 0;
-                    PC_news[1].GetComponent<News>().moneyCost = 0;
+                    PC_news[0].GetComponent<NewsObject>().moneyCost = 0;
+                    PC_news[1].GetComponent<NewsObject>().moneyCost = 0;
                 }
                 else
                 {
-                    news[0].GetComponent<News>().moneyCost = 0;
-                    news[1].GetComponent<News>().moneyCost = 0;
+                    news[0].GetComponent<NewsObject>().moneyCost = 0;
+                    news[1].GetComponent<NewsObject>().moneyCost = 0;
                 }
                     
                 break;
