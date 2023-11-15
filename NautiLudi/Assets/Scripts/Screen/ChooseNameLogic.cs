@@ -7,6 +7,7 @@ public class ChooseNameLogic : MonoBehaviour
 {
     public TMP_InputField inputName;
     public TMP_Text nameText;
+    public TMP_Text mobileCompanyName;
     [Space(10)]
     public TMP_InputField PC_InputName;
     public TMP_Text PC_NameText;
@@ -16,7 +17,7 @@ public class ChooseNameLogic : MonoBehaviour
     {
         if(!UIDisplay.isPC)
         {
-            nameString = inputName.text;
+            nameString = mobileCompanyName.text;
             nameText.text = nameString;
         }
         else

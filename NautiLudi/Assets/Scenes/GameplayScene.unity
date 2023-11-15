@@ -29880,7 +29880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.366}
   m_AnchorMin: {x: 0, y: 0.158}
   m_AnchorMax: {x: 0.3484264, y: 0.708}
-  m_AnchoredPosition: {x: 29.207611, y: 77.270706}
+  m_AnchoredPosition: {x: 29.20758, y: 77.270706}
   m_SizeDelta: {x: 5.564209, y: -24.883606}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &481218745
@@ -53119,8 +53119,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NAUTILUS NEWS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -53144,7 +53144,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 70.8
   m_fontSizeBase: 70.8
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -54870,9 +54870,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1267974484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.4199829, y: -89.4}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.4199829, y: -29.400002}
   m_SizeDelta: {x: 153.66461, y: 46.358}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &906749477
@@ -54897,8 +54897,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 365
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -54922,7 +54922,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.45
+  m_fontSize: 39.55
   m_fontSizeBase: 48.6
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -77603,7 +77603,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267974483}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -7}
   m_LocalScale: {x: 11.609485, y: 1.9256676, z: 1.7635934}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -77611,10 +77611,10 @@ RectTransform:
   - {fileID: 1993180992}
   m_Father: {fileID: 966844189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.78372645, y: 0.208}
-  m_AnchorMax: {x: 0.9747595, y: 0.94900006}
-  m_AnchoredPosition: {x: -88, y: -71.024}
-  m_SizeDelta: {x: -220.56982, y: -69.07507}
+  m_AnchorMin: {x: 0.7252951, y: 0}
+  m_AnchorMax: {x: 0.90400004, y: 0.8625783}
+  m_AnchoredPosition: {x: -8, y: -31}
+  m_SizeDelta: {x: -236.5387, y: -96.466}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1268558415
 GameObject:
@@ -96978,10 +96978,10 @@ RectTransform:
   - {fileID: 1631661060}
   m_Father: {fileID: 966844189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.025207128, y: 0.17271093}
-  m_AnchorMax: {x: 0.26663682, y: 0.909711}
-  m_AnchoredPosition: {x: 30.251099, y: -71.927}
-  m_SizeDelta: {x: -177.9198, y: -76.900024}
+  m_AnchorMin: {x: 0.025207128, y: 0}
+  m_AnchorMax: {x: 0.2936136, y: 0.909711}
+  m_AnchoredPosition: {x: 15, y: -44}
+  m_SizeDelta: {x: -216.9198, y: -120.900024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1587957674
 GameObject:
@@ -100516,15 +100516,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631661059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -5.4}
   m_LocalScale: {x: 1.0795, y: 1.0795, z: 1.0795}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1587950031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5, y: -76}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5, y: -21}
   m_SizeDelta: {x: 98.215546, y: 32.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631661061
@@ -100549,8 +100549,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 10000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -100574,7 +100574,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.7
+  m_fontSize: 24.5
   m_fontSizeBase: 32.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -124113,9 +124113,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1267974484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1.4499512, y: -30.305054}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.4499512, y: 29.694946}
   m_SizeDelta: {x: 266, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993180993
@@ -124140,8 +124140,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Day
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -124658,7 +124658,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.7
+  m_fontSize: 72
   m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1
